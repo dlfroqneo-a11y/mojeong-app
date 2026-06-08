@@ -1333,12 +1333,9 @@ def run(mode):
     label = "A안 · 동·읍 경계 표시형" if mode == "A" else "B안 · 데이터 집중형"
     st.set_page_config(page_title=f"모정 프로토타입 {mode}안", page_icon="🏛️",
                        layout="wide", initial_sidebar_state="collapsed")
-    # 브라우저 뒤로/앞으로(popstate) → 새로고침으로 URL 상태 복원 (8501과 동일)
-    components.html("""<script>
-    (function(){ var p=window.parent;
-      if(p && !p.__mj_proto_pop__){ p.__mj_proto_pop__=true;
-        p.addEventListener('popstate', function(){ p.location.reload(); }); }
-    })();</script>""", height=0)
+    # 뒤로가기 = Streamlit 1.58 네이티브 query_params 처리(자동 rerun)에 위임.
+    # 과거 popstate→location.reload()는 전체 페이지 새로고침이라 느린 환경(Cloud 무료플랜)에서
+    # 뒤로가기 반응이 늦어 '두 번 눌러야' 체감을 유발 → 제거(2026-06-08, back 전수검증 PASS).
     # 8501과 동일한 본문 폭·여백 + 입체 토글 스위치
     st.markdown("""<style>
       .block-container { padding-top: 2.6rem; max-width: 1240px; }
