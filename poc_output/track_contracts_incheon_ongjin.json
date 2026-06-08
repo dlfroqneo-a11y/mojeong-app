@@ -1,0 +1,2091 @@
+{
+ "기관필터": "인천광역시 옹진군",
+ "기간": "20240501~20240531",
+ "상태": "OK",
+ "계약수": 208,
+ "계약총액": 34041784710,
+ "수의계약수": 176,
+ "수의계약비율": 84.6,
+ "계약": [
+  {
+   "계약명": "(선박) 도서쓰레기  정화운반선 건조",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 한국메이드",
+   "계약금액": 7250280000,
+   "계약일자": "2024-05-03",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=0023H0229_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월분교장 국민체육문화센터 건립공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)무한종합건설",
+   "계약금액": 3478920000,
+   "계약일자": "2024-05-16",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202209107FB_3&ctrtChgOrd=09&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 군도32호선(하늬~고봉포) 도로개설공사(3차분)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "케이디종합건설 주식회사",
+   "계약금액": 1692318400,
+   "계약일자": "2024-05-20",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023061583C_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월도 달빛바람 천문공원 조성공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 싸이트",
+   "계약금액": 1640408000,
+   "계약일자": "2024-05-24",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230808AC8_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥 친환경 생태공원 조성사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)대원건설",
+   "계약금액": 1275516000,
+   "계약일자": "2024-05-24",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231017144_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 중앙배수로 배수갑문 정비공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "상상종합건설 주식회사",
+   "계약금액": 1063481880,
+   "계약일자": "2024-05-21",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EBC1_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2022년 어촌뉴딜300사업(문갑리항 기항지개선사업)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "화주종합건설주식회사",
+   "계약금액": 1030005000,
+   "계약일자": "2024-05-20",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202401109EC_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥대교 유지보수공사(2차)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 미디자인건설",
+   "계약금액": 815109190,
+   "계약일자": "2024-05-20",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231011BED_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "가을1리 경로당 신축공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 바림종합건설",
+   "계약금액": 774361500,
+   "계약일자": "2024-05-20",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023090A560_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시모도 갯벌생태계 복원 및 연도교 해수소통로 건설공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)대양건설환경",
+   "계약금액": 742330000,
+   "계약일자": "2024-05-24",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230307F9F_5&ctrtChgOrd=04&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "도우해안길 조성사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "반도종합건설(주)",
+   "계약금액": 659527000,
+   "계약일자": "2024-05-08",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202305089B3_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 해양쓰레기 정화사업 폐기물 운송처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 신승에너지",
+   "계약금액": 553294610,
+   "계약일자": "2024-05-10",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506B78_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 외리 면도176호선 도로 확포장공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "아이엔케이건설 주식회사",
+   "계약금액": 516940000,
+   "계약일자": "2024-05-27",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230617329_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 국민체육문화센터 신축공사 레미콘 제조구매",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "광진레미콘(주)",
+   "계약금액": 461549700,
+   "계약일자": "2024-05-30",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20223202A6F_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 군도31호선(가을리) 보행자도로 개설공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "대연종합건설 주식회사",
+   "계약금액": 330176000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230614B56_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월도 달빛바람 천문공원 조성 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 영일이엔씨",
+   "계약금액": 324824500,
+   "계약일자": "2024-05-02",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230902699_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 대청 국가지질공원 탐방시설 조성공사 2단계",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "용두건설주식회사",
+   "계약금액": 319088000,
+   "계약일자": "2024-05-15",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023090411E_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청 행정선(인천526호) 기관개방 임시검사 수리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "YS선박",
+   "계약금액": 312259000,
+   "계약일자": "2024-05-14",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509B8C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 조림사업(섬지역 산림가꾸기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 301428500,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030D746_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "군도74호선(영흥면 외리) 외 4개소 재포장공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 한국교량",
+   "계약금액": 287782000,
+   "계약일자": "2024-05-16",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050B1A0_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시모도 연도교 항로표지 설치공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 이스젠",
+   "계약금액": 256928000,
+   "계약일자": "2024-05-15",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231200837_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월분교장 국민체육문화센터 건립 소방공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "경서산업(주)",
+   "계약금액": 254695240,
+   "계약일자": "2024-05-21",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20220910882_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령면 연화3리 배수갑문 정비공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "보룡건설 주식회사",
+   "계약금액": 245945800,
+   "계약일자": "2024-05-02",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240500172_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "모도리 어선선착장 개선사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 경방산업개발",
+   "계약금액": 225742000,
+   "계약일자": "2024-05-17",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240317C3C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2023년 자월면 계남마을 경관개선사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)근원",
+   "계약금액": 218130000,
+   "계약일자": "2024-05-08",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231107A2A_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥화력발전소 주변지역 주민건강영향조사 사후관리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "안양대학교 산학협력단",
+   "계약금액": 200000000,
+   "계약일자": "2024-05-21",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EAAB_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평면 조기역사관 보수보강 공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 예스에프엠",
+   "계약금액": 177428910,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506283_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "내1리 마을환경 개선공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "성우개발 주식회사",
+   "계약금액": 171890000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023120F822_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 폐교 문화재생사업 조성 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)백운전력",
+   "계약금액": 167258770,
+   "계약일자": "2024-05-17",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230204335_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 폐교 문화재생사업 조성 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)백운전력",
+   "계약금액": 167258770,
+   "계약일자": "2024-05-21",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230204335_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲가꾸기 사업(덩굴제거-서해5도)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 161139000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509DEF_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲가꾸기 사업(덩굴제거-근해도서)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 160650000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509D6D_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "내리어촌계 어업인 복지회관 리모델링",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "호진기업",
+   "계약금액": 154338000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050B545_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 끝섬전망대 도로 정비공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "광진산업개발 주식회사",
+   "계약금액": 150474780,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230907285_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "승봉리항 물양장 증고공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 그린건설개발",
+   "계약금액": 150457000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202331000A6_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청면 직원관사 신축사업 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 장형기업",
+   "계약금액": 145315400,
+   "계약일자": "2024-05-20",
+   "계약방법": "제한경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DD67_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 슬레이트 처리지원사업(1차)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "인성코퍼레이션 주식회사",
+   "계약금액": 143090000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050D554_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 복합커뮤니티센터 건립공사(자동제어장치)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 싸이몬",
+   "계약금액": 142500000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=222431279_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평 해상보행교 진입로 조성공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "풍산건설 주식회사",
+   "계약금액": 139170000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023120F98D_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청 중고등학교 앞 보행자도로 개설공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "고대건설(주)",
+   "계약금액": 135350890,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024220A13C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시모도 연도교 건설사업(전기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 선두파워텍",
+   "계약금액": 133836000,
+   "계약일자": "2024-05-16",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2022070D0B2_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 브랜드쌀 저온저장 시설 설치",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 대지종합건설",
+   "계약금액": 132001700,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050D5B4_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 해수욕장 이용환경 선진화사업(덕적 서포리)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "대한안전공사",
+   "계약금액": 127475420,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405129AD_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 패류종자(바지락) 살포사업(3권역(수특))",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해수산",
+   "계약금액": 125000000,
+   "계약일자": "2024-05-30",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405172C5_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "문갑도 섬마을 꽃길 및 한평정원 조성사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "이리온산업(주)",
+   "계약금액": 121286000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240315BAD_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "문갑도 섬마을 꽃길 및 한평정원 조성사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "이리온산업(주)",
+   "계약금액": 121286000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240315BAD_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 패류종자(백합) 살포사업(6권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "한국패류양식 영어조합법인",
+   "계약금액": 115000000,
+   "계약일자": "2024-05-16",
+   "계약방법": "일반경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050ACB6_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "이작2리 벌안해변 지중화 2차복구공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "대호이엔씨(주)",
+   "계약금액": 114075440,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242204636_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대이작도 장골아래해변 배수로 설치공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "경기산업개발 주식회사",
+   "계약금액": 114059000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030A33C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 군도31호선(가을리) 보행자도로 개설공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "홍익환경건설주식회사",
+   "계약금액": 112920000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023080BB94_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "옹암해수욕장 공영주차장 조성사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)해밀이엔씨",
+   "계약금액": 108616850,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506230_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 개인정화조 폐쇄공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "브니엘네이처 주식회사",
+   "계약금액": 105052680,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EC9A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥 하늘고래전망대 해상보행로 경관조명 설치공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 104078000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240203911_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 패류종자(바지락) 살포사업(2권역(수특))",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해수산",
+   "계약금액": 100000000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502466_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "계남항 선착장 보강사업(1-1차)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "초석산업주식회사",
+   "계약금액": 100000000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405061CC_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 패류종자(바지락) 살포사업(2권역(시비))",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 세현글로벌",
+   "계약금액": 100000000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DD9A_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 유어장 패류(바지락) 살포사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "탑 해양",
+   "계약금액": 100000000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F97D_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "노후 어업지도선 대체건조 보완 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 케이알엔지니어링",
+   "계약금액": 96888000,
+   "계약일자": "2024-05-10",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506B28_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 옹진군 청사 재배치공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "신한디자인",
+   "계약금액": 90992000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240305CB7_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 패류종자(바지락) 살포사업(1권역(시비))",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "큰바다수산",
+   "계약금액": 90000000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DE10_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "국가지원지방도 노선(대부도 입구 사거리~장경리 해변)승격 타당성 용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 도담이앤씨",
+   "계약금액": 89248000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023030EC21_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 해수욕장 이용환경 선진화사업(자월 이일레)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "대한안전공사",
+   "계약금액": 87641100,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240512A52_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월도 달빛바람 천문과학관 건립공사 기본 및 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)삼정에이앤씨건축사사무소",
+   "계약금액": 86499600,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221202074_5&ctrtChgOrd=05&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 유어장 패류종자(바지락) 살포사업(1권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 경성수산",
+   "계약금액": 84000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516778_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월도 달빛바람 천문과학관 건립공사 기본 및 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)삼정에이앤씨건축사사무소",
+   "계약금액": 82825870,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221202074_5&ctrtChgOrd=06&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "문갑도 농산물 공동재배단지 조성사업(1차)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 79258000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231100001_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "문갑도 농산물 공동재배단지 조성사업(2차)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 73576000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403181F6_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "군도74호선(영흥면 외리) 외 4개소 재포장공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 한강건설환경",
+   "계약금액": 73206100,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A6B7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "덕적면 울도리 배수로 정비공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "태성건설 주식회사",
+   "계약금액": 72273000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030E20D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령면 북포1리 농로개설공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)으뜸건설",
+   "계약금액": 72059760,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240315B6B_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 외1리 공영주차장 조성공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 창성산업개발",
+   "계약금액": 69597000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230905F6E_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 면허어장 패류종자(동죽) 살포사업(3권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "삼희상사",
+   "계약금액": 67800000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240404FC8_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "덕적도 자연휴양림 조성사업 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해환경(주)",
+   "계약금액": 66506000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023220B702_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령면 폐기물 적치장 폐기물 반출처리 용역",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "주식회사 옹진해운",
+   "계약금액": 65848150,
+   "계약일자": "2024-05-10",
+   "계약방법": "제한경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503C5E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 유어장 패류종자(바지락) 살포사업(2권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "큰바다수산",
+   "계약금액": 64000000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508FBA_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 폐교 문화재생사업 조성 통신공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 케이아이정보통신",
+   "계약금액": 63713520,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023020448B_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "두무진 유람선 관광 브랜드화 사업 기본계획 수립용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "신쇠부리",
+   "계약금액": 61291880,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517CBF_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "NLL 평화생태 섬 둘레길 조성사업 일반해역이용협의용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 한국연안환경생태연구소",
+   "계약금액": 61230000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509D38_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신시도 어장진입로 개선공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "고대건설(주)",
+   "계약금액": 61143700,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EBEB_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 리도280-4호선 도로 확포장공사 일반해역이용협의서 작성용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 메사",
+   "계약금액": 61116000,
+   "계약일자": "2024-05-15",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023050A3A9_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 면허어장 패류종자(바지락) 살포사업(1권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "송도수산",
+   "계약금액": 60000000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050247D_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "장봉1리 방앗간 조성공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "호진기업",
+   "계약금액": 58790000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405081F4_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청 행정선(인천526호) 선체수리 용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "대한조선주식회사",
+   "계약금액": 55569800,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050549C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 유어장 패류종자(바지락) 살포사업(3권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 경성수산",
+   "계약금액": 55000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516781_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 임도구조개량사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 53933000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030CB56_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령면 진촌리 농로개설공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "제일건설개발 주식회사",
+   "계약금액": 53718000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242300E3B_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월3리 관광명소화(해상보행로) 조성사업 일반해역이용협의용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "솔해연기술(주)",
+   "계약금액": 53630000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202424040A9_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 유어장 패류종자(동죽) 살포사업(1권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해수산",
+   "계약금액": 52000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516731_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 낙뢰피해방지시설[피뢰침] 설치",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 써모테크",
+   "계약금액": 50977000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240301ACF_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 끝섬전망대 도로 정비공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "이도에코원 주식회사(YIDO Ecoone Inc.)",
+   "계약금액": 49507100,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230901A9B_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "장봉리 공영버스 회차지역 조성공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "대호이엔씨(주)",
+   "계약금액": 48532000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202422048FC_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 외1리 노가리해변 랜드마크 추진사업 기본계획 수립용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)도시디자인건축사사무소 젠",
+   "계약금액": 47500000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509DA0_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시도리 650번지 일원 도로개설공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "보성개발(주)",
+   "계약금액": 46766000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051446B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 면허어장 패류종자(바지락) 살포사업(5권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해수산",
+   "계약금액": 45000000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501B0B_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 유어장 패류종자(바지락) 살포사업(4권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "삼희상사",
+   "계약금액": 45000000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509116_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 면허어장 패류종자(바지락) 살포사업(4권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "삼희상사",
+   "계약금액": 45000000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DDC9_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연화1리 도로확장공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "주식회사 창성산업개발",
+   "계약금액": 44843700,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040F4A9_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "수산종자연구소 취수용 펌프 설치 및 취수관로 보강공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "티제이토건(주)",
+   "계약금액": 44730000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504E12_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "선재2리 마을안길 정비공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 한구환경건설",
+   "계약금액": 44260000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240405B24_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "내3리 함상공원 해안가석축 정비공사",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "성우개발 주식회사",
+   "계약금액": 40846700,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505115_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 폐교 문화재생사업 조성공사 감리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "건인건축사사무소",
+   "계약금액": 40440760,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023011508E_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 방치선박 제거용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 효자건설",
+   "계약금액": 40055000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F6CF_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "문갑도 교통안전시설물 설치공사",
+   "수요기관": "인천광역시 옹진군 덕적면",
+   "계약업체": "주식회사 누림",
+   "계약금액": 39655000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040724F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 폭염대비 그늘막 설치사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 누림",
+   "계약금액": 39404380,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240312794_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "가을1리 배수로 및 농로 정비공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "주식회사비르건설",
+   "계약금액": 38800000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242403B83_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청면 답동종합운동장 본부석 보강공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)태윤이앤씨",
+   "계약금액": 38065000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F53B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "가을1리 경로당 신축 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 38057000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023090A5A8_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공립연평어린이집 그린리모델링 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "조아 건축사사무소",
+   "계약금액": 38000000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240311EDB_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 국민체육문화센터 신축공사 아스콘 제조구매",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "동서에너지 주식회사",
+   "계약금액": 37418600,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221216F67_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024 옹진군자원봉사자 역량 강화 교육",
+   "수요기관": "인천광역시 옹진군자원봉사센터",
+   "계약업체": "주식회사 에이디링크연구소",
+   "계약금액": 36471600,
+   "계약일자": "2024-05-21",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050731C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공립영흥어린이집 그린리모델링 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "건축사사무소일오삼",
+   "계약금액": 36400000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240311EAF_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 해수욕장 이용환경 선진화사업(영흥 장경리)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "호진기업",
+   "계약금액": 36359000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050B2F3_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 1차 대형폐기물 처리용역(시도선별장, 장봉선별장)",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "(주)유원환경",
+   "계약금액": 36000000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050B7C8_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 내4리 보도블럭 교체공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "초석산업주식회사",
+   "계약금액": 33810000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030CBAC_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "진촌6리 옹벽 설치공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "태성건설 주식회사",
+   "계약금액": 33600000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405010AA_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월도 달빛바람 천문공원 부스터 펌프 설치공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 도리건설",
+   "계약금액": 33209000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240404E79_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "옹진군 청사 냉·난방기 설치공사(전기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진전력 주식회사",
+   "계약금액": 33050000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050222A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "진촌3리 배수로 설치공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "제일건설개발 주식회사",
+   "계약금액": 31787000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202404098B2_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 외1리 공영주차장 조성공사(전기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진전력 주식회사",
+   "계약금액": 30657000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023080AC4F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 체험어장(해수욕장 등) 패류(동죽) 자원조성 사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해수산",
+   "계약금액": 30000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051674B_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청면 답동종합운동장 가로등 설치공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 29300000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508CFD_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "가을1리 경로당 신축 통신공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 케이아이정보통신",
+   "계약금액": 27605600,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023090A5DE_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 외리 면도176호선 도로 확포장공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "해밀환경(주)",
+   "계약금액": 27000000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230602F52_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "선재1리 농업용 관정개발사업",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "옹진지하수개발",
+   "계약금액": 25800000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405056BB_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "외리어촌계 어장진입로 보수공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "고대건설(주)",
+   "계약금액": 25650000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050227C_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 평화전망대 보수 공사",
+   "수요기관": "인천광역시 옹진군 연평면",
+   "계약업체": "(주)태윤이앤씨",
+   "계약금액": 25600000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503944_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "음식물처리시설 보수공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "주식회사 엔바이로텍",
+   "계약금액": 25600000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051702F_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "덕적면 종합운동장 방송시스템 구축공사",
+   "수요기관": "인천광역시 옹진군 덕적면",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 24900000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507ECF_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십리포 해수욕장 수경시설 설치공사(세라믹데크)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "휴먼이엔티 주식회사",
+   "계약금액": 23178780,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505673_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2023회계연도 통합결산서 등 책자 제작",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "성광인쇄소",
+   "계약금액": 23010000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051428E_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 옹진군 청사 재배치 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 써모테크",
+   "계약금액": 21549000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240305D12_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소연평 면도125호선 유지보수공사",
+   "수요기관": "인천광역시 옹진군 연평면",
+   "계약업체": "(주)성광건설",
+   "계약금액": 21000000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501CFB_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "북도 국민체육센터 지붕 우레탄 방수 공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "호진기업",
+   "계약금액": 20900000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502F10_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "(구)용기포항 물양장 대체부지 조성공사 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)동서이엔지",
+   "계약금액": 20900000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403065E2_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 군도32호선(하늬~고봉포) 도로개설(2차분) 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 20890000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231214C68_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "옹진군 브랜드 쌀빵 개발연구 용역",
+   "수요기관": "인천광역시 옹진군 보건소",
+   "계약업체": "재능대학교 산학협력단",
+   "계약금액": 20824000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508175_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평면 관내 파손도로 보수공사",
+   "수요기관": "인천광역시 옹진군 연평면",
+   "계약업체": "(주)성광건설",
+   "계약금액": 20600000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517090_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 국방부 대여군수품(퇴역함) 유지보수공사",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "(합)제이디건설",
+   "계약금액": 20500000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C6F6_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥종합운동장 시설보수공사",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "주식회사 누림",
+   "계약금액": 20300000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516A9D_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 도로 소파보수공사(1차)",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "고대건설(주)",
+   "계약금액": 20000000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501B1E_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시모도 연도교 건설공사 준공식 행사대행용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 디자인이룸",
+   "계약금액": 19800000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405035BD_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "옹암해수욕장 공영주차장 조성사업(전기))",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "제일전기",
+   "계약금액": 19710000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504D19_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "남포리 농로 포장공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "제일건설개발 주식회사",
+   "계약금액": 19700000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514CFD_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 도로 소파보수공사(1차)",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "고대건설(주)",
+   "계약금액": 19391000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501B1E_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "장봉2리 작은야달 선착장 어항시설 정비공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "보성개발(주)",
+   "계약금액": 19300000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504289_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소청리 행복버스 차고지(정비소) 신축공사 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "아키그룹성창건축사사무소",
+   "계약금액": 19000000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502885_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "북도면 장봉리 제설창고 설치공사 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "건축사사무소일오삼",
+   "계약금액": 19000000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024010C5C2_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상반기 마을방송 유지보수",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "세기미래기술 주식회사",
+   "계약금액": 18900000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503AAC_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 어린이 보호구역 개선사업 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 미소엔지니어링",
+   "계약금액": 18800000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503086_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "진촌5리 배수로 외 1개소 정비공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "티제이토건(주)",
+   "계약금액": 18800000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240513A01_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월도 달빛바람 천문공원 조성 통신공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 케이아이정보통신",
+   "계약금액": 18453290,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230808CDD_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "덕적면 백아리 가로등 및 보안등 보수보강 공사",
+   "수요기관": "인천광역시 옹진군 덕적면",
+   "계약업체": "예담전력",
+   "계약금액": 18400000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505BA8_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 도로확장 및 개설구간 임목폐기물 수집운반용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "한성환경",
+   "계약금액": 18200000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504D90_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2022년 옹진군 농업용 소류지 개발공사(승봉리) 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 강인전력",
+   "계약금액": 18000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405164EA_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "장봉1리 방앗간 조성 및 기계 구입(전기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 17890000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509E9B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 문화재생사업 아카이브 용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 누리아이",
+   "계약금액": 17875110,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221209D81_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 진두선착장 공중화장실 보수공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 누림",
+   "계약금액": 17640000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F47C_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연화2리 해안도로 숭상공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "대로건설 주식회사",
+   "계약금액": 17300000,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202424039DD_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "낚시터 소비어종의 양식시설 확충 연구회 연구용역",
+   "수요기관": "인천광역시 옹진군 의회사무과",
+   "계약업체": "(사) 한국수산회",
+   "계약금액": 17100000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050D593_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 폐교 문화재생사업 조성공사 설계의도구현 업무용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "건축사사무소 공감",
+   "계약금액": 17000000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230115087_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청면 답동종합운동장 방송 시스템 추가 구축공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "하늘정보통신",
+   "계약금액": 16920000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508D51_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 옹진군 청사 재배치 소방공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)송림소방",
+   "계약금액": 16475800,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240305DAA_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 신도 선착장 공중화장실 배관 보수공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "주식회사 한구환경건설",
+   "계약금액": 16400000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508D48_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "소야도 폐교 문화재생사업 조성 전기공사 감리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사화신기술단",
+   "계약금액": 14900000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023011507B_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥 친환경 생태공원 조성사업 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해환경(주)",
+   "계약금액": 14630000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242303BF0_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 북도면 현수막 지정게시대 제작 설치공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "주식회사 새샘플러스",
+   "계약금액": 14400000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405080C0_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시도리 늦은구지 해안도로 석축 재설치공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "(주)덕운건설",
+   "계약금액": 14280000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240518046_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청3리 도로확포장 공사",
+   "수요기관": "인천광역시 옹진군 대청면",
+   "계약업체": "태성건설 주식회사",
+   "계약금액": 13720000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405136C8_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평도 함상공원 산책로 조성사업 레미콘 제조 구매",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)미래해운(연평레미콘공장)",
+   "계약금액": 13639720,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240410C9B_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "옹암해수욕장 공영주차장 조성사업(통신)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 13440000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504D87_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "지도발전소 수용가 선로교체 및 삼상전환 공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "제일전기",
+   "계약금액": 13380000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516517_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "북도면 신시도 일원 방호벽 도색공사",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "신화건설",
+   "계약금액": 13300000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504235_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "새마을리 월파피해방지 배수관로 설치공사",
+   "수요기관": "인천광역시 옹진군 연평면",
+   "계약업체": "풍산건설 주식회사",
+   "계약금액": 13300000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516F84_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 AI-IoT기반 어르신 건강관리 물품 구입",
+   "수요기관": "인천광역시 옹진군 보건소",
+   "계약업체": "노블레스팜",
+   "계약금액": 12843500,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A86E_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "장골해수욕장 편의시설(야영장 및 주차장) 전기공사 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "선우",
+   "계약금액": 12700000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DF07_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "제69회 현충일 추념행사용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 월드커뮤니케이션",
+   "계약금액": 12600000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051012F_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "용기포신항 바다쉼터 조성사업 경관조명공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 11899000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202311156CB_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 외1리 공영주차장 조성공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "홍익환경건설주식회사",
+   "계약금액": 11700000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230812A78_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평 해상보행로 설치공사 레미콘 제조구매(장기계속)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)미래해운(연평레미콘공장)",
+   "계약금액": 11478060,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405162BD_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대청 중고등학교 앞 보행자도로 개설공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해환경(주)",
+   "계약금액": 11000000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242200E87_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "농어촌도로276호선(농어바위) 진입도로 확포장 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)동구환경",
+   "계약금액": 10300000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405027DA_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 패류종자(동죽) 살포사업(4권역)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "삼희상사",
+   "계약금액": 10000000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202423032F7_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백아발전소 제어용 UPS배터리 교체 및 CCTV선로 보수공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옴니시스템주식회사",
+   "계약금액": 9870000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050617A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "장봉2리 동녘소하천 정비 외 2건 실시설계용역",
+   "수요기관": "인천광역시 옹진군 북도면",
+   "계약업체": "주식회사 은혜엔지니어링",
+   "계약금액": 9400000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504199_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "서포리 물탱크 진입로 개설공사 실시설계용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 알에이이엔씨",
+   "계약금액": 9220000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240511CC7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십리포 해수욕장 수경시설 설치공사 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "황해환경(주)",
+   "계약금액": 8700000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242403AC2_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월보건지소 치과방사서장비 및 센서 구입",
+   "수요기관": "인천광역시 옹진군 보건소",
+   "계약업체": "샤인덴탈",
+   "계약금액": 8240000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050D07F_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령 벼 건조저장시설 야적장 배수로 정비공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사비르건설",
+   "계약금액": 8170000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050606A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백령면 대피시설 30호 상수도 연결공사",
+   "수요기관": "인천광역시 옹진군 백령면",
+   "계약업체": "티제이토건(주)",
+   "계약금액": 7900000,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242403D85_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "상임위원장실 및 의원실 집기등 구입",
+   "수요기관": "인천광역시 옹진군 의회사무과",
+   "계약업체": "아이콘",
+   "계약금액": 7524000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C1BF_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 명예사회복지공무원 활동수첩 등 제작",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)디자인촉",
+   "계약금액": 7200000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405037B8_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평2호 대피호 난방시설 설치공사(전기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "현주전기공사",
+   "계약금액": 6920000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F4D2_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 제3종시설물 안전점검용역(상반기)",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 와이구조엔지니어링",
+   "계약금액": 6820000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509009_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "옹진군가족센터 부지 내 폐기물처리용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "해밀환경(주)",
+   "계약금액": 5900000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502818_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "제63회 2023 옹진군 기본통계 책자 제작",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "예일문화사",
+   "계약금액": 5200000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405135C5_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "덕적면 지도리 마을연못 주변 정비공사",
+   "수요기관": "인천광역시 옹진군 덕적면",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 4850000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240515F0A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 선재1리(측도) 수문 및 배수로 정비 전기공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 피아이전기건설",
+   "계약금액": 4671000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405164B4_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "양로봉 숲길 정비사업",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진부천산림조합",
+   "계약금액": 4446000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405038BE_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "군도73호선 재포장구간 가로등 이설공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 태양이엔지전설",
+   "계약금액": 4400000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F585_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "해군 영흥도 전적비 현충일행사 조경공사",
+   "수요기관": "인천광역시 옹진군 영흥면",
+   "계약업체": "보명조경건설 주식회사",
+   "계약금액": 3470000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516A53_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연평 새마을리 월파피해 방지시설 설치공사 레미콘 제조구매",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)미래해운(연평레미콘공장)",
+   "계약금액": 3213600,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DE93_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시모도 연도교 건설사업 지장물(방범용 CCTV) 이설공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "주식회사 스카이정보기술",
+   "계약금액": 3210000,
+   "계약일자": "2024-05-11",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202211116F5_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥 늘푸른센터 소독 유지관리 대행용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "옹진환경",
+   "계약금액": 3100000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240513784_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 중앙배수로 배수갑문 정비공사 건설재해예방 기술지도용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 2940000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242500038_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영흥면 개인정화조 폐쇄공사 건설재해예방 기술지도용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)스마트안전",
+   "계약금액": 2910000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242500BA2_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 옹진군 청사 재배치 통신공사",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "하늘정보통신",
+   "계약금액": 2827000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240305D5C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자월분교장 국민체육문화센터 전기안전관리대행용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)현대전기안전",
+   "계약금액": 1265000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202425001A8_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영흥면 내리 농로 포장공사 건설재해예방 기술지도용역",
+   "수요기관": "인천광역시 옹진군",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 1140000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405025D8_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  }
+ ]
+}

@@ -1,0 +1,1461 @@
+{
+ "기관필터": "인천광역시 부평구",
+ "기간": "20240501~20240531",
+ "상태": "OK",
+ "계약수": 145,
+ "계약총액": 11913825773,
+ "수의계약수": 132,
+ "수의계약비율": 91.0,
+ "계약": [
+  {
+   "계약명": "산곡3동 행정복지센터 건립공사(건축,토목,조경,기계)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 서진이엔씨",
+   "계약금액": 3814521900,
+   "계약일자": "2024-05-14",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221006A31_3&ctrtChgOrd=06&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년부평구 노후불량 하수관로 정비공사(긴급보수) 실시설계용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 이산",
+   "계약금액": 1035980000,
+   "계약일자": "2024-05-17",
+   "계약방법": "지명경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C537_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "문화의 거리 연장 조성 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사국일공영",
+   "계약금액": 698890000,
+   "계약일자": "2024-05-13",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2021111191E_3&ctrtChgOrd=10&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산곡3동 행정복지센터 건립 전기공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사대환테크",
+   "계약금액": 462017600,
+   "계약일자": "2024-05-08",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221006B0D_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산곡3동 행정복지센터 건립공사 건설사업관리용역(건축, 토목, 기계)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 해량엔지니어링종합건축사사무소",
+   "계약금액": 455731000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202211041B8_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2023년도 국가하천 시설물 유지보수공사(단가계약)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 피앤피개발",
+   "계약금액": 356576000,
+   "계약일자": "2024-05-29",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023090BC3F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산곡3동 행정복지센터 건립 소방공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사이앤피",
+   "계약금액": 271721520,
+   "계약일자": "2024-05-08",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221006BFD_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정동 소2-2호선 도로개설공사(1단계)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "아이엠지건설 주식회사",
+   "계약금액": 259304500,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023080FFE3_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정동 소2-2호선 도로개설공사(1단계)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "아이엠지건설 주식회사",
+   "계약금액": 259304500,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023080FFE3_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산곡3동 행정복지센터 건립 통신공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)부현전기",
+   "계약금액": 241494000,
+   "계약일자": "2024-05-07",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20221006C40_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "안심부평 부평4동 스마트타운 조성 전기공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 삼보기전",
+   "계약금액": 216502000,
+   "계약일자": "2024-05-13",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023310293C_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "투명페트병 무인회수기 구입 및 설치",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "수퍼빈 주식회사",
+   "계약금액": 195000000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050BEBA_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "(가칭)문화공간 두드림 조성공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "그랜드건설 주식회사",
+   "계약금액": 192847680,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050FF62_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲길조성 관리사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "월드종합건설주식회사",
+   "계약금액": 181381000,
+   "계약일자": "2024-05-09",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503EF6_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정녹지 내 야외무대 설치 등 정비사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)영서조경",
+   "계약금액": 166653300,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023120C17A_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평구 부평동 261-3번지 일원 하수암거 준설공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)해온건설",
+   "계약금액": 122438990,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050173E_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평구 부평동 261-3번지 일원 하수암거 준설공사 폐기물처리용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "유창테크",
+   "계약금액": 105108600,
+   "계약일자": "2024-05-13",
+   "계약방법": "제한경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050859E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "삼산건강생활지원센터 설치(공간조성) 공사",
+   "수요기관": "인천광역시 부평구 보건소",
+   "계약업체": "기혼건설주식회사",
+   "계약금액": 101862370,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231212666_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산곡3동 행정복지센터 건립 폐기물 처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 아이케이（IK.Co.,Ltd.）",
+   "계약금액": 101068000,
+   "계약일자": "2024-05-08",
+   "계약방법": "제한경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202210022D7_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시냇물공원 산책로 정비공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 수인건설조경",
+   "계약금액": 92620000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202332028C7_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 장제로(서부1교) 자전거도로 정비사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 백승건설",
+   "계약금액": 90128000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405169C2_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "굴포공원 등 3개소 맨발걷기길 조성 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "백호건설조경",
+   "계약금액": 82111200,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024031106C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "굴포공원 등 3개소 맨발걷기길 조성 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "백호건설조경",
+   "계약금액": 79697200,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024031106C_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평구청 무인경비 및 근태관리시스템 관리용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "에스케이쉴더스 주식회사",
+   "계약금액": 76073250,
+   "계약일자": "2024-05-03",
+   "계약방법": "제한경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023320A3FE_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 사방사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "인천산림조합",
+   "계약금액": 74447000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024230320D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 항동로(일신로~무네미로)일원 도로재포장공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 인천건설산업",
+   "계약금액": 72132000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240409B53_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "창휘로3번길(소로3-17호선) 도로개설공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "혜성건설 주식회사",
+   "계약금액": 55924000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023100F311_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영성·도드리놀이공원 내 체육시설 개선 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "선강건설(주)",
+   "계약금액": 54360000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040BE7F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영성·도드리놀이공원 내 체육시설 개선 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "선강건설(주)",
+   "계약금액": 54050000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040BE7F_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평상권르네상스 2030 유튜브 콘텐츠 제작지원 사업 용역",
+   "수요기관": "(재)인천광역시부평구문화재단",
+   "계약업체": "공간21 프로덕션",
+   "계약금액": 52000000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050D126_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부원공영주차장 정비공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 명진건업",
+   "계약금액": 51139200,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405045B1_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "희망공원 계단 정비공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 예일조경",
+   "계약금액": 48632100,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403063B8_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정동 643번지 임시 공영주차장 건설공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "경복아이엠씨(주)",
+   "계약금액": 48438000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050FA8A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "진흥종합시장 공용(개방)화장실 개선공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사영우상재",
+   "계약금액": 46507000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040BE22_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연결통로 및 의회청사 옥상바닥 보수 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 제우스",
+   "계약금액": 46431000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514C8C_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "희망공원 계단 정비공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 예일조경",
+   "계약금액": 46118050,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403063B8_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "박물관공원 특화공원 조성사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 수인건설조경",
+   "계약금액": 43748000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405030D3_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "관내 보도육교 경사로 정비공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "경복아이엠씨(주)",
+   "계약금액": 42718000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507A61_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "뮤직라이브러리 조성 관련 체험형 주크박스 개발 용역",
+   "수요기관": "(재)인천광역시부평구문화재단",
+   "계약업체": "주식회사 할로디자인",
+   "계약금액": 42000000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506314_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 학교숲 조성사업(명신여고)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 진한",
+   "계약금액": 41231300,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202404043F8_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 야간보행자 교통사고 예방을 위한 횡단보도 투광기 설치공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 더메이테크",
+   "계약금액": 40316000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051219A_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "행복보도육교 환경개선사업 실시설계 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 디자인본",
+   "계약금액": 38000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051636D_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 참나무시들음병 방제사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "부성조경 주식회사",
+   "계약금액": 37914580,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240405F09_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "유아숲체험원 조성사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "한라종합건설",
+   "계약금액": 35486740,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405039D1_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 굴포천 제방 정밀안전점검 및 하천시설물 정기안전점검 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "현우건설(주)",
+   "계약금액": 35192000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514FC6_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "스마트쉼터 조성공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 도솔조경건설",
+   "계약금액": 35127000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202422046BF_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정동 소2-2호선 가로등 설치공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 나진전력",
+   "계약금액": 34596780,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231107E3A_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 현수막 지정게시대 설치사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 무은컴퍼니",
+   "계약금액": 33210000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517501_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 교통사고 잦은 곳 개선사업(전기)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "영전에너지 주식회사",
+   "계약금액": 31196000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051221E_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 선진지 견학 사업 용역 계약",
+   "수요기관": "(재)인천광역시부평구문화재단",
+   "계약업체": "주식회사 마이스베로",
+   "계약금액": 30000000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240511531_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲가꾸기 사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "강화군 산림조합",
+   "계약금액": 27036900,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240405EF3_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 어린이 통합 문화예술교육 땅 위에서 교육 운영",
+   "수요기관": "(재)인천광역시부평구문화재단",
+   "계약업체": "상상이상",
+   "계약금액": 27000000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050297A_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "창휘로3번길(소로3-17호선) 도로개설공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "혜성건설 주식회사",
+   "계약금액": 26304900,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023100F311_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정동 소2-2호선 도로개설공사(1단계) 폐기물 처리용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "인성코퍼레이션 주식회사",
+   "계약금액": 25400000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230811BF2_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲가꾸기 사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "강화군 산림조합",
+   "계약금액": 25223000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240405EF3_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲가꾸기 사업",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "강화군 산림조합",
+   "계약금액": 24382820,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240405EF3_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "어린이놀이시설 정비사업 (중부동공원)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 삼일건설",
+   "계약금액": 22753000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503990_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상반기 부평구 하수맨홀 인상공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 보은건설",
+   "계약금액": 21365283,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240403EF6_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "삼산1동 행정복지센터 신청사 민원대 및 가림막 설치공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 무은컴퍼니",
+   "계약금액": 21123000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514CED_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "작전고가교 외 2개소 정비공사 실시설계용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 장원",
+   "계약금액": 20795500,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502A5E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평동 소3-3호선 도로개설구간 외 2개소 공공측량용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)동서이엔지",
+   "계약금액": 20767000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202310173B2_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "뫼골문화공원 리모델링 사업 실시설계용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 다인환경디자인",
+   "계약금액": 20699800,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507BCB_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평1동 부원경로당 외 2개소 도배, 장판 교체공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "케이에이치종합건설 주식회사",
+   "계약금액": 20630000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514C64_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "맑은내공원 환경, 교통, 경관성 검토서 작성 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)동서이엔지",
+   "계약금액": 20377500,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024031212E_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평상권르네상스 디지털상권센터 운영 용역",
+   "수요기관": "(재)인천광역시부평구문화재단",
+   "계약업체": "새나",
+   "계약금액": 20000000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516B27_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "맑은내공원 조성계획(변경) 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 소유엔지니어링",
+   "계약금액": 19950000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110FF0B_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 통장워크숍 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 이너트립",
+   "계약금액": 19000000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C7B1_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "맑은내공원 도시관리계획 결정(변경) 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "선재이앤씨",
+   "계약금액": 18810000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231116EFC_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백운근린공원 지적확정 측량용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 한라이엔씨",
+   "계약금액": 18454700,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202308067EC_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 서부간선수로 노후시설물 정비사업 실시설계용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 정방종합엔지니어링",
+   "계약금액": 18350200,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024020F250_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "시 관리도로 감전보호설비 교체공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "태화전력(주)",
+   "계약금액": 18168180,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240311151_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "비둘기아파트 민방위 비상급수시설 폐공공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "중앙지하수개발",
+   "계약금액": 18100000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202423041BE_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "구 관리도로 감전보호설비 교체공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 재원전력",
+   "계약금액": 18084580,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240203017_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "청운공원 내 체육시설 개선 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사로드토건",
+   "계약금액": 16720000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240410518_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "청운공원 내 체육시설 개선 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사로드토건",
+   "계약금액": 16520000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240410518_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "삼산1동 행정복지센터 신청사 게시판 등  구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)에스이씨글로벌",
+   "계약금액": 16376800,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242500ACA_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평구 공무원 「행복더하기」 워크숍 실시 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 더벨류코리아",
+   "계약금액": 15770000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A8BA_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 공원정비사업(청운, 개울공원) 폐기물 처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "홍익환경건설주식회사",
+   "계약금액": 15528700,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501B70_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 하천 교량 수위계 설치",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "컨스틸",
+   "계약금액": 15345000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EE22_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평구 주소정보안내도 제작",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "올맵디자인",
+   "계약금액": 14772120,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506896_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동암굴다리 안전한 보행환경 디자인 개선사업 디자인 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사마농탄토",
+   "계약금액": 14250000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050362E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평3동 창휘로3번길(소로3-17호선) 도로개설공사 폐기물처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 대아이앤씨",
+   "계약금액": 14200000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231010A52_5&ctrtChgOrd=04&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "맑은내공원 화장실 조성사업 실시설계용역(건축, 기계)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 삼희건축사사무소",
+   "계약금액": 14171300,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20230802A90_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 장제로(서부1교) 자전거도로 정비사업 폐기물처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 보성이앤씨",
+   "계약금액": 13816000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517079_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 자투리텃밭 조성사업 추진 물품 구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "청원조경(주)",
+   "계약금액": 13540000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240515831_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평동 소3-3호선 도로개설공사(2단계)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "장흥토건(주)",
+   "계약금액": 13431000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024031117D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "갈산공원 노후 공원등 교체공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사도경전기",
+   "계약금액": 13024000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240301496_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "삼산1동 행정복지센터 신청사 LED 전광판 구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 포브텍",
+   "계약금액": 12884000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504E54_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부개3동 부광경로당 외 1개소 도장 공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "주식회사덕송",
+   "계약금액": 12820000,
+   "계약일자": "2024-05-21",
+   "계약방법": "지명경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EF1C_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 구정운영방향 설문조사 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 한길리서치",
+   "계약금액": 11875000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A990_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "구청사 에너지 절감 및 환경 개선을 위한 조명 개선공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "태화전력(주)",
+   "계약금액": 11830000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405173AC_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평3동 창휘경로당 외 3개소 외벽 방수코팅 공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "주식회사 에이치엘디",
+   "계약금액": 11630000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C763_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "이동식 반려동물 쉼터 조성을 위한 이동식 울타리 구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "디와이산업주식회사",
+   "계약금액": 11306900,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050B121_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 취약계층 에너지복지사업(저소득층 LED 교체)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 경원씨앤에스",
+   "계약금액": 11030000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240500A50_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "도로개설구간 산지 유입수 도로결빙 방지공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "장흥토건(주)",
+   "계약금액": 10318000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240414488_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "어린이놀이시설 정비사업(중부동공원) 폐기물처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "홍익환경건설주식회사",
+   "계약금액": 10188000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050244E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대갈공원 리모델링 사업 폐기물 처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)유원환경",
+   "계약금액": 10126000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242403533_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "제79회 나무심기 식재기반 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "인천산림조합",
+   "계약금액": 10097000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240408834_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "삼산2배수펌프장 구조물 하단부 보강공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "우진산업건설주식회사",
+   "계약금액": 9950000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240413602_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 폐기물처리 및 관리 우수사례 현장 견학 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 런런컨설팅",
+   "계약금액": 9700000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501F2E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "삼산 복합건축물(민방위교육장, 노인복지관) 정밀안전점검 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 와이구조엔지니어링",
+   "계약금액": 9603000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240518137_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "십정녹지 내 야외무대 설치 등 정비사업 폐기물 처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 대아이앤씨",
+   "계약금액": 9570000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023120D644_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 반려견 산책교실 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 브리딩",
+   "계약금액": 9500000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240513411_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 취약계층 에너지복지사업(복지시설 LED교체) 실시설계용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 비상이앤씨",
+   "계약금액": 9288180,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405023BE_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 슬레이트 철거·처리 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 지주산업개발",
+   "계약금액": 9154000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051198B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평6동 분회경로당 창호 교체공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "미산건축 주식회사",
+   "계약금액": 9025000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505408_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 어울림마당 잔디광장 관리공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 그린인",
+   "계약금액": 8966000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EB1B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 삼산복합건물 기계설비 성능평가",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "스카이비엠텍 주식회사",
+   "계약금액": 8730000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C917_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "희망공원 차폐수목 식재공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 그린인",
+   "계약금액": 7918000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240414468_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 여성이 편안한 발걸음 500보 사업 부평4동 마을환경개선 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "인천가톨릭대학교 산학협력단",
+   "계약금액": 7200000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050BF8E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "혁신센터 잔여물품 폐기물 처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)유원환경",
+   "계약금액": 7116000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050254C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상반기 재난취약계층 주택용 소방시설 구매 및 설치",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)삼주이엔씨",
+   "계약금액": 6521900,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517F78_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 항동로(일신로~무네미로) 일원 도로재포장 공사 폐기물처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 대아이앤씨",
+   "계약금액": 6347000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240409C5F_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평 비전 2020위원회 워크숍",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 인업",
+   "계약금액": 5790000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514B89_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평남부체육센터 지하2층 탈의실 벽면 거울 부착공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "신우인퍼스",
+   "계약금액": 5700000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501689_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "마이크로필름 촬영 소모품 구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "한국마이크로",
+   "계약금액": 5670000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A326_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평남부체육센터 지하2층 탈의실 벽면 거울 부착공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "신우인퍼스",
+   "계약금액": 5654000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501689_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평3동 창휘로3번길(소로3-17호선) 도로개설공사 폐기물처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 대아이앤씨",
+   "계약금액": 5200000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231010A52_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평3동 창휘로3번길(소로3-17호선) 도로개설공사 폐기물처리 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 대아이앤씨",
+   "계약금액": 5200000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231010A52_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "일신공원 물놀이장 조성사업(전기)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 에스엠이엔에프",
+   "계약금액": 5183000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242402BD1_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 숲길조성 관리사업 감리용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "산림이엔지 울림",
+   "계약금액": 4994000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507935_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 근로자의 날 기념 선물(가정용소화기) 구매",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "사회적협동조합 일원",
+   "계약금액": 4870080,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405066DC_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 어린이대축제 「부평에서 놀래」방정환 어린이 선언 퍼포먼스 운영 계약",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "상상이상",
+   "계약금액": 4850000,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024240144E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 민원담당자 맞춤형 힐링교육 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 인업",
+   "계약금액": 4850000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509B3F_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "북부교육문화센터 수영장 전문업체 환경정비",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "(주)덕인환경",
+   "계약금액": 4850000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405137E0_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산곡3동 행정복지센터 정보통신시설 이전공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "토탈정보통신",
+   "계약금액": 4830000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405167F9_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 부평구 공무직근로자 워크숍 - 도마만들기 체험 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 미래역량교육연구원",
+   "계약금액": 4780000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C767_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 지속가능발전 통합워크숍 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 인업",
+   "계약금액": 4460000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507E91_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평남부체육센터 회원관리 프로그램 대관 단체 예약 시스템 개선",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "(주)혁산정보시스템",
+   "계약금액": 4365000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242303E9C_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "청사 유지관리를 위한 자재 구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "그린종합상사",
+   "계약금액": 4158000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DB81_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "유아숲체험원 조성사업 관급자재(가방걸이대)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 이지데코",
+   "계약금액": 3880000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240500F49_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평구청소년복합문화센터 개관식 행사 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "요요아이엠씨 주식회사",
+   "계약금액": 3798000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040ED47_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 여름편 공감글판 현수막 제작",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 섬나애드기획",
+   "계약금액": 3702490,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051437C_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자동염수분사장치(남부고가교 외 1개소) 보수 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "리텍 주식회사",
+   "계약금액": 3542000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050121C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "주차사업팀 안전화 구매",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "안전만들기",
+   "계약금액": 3531500,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514EA4_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 찾아가는 가정방역(소독)지원 용역",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)세스코",
+   "계약금액": 3395000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050E354_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평1동 분회경로당 불법건축물 철거 및 보수 공사",
+   "수요기관": "인천시 부평구 시설관리공단",
+   "계약업체": "해다온 사회적협동조합",
+   "계약금액": 3370000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A3E5_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "청사관리용 소모성물품(청소용품) 구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "경진상사",
+   "계약금액": 3204740,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050CB5F_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "뫼골문화회관 외벽 보수 공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "케이에이치종합건설 주식회사",
+   "계약금액": 3201000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240515EF2_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "부평구청 유소년축구단 하계유니폼 및 운동복 추가구입",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "애플라인드스포츠 주식회사",
+   "계약금액": 2949240,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050527A_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "구청사 소방설비 보수공사",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "에스디 유한책임회사",
+   "계약금액": 2868000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405006CE_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "근로자 온열질환 예방물품(쿨토시) 구매",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "주식회사 판촉사랑",
+   "계약금액": 2596000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240510EE3_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 하반기 주요업무보고서 인쇄",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "(주)에스이씨글로벌",
+   "계약금액": 2558600,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242500A0A_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 드림스타트 가족소풍 버스임차",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "복사골관광(주) 인천지점",
+   "계약금액": 2182500,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405075CD_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개발비용 재산정 용역(십정동 162-18)",
+   "수요기관": "인천광역시 부평구",
+   "계약업체": "재단법인 한국경제행정연구원",
+   "계약금액": 760000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503933_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  }
+ ]
+}

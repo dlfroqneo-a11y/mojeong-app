@@ -1,0 +1,2221 @@
+{
+ "기관필터": "인천광역시 중구",
+ "기간": "20240501~20240531",
+ "상태": "OK",
+ "계약수": 221,
+ "계약총액": 18667603110,
+ "수의계약수": 203,
+ "수의계약비율": 91.9,
+ "계약": [
+  {
+   "계약명": "자유공원 야간경관 조성사업 관급자재 구매(긴급)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "디피코어 주식회사",
+   "계약금액": 2873395000,
+   "계약일자": "2024-05-10",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023120D950_1&ctrtChgOrd=02&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신포동 공영주차장 조성공사(건축, 기계)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "금영종합건설주식회사",
+   "계약금액": 2444087480,
+   "계약일자": "2024-05-03",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231217D6D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공항신도시 일원 가로녹지 야간경관 조성사업 (협상에 의한 계약)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 위즈플러스",
+   "계약금액": 639000000,
+   "계약일자": "2024-05-24",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240513270_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공항신도시 일원 가로녹지 야간경관 조성사업 (협상에 의한 계약)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 위즈플러스",
+   "계약금액": 639000000,
+   "계약일자": "2024-05-24",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240513270_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "월미 해상스카이워크 기본 및 실시설계용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 케이지엔지니어링종합건축사사무소",
+   "계약금액": 616900000,
+   "계약일자": "2024-05-21",
+   "계약방법": "지명경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405095EE_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백련골 실개천 조성사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 씨에이치조경",
+   "계약금액": 614801000,
+   "계약일자": "2024-05-27",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231011A47_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "인천종합어시장 공영주차장 조성공사 관급자재(고강도콘크리트파일) 제조 구매(긴급)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 삼성엠케이",
+   "계약금액": 523495220,
+   "계약일자": "2024-05-07",
+   "계약방법": "일반경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503288_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자연대로 중앙분리대 화단조성사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "경화건설 주식회사",
+   "계약금액": 455840000,
+   "계약일자": "2024-05-20",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110E16D_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백운산 등산로 공중화장실 조성공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 주안건설",
+   "계약금액": 440000000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024010B106_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "예단포 선착장 개선공사(2단계)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 피앤피건설",
+   "계약금액": 362141000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240518346_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 자원특화사업 역사산책길 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 무진건설",
+   "계약금액": 323068900,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023120A85D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 가로녹지 제초공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "숲풍엘앤씨",
+   "계약금액": 277772340,
+   "계약일자": "2024-05-21",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050E679_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "운북저수지 정비사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "배명종합건설 주식회사",
+   "계약금액": 262947570,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110D324_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "운북저수지 정비사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "배명종합건설 주식회사",
+   "계약금액": 259014130,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110D324_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024 자유공원&동인천 고고축제 기획 및 운영대행",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 에스포컴퍼니 (S4 company)",
+   "계약금액": 217175500,
+   "계약일자": "2024-05-09",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040F2DE_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "항동7가 및 신흥동3가 하수관로 보수보강 사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "일해건설(주)",
+   "계약금액": 200024000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110C01C_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 수산종자(점농어) 매입·방류사업 종자구입(단가계약)(긴급)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "현빈수산",
+   "계약금액": 200000000,
+   "계약일자": "2024-05-07",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503298_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "항동7가 및 신흥동3가 하수관로 보수보강 사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "일해건설(주)",
+   "계약금액": 187033000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110C01C_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 자원특화사업 최초플라타너스주변 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 조이든",
+   "계약금액": 185042000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023121426D_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 도로정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "광호건설(주)",
+   "계약금액": 170258000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240300EC8_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산어촌계 어장진입로 개설 지원사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "태승건설(주)",
+   "계약금액": 165990000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024020C269_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산어촌계 어장진입로 개설 지원사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "태승건설(주)",
+   "계약금액": 156420000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024020C269_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "을왕리 해수욕장 쉼터 정비사업(조경)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사선화건설",
+   "계약금액": 154305000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508641_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산배수지 상부 테니스장 부대시설 설치 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "넥시아 주식회사",
+   "계약금액": 153472000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240100D1F_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 가로수 및 녹지대 병해충 방제공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "일월조경건설 주식회사",
+   "계약금액": 152440990,
+   "계약일자": "2024-05-07",
+   "계약방법": "제한경쟁",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502D08_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공항신도시 공원 조도개선 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)백운전력",
+   "계약금액": 141369730,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405145C4_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 등산로 정비사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 아주산림",
+   "계약금액": 139835990,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502D46_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 미세먼지저감 공익숲가꾸기사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인천산림조합",
+   "계약금액": 138545000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503DF9_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "제물량로39-2 일원 외 2개소 보도 점자블록 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 피앤피건설",
+   "계약금액": 125344800,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051391E_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 취약해안 폐기물 대응사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "이지티엔에스",
+   "계약금액": 125201000,
+   "계약일자": "2024-05-31",
+   "계약방법": "제한경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240417B13_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 주거취약계층 집수리 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "아우룸디자인",
+   "계약금액": 120577120,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514CCC_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 방범용 CCTV 설치공사 관급자재(카메라) 제조 구매(긴급)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 엠비아테크",
+   "계약금액": 115844430,
+   "계약일자": "2024-05-16",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050900A_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동화마을 상상마당 조성공사 관급자재(고양이놀이시설) 제조 구매(긴급)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 디자인파크",
+   "계약금액": 110796000,
+   "계약일자": "2024-05-23",
+   "계약방법": "제한경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240410DBA_1&ctrtChgOrd=01&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 가로수 수벽전지 및 관리공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "푸른미래조경(주)",
+   "계약금액": 108975090,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405165B0_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "중구 관내 도로정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "화임건설(주)",
+   "계약금액": 98340000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405138C5_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종국제도시 노인·장애인 보호구역 시종점 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "케이투건설(주)",
+   "계약금액": 98212050,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050EDBA_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 친환경 고효율 도로조명 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 대아네오텍",
+   "계약금액": 96060600,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030528D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항동 내 빈집 정비 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "삼홍토건 주식회사",
+   "계약금액": 92499000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050547F_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 관내 빗물받이 확장공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 가온건설산업",
+   "계약금액": 91707000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240315A0E_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연안초교 안전한 통학로 개선공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 가온티엔씨",
+   "계약금액": 90940000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202311114CC_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연안초교 안전한 통학로 개선공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 가온티엔씨",
+   "계약금액": 90940000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202311114CC_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "전동 웃터골 저층주거지 재생사업 정비기반시설 개선 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "창운건설주식회사",
+   "계약금액": 90178000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231103B51_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종지역 도로 예초공사(2구간)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)정문개발",
+   "계약금액": 88474290,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DB62_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종지역 도로 예초공사(1구간)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 창의조경",
+   "계약금액": 86862300,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050DB34_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연안초교 안전한 통학로 개선공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 가온티엔씨",
+   "계약금액": 85060000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202311114CC_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "전동 웃터골 저층주거지 재생사업 정비기반시설 개선 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "창운건설주식회사",
+   "계약금액": 85052000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231103B51_3&ctrtChgOrd=04&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 용유·무의지역 일원 도로변 예초공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 에스엘엘",
+   "계약금액": 81790000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A645_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "덕교어촌계 어장진입로 개설 지원사업 일반해역이용협의 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 한국연안환경생태연구소",
+   "계약금액": 81740000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507BDA_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자유공원 배드민턴장 노후시설 개선사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 미르조경",
+   "계약금액": 81400000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030E22E_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 산지사방사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인천산림조합",
+   "계약금액": 74924000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040315A_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "미단시티 체육공원 조성사업 실시설계용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 한서",
+   "계약금액": 73806000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505AE6_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공용차량(중형승합차 11인승) 구입(긴급)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "현대자동차 주식회사",
+   "계약금액": 70980000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507FD3_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 자유공원 석정루 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "동건종합건설 주식회사",
+   "계약금액": 70167200,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505844_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목동 일원 도로정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "용두종합건설 주식회사",
+   "계약금액": 69664000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509383_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신선초 폭염저감시설 조성사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "이랜드체육조경 주식회사",
+   "계약금액": 64410500,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516FB0_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동화마을 상상마당 조성공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 무영하이텍",
+   "계약금액": 62186000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240314A9F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 침수방지시설 설치공사(연간단가)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 윤도건설",
+   "계약금액": 62029430,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024230343D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "중구 수산업ㆍ어촌 발전계획 수립 연구용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "지역사회발전연구소",
+   "계약금액": 61328800,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501EC6_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신포동 공영주차장 조성공사(건축, 기계) 관급자재 고강도콘크리트말뚝 제조 구매",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)대원바텍",
+   "계약금액": 60582060,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233203D2F_1&ctrtChgOrd=02&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목어린이공원 안심화장실 환경개선사업(건축)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "씨티이엔지 주식회사",
+   "계약금액": 60372930,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023320232C_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 투명페트병 무인회수기 구매",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "수퍼빈 주식회사",
+   "계약금액": 58500000,
+   "계약일자": "2024-05-09",
+   "계약방법": "일반경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240504E25_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동인천동 내 빈집 정비 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 지피건설",
+   "계약금액": 57696900,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242401EF1_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "중구 다함께돌봄센터 1·2호점 리모델링 건축공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 유필드",
+   "계약금액": 55058270,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240511BEB_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "세계평화의숲 건강걷기 산책로 조성사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 도원조경",
+   "계약금액": 54518000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024031225D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 주택 지붕 슬레이트 해체처리 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "이찬건설산업 주식회사",
+   "계약금액": 52975000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050604E_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024 개항차 타고 즐기는 유랑악단 버스킹 공연 운영",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "제이에이치(JH)엔터테인먼트",
+   "계약금액": 52041000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024041867E_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "세계평화의숲 건강걷기 산책로 조성사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 도원조경",
+   "계약금액": 52032000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024031225D_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 자원특화사업 역사산책길 정비공사 폐기물처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "해밀환경(주)",
+   "계약금액": 51999200,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233201AD3_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가 있는 날 구석구석 문화배달」Hello 개항장 프로그램 운영 용역",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 에이치스토리",
+   "계약금액": 50000000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505C2B_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 해수욕장 관리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "한국진돗개안전씨엔에스 주식회사",
+   "계약금액": 49728000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240501980_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목어린이공원 안심화장실 환경개선사업(기계)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)선진엔텍",
+   "계약금액": 49709000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233202406_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목어린이공원 안심화장실 환경개선사업(기계)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)선진엔텍",
+   "계약금액": 48040000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233202406_3&ctrtChgOrd=03&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 폭염저감시설 설치사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 포그마스터",
+   "계약금액": 46133000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509641_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공감마을 창업지원 및 브랜드 개발 양성 교육 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 청청프로젝트연구소",
+   "계약금액": 45191000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050AAF9_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가있는날 구석구석 문화배달」제물포 문화학당 운영 용역",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "아템포 컴퍼니",
+   "계약금액": 45000000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505C10_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 해수욕장 백사장 청소 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)해피C&T",
+   "계약금액": 45000000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202425007A8_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가 있는 날 구석구석 문화배달」이머시브형 예술콘텐츠 운영",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "굿필(Good Feel)",
+   "계약금액": 43000000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050E0FA_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가 있는 날 구석구석 문화배달」사업 통합 홍보",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "덕신인쇄기획",
+   "계약금액": 39930000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405081A1_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "해안데크 유지관리사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "익산건설주식회사",
+   "계약금액": 39700700,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508E81_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "운서역 지하보도 에스컬레이터 설치공사 실시설계용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "건축사사무소 이은",
+   "계약금액": 37246000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024020452B_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 공단 냉난방기 종합세척 용역",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "대원리스오스시스템 주식회사",
+   "계약금액": 36091000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242402839_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 무의도 일원 현수막 지정게시대 확충 사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 우인이앤디",
+   "계약금액": 34628000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240416C92_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종·용유 일원 도로조명 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 성연전력",
+   "계약금액": 32076000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202404153B0_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동인천동 내 빈집 정비 공사 건설폐기물 처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 파란에코",
+   "계약금액": 31860000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508A62_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "왕산해수욕장 공영주차장 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "세화건설 주식회사",
+   "계약금액": 29299000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051233F_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항동 내 빈집 정비 공사 건설폐기물 처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "그린웨이 주식회사",
+   "계약금액": 29010900,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509525_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신포국제시장 LED채널 간판 제조 구매",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "태성사",
+   "계약금액": 26898300,
+   "계약일자": "2024-05-08",
+   "계약방법": "일반경쟁",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050522F_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "차이나타운 관광홍보시설물 철거에 따른 원상복구 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "우리건설 주식회사",
+   "계약금액": 25935000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242500844_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "(무허가)빈집 정비 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 지주산업개발",
+   "계약금액": 24733260,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505955_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장플랫폼시티 프로젝트 관광기념품(마그넷) 제조 구매",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인더로컬 협동조합",
+   "계약금액": 22239000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240500417_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "도원보도육교 외2개소 도로시설물 세척 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "중앙씨엔피",
+   "계약금액": 21255000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240515816_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "무의동 50-7번지 일원 제방 및 도로정비공사 실시설계 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 우리엔지니어링",
+   "계약금액": 21191000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517ABF_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공원녹지 시설 보수(포장) 공사",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "주식회사 우석건설산업",
+   "계약금액": 21010000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240508ED4_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개발부담금 부과를 위한 개발비용 재산정 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(재)현대산업정보연구원",
+   "계약금액": 21000000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405075FC_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가있는날 구석구석 문화배달」홍보영상제작",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 엠엠투지오텍",
+   "계약금액": 21000000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A718_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "[2024년 중구 영유아 한마당] 행사 대행 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 피닉스21커뮤니케이션즈",
+   "계약금액": 20990000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502DE9_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송월동3가 17-1 도로환경 개선공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 서준건설",
+   "계약금액": 20757000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202423024C1_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "하늘초롱길 일원 조도개선공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인천전기상사",
+   "계약금액": 20711000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405035B6_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동화마을안길 29-3 일원 노후벽화 재정비 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "경신플랜트(주)",
+   "계약금액": 20680000,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403121F8_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2023년도 국공립어린이집 그린리모델링 사업(2차) 녹색건축인증 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "에코메이커건축사사무소 주식회사",
+   "계약금액": 20556000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C7B6_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "인천종합어시장 공영주차장 조성공사(소방) 감리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 이곳이앤씨",
+   "계약금액": 20553000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051562C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "용유로~마시안 해변 간 도로(소로1-13호선) 공공측량 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 아이맵",
+   "계약금액": 20482000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517C73_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "전동 웃터골 저층주거지 재생사업 폐기물처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "홍익환경건설주식회사",
+   "계약금액": 20460000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231103798_5&ctrtChgOrd=03&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "왕산 진입도로 개설공사 재해영향성 검토 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 바우컨설탄트",
+   "계약금액": 20378000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C582_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공원녹지 우수로 정비사업",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "공신이앤씨(주)",
+   "계약금액": 20370240,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240312382_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "전동 16-20 일원 계단형 꽃밭 조성공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 일진글로벌",
+   "계약금액": 20357000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405100AC_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "을왕동 206-5번지 외 6개소 농업용 관정 보수공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 효자건설",
+   "계약금액": 20288000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20242401B8E_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신포시장 일원 외 1개소 하수관 준설공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "에스엠(SM)건설 주식회사",
+   "계약금액": 20218000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240403E6C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상습침수지역 하수관 준설공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "역동건설주식회사",
+   "계약금액": 20064000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240512468_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가있는날 구석구석 문화배달」사업 평가 연구",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 컬쳐비즈글로벌",
+   "계약금액": 20000000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050B8FB_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동인천역 일원 하수맨홀 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "창운건설주식회사",
+   "계약금액": 19866000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240309500_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종국제도시 오수 흐름 불량구간 세정공사(2분기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)대각건설",
+   "계약금액": 19822000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040414E_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "운서역 일원 빗물받이 준설공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 디케이환경",
+   "계약금액": 19805000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405125D6_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 움직이는 관광안내소 운영용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 공간환경디자인",
+   "계약금액": 19381000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240518307_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "을왕리 해수욕장 쉼터 정비사업(통신)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "동아테크솔루션",
+   "계약금액": 19062000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F4F1_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "K-컬처 오색체험 관광상품 개발 및 운영 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 위드원네트웍스",
+   "계약금액": 19000000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502C69_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "대형폐기물 접수 키오스크 구입",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 지금여기",
+   "계약금액": 19000000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405169E4_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "지중화 구간 방범용 CCTV 이전 설치 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "삼영에이아이씨 주식회사",
+   "계약금액": 18870000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024230293D_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "을왕리해수욕장 전면 해안도로(을왕동737-7인근) 원상회복 의무면제 신청 검토서 작성 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 한국연안환경생태연구소",
+   "계약금액": 18843000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050AAB7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "운서역 2번 출구 일원 오수관로 조사 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "태성에스엔씨 주식회사",
+   "계약금액": 18612000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040EC3C_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "상권 평가플랫폼 구축 및 관리",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "비스타컨설팅그룹주식회사",
+   "계약금액": 18600000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050BA1C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "계양공원사업소 공급수목 식재공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 세방건설",
+   "계약금액": 18486000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040C9E0_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "인천종합어시장 일원 측구 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 윤도건설",
+   "계약금액": 18425000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240403F5F_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "월남촌 사랑마을 역사 조사 및 교육 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인하대학교 산학협력단",
+   "계약금액": 18392000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240515B41_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "계양공원사업소 공급수목 식재공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 세방건설",
+   "계약금액": 18119000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040C9E0_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목동 일원 도로정비공사 폐기물처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "부흥환경주식회사",
+   "계약금액": 18040000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A6C4_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종지역 교차로명 정비 연구용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "재단법인 인천연구원",
+   "계약금액": 17955000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050090B_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "(무허가) 빈집 정비 공사 (건설)폐기물 처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "청도개발(주)",
+   "계약금액": 17878000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405053A8_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목어린이공원 안심화장실 환경개선사업(전기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인천전기상사",
+   "계약금액": 17875000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202312182B1_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "도원 수영장 앞 도로 일원 외 1개소 보수공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)화신건설",
+   "계약금액": 17864000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040773F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "차이나타운공영주차장 외벽 기와 보수공사",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "주식회사 우인이앤디",
+   "계약금액": 17512000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051136F_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "산불진화장비(산불대책비) 구입",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "두빛테크",
+   "계약금액": 17144000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240500760_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "중구 제2청 조경관리공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 레인조경",
+   "계약금액": 17019000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F5B7_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "「2024 문화가 있는 날 구석구석 문화배달」음악공연 운영",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "센트럴심포니오케스트라",
+   "계약금액": 17000000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405081AA_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "차이나타운 건물 관광홍보시설물 철거공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인성코퍼레이션 주식회사",
+   "계약금액": 16777000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240503840_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산배수지 상부 테니스장 부대시설 설치 공사 폐기물 처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "청도개발(주)",
+   "계약금액": 16720000,
+   "계약일자": "2024-05-27",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233205FE5_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "숨은 1cm 끌어올려 지원사업 용역",
+   "수요기관": "인천광역시 중구 보건소",
+   "계약업체": "주식회사 팀엘리시움(Team Elysium Inc.)",
+   "계약금액": 16490000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050AAD7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 제3종시설물 정기안전점검 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "정원도시안전진단 주식회사",
+   "계약금액": 16350000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050920C_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "IN N OUT 디지털 라운지 조성",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 마스몬스터",
+   "계약금액": 15982980,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405047F7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 버스승강장 냉·온열의자 설치 공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 대덕에너지",
+   "계약금액": 15829000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024230364E_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "전동 34-53 일원 계단 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)서전이엔씨",
+   "계약금액": 15499000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240407553_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신흥동 버스정류소 에어송풍기 설치 전기공사",
+   "수요기관": "인천광역시 중구 신흥동",
+   "계약업체": "주식회사 호성",
+   "계약금액": 15360000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240510E89_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백운산 등산로 공중화장실 조성공사(전기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 대덕에너지",
+   "계약금액": 15257000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024010ECB2_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백련골 실개천 조성사업 폐기물 운반 및 처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)삼천리로지스틱",
+   "계약금액": 15004000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202310132C7_5&ctrtChgOrd=04&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 주민자치회 위원 워크숍 행사장 임차",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 호반호텔앤리조트",
+   "계약금액": 14760000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F8A7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "항동7가 및 신흥동3가 하수관로 보수보강 사업 폐기물 처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 고려환경",
+   "계약금액": 14663000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110D224_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "운남동 1574 일원 자전거도로 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 한길건설",
+   "계약금액": 14619000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024230375E_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "어린이 안전테마공원 조성사업(전기·통신 분야) 실시설계 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "해솔이엔씨",
+   "계약금액": 14540000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240510D34_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "을왕동 721-12번지 일원 보행로 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "지인건설(주)",
+   "계약금액": 14446000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405036ED_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "어린이 생활안전분야 동영상 제작 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)유로티브이",
+   "계약금액": 14250000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050E5D5_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 도로정비공사 건설폐기물 처리  용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)중앙Emc",
+   "계약금액": 14212000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240305CC7_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "(재)인천중구문화재단 관용차량 임차(장기계속)",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "롯데렌탈(주)",
+   "계약금액": 13937000,
+   "계약일자": "2024-05-27",
+   "계약방법": "일반경쟁",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F1A1_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 도로정비공사 건설폐기물 처리  용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)중앙Emc",
+   "계약금액": 13915000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240305CC7_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자유공원 배드민턴장 노후시설 개선사업(전기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 지엘 (GL Co.,Ltd.)",
+   "계약금액": 13741000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240312B5F_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자유공원 배드민턴장 노후시설 개선사업(전기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 지엘 (GL Co.,Ltd.)",
+   "계약금액": 13717000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240312B5F_3&ctrtChgOrd=02&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "중구 다함께돌봄센터 1·2호점 리모델링 공사(전기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "오성전설산업(주)",
+   "계약금액": 13464000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240512BB1_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장플랫폼시티 프로젝트 홍보물품(비누세트) 제작",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "광창문화사",
+   "계약금액": 13440000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405089C0_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 폭염저감시설 설치사업(전기)",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 선호이엔티",
+   "계약금액": 13242000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240509EAB_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자유공원 경관조명 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "일동전력 주식회사",
+   "계약금액": 13221000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050665C_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 상반기 중구청사(제1청) 정기안전점검 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 한국구조안전기술",
+   "계약금액": 12352000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050C60A_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 자원특화사업 최초플라타너스주변  정비공사 폐기물처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)유원환경",
+   "계약금액": 11661000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233206779_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "인천종합어시장 공영주차장 조성공사(통신) 감리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "아이에스 주식회사",
+   "계약금액": 11428000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050E6D2_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 갯골수로 제초공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 효자건설",
+   "계약금액": 11383000,
+   "계약일자": "2024-05-24",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240512B7B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "전동 웃터골 CCTV 설치공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "으뜸아이에스 주식회사",
+   "계약금액": 11323810,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040274C_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종·월미 선착장 보수공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "태경산업개발주식회사",
+   "계약금액": 11000000,
+   "계약일자": "2024-05-13",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240407914_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "무의도 관광기반시설(도로)조성공사(전기) 실시설계 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 디오씨",
+   "계약금액": 10597000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516958_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 운동경기부 훈련피복(하복) 구입",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)대산스포츠",
+   "계약금액": 10097000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405077E9_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "영종국제도시 노인·장애인 보호구역 시종점 정비공사 및 폐기물처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "대훈환경(주)",
+   "계약금액": 9838000,
+   "계약일자": "2024-05-22",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240510312_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024 영종역사관 삼목도 찾아가는 박물관 - 고고(古!GO!)여행",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 우리가만드는미래",
+   "계약금액": 9481000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050BE32_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "녹지관리사 화장실 및 창고 설치공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 늘품건설",
+   "계약금액": 9397000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030520B_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "차이나타운 삼국지 벽화거리 경관조명 설치",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 케이씨환경디자인",
+   "계약금액": 9297000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405027D4_3&ctrtChgOrd=01&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송학동 휴게시설 배관 설치공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "토왕산업 주식회사",
+   "계약금액": 8920000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405177BA_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "차이나타운 삼국지 벽화거리 경관조명 설치",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 케이씨환경디자인",
+   "계약금액": 8406000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405027D4_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자유공원 배드민턴장 노후시설 개선사업 폐기물처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "대훈환경(주)",
+   "계약금액": 8206000,
+   "계약일자": "2024-05-07",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030F5AF_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "주민자치센터 누수 공사",
+   "수요기관": "인천광역시 중구 도원동",
+   "계약업체": "주식회사 새샘플러스",
+   "계약금액": 7990000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405059E6_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "을왕리 해수욕장 쉼터 정비사업 폐기물처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)중앙Emc",
+   "계약금액": 7650000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A960_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상반기 관내 지하보도(3개소) 대청소 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "고려환경",
+   "계약금액": 7630000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517751_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "항동7가 및 신흥동3가 하수관로 보수보강 사업 GIS-DB 구축용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 송산기술단",
+   "계약금액": 7598000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514294_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "보일러 및 판형 열교환기 세관",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "에스원쿨링",
+   "계약금액": 7524000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050727B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "중구노인복지관 기능보강사업 실시설계 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "공림건축사사무소",
+   "계약금액": 7200000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405050C6_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "도원동 추억피움 치매안심마을 선포 행사 용역",
+   "수요기관": "인천광역시 중구 보건소",
+   "계약업체": "주식회사 피닉스21커뮤니케이션즈",
+   "계약금액": 6936000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506FB7_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 영종역사관 냉난방기 종합세척 및 전열교환기 필터 교체 작업",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "삼성전자서비스(주)",
+   "계약금액": 6484700,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240507759_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 등산로 정비사업 감리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "산림이엔지 울림",
+   "계약금액": 6082000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403115F9_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024 개항차 타고 즐기는 유랑악단 버스킹 공연 개항차 운영",
+   "수요기관": "재단법인인천중구문화재단",
+   "계약업체": "주식회사 조은투어",
+   "계약금액": 5700000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405130CF_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "미단시티 일원 도로명 안내표지판 정비공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "（주）경화",
+   "계약금액": 4940000,
+   "계약일자": "2024-05-21",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050F43E_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "재난안전 홍보물(생존키트) 구입",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "굿데이즈",
+   "계약금액": 4900000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405090AE_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년도 일반 및 기타특별회계 제1회 추가경정예산안 유인",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "원-스톱디자인",
+   "계약금액": 4898000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "물품",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240516B01_1&ctrtChgOrd=00&prcmBsneSeCd=조070001&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산어촌계 어장진입로 개설 지원사업 시공감리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 서해기술단",
+   "계약금액": 4807000,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202403078EB_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상반기 을왕리 문화탐방로 출렁다리 정기안전점검 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "사단법인 대한산업안전협회",
+   "계약금액": 4502000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506BF2_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신흥동2가 37-4번지 일원 철거공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "성석개발(주)",
+   "계약금액": 3969000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024051789B_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "ISO 22301 1차 사후심사 컨설팅 용역",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "비전인사이트 주식회사",
+   "계약금액": 3850000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A337_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항동 내 빈집 정비 (지정)폐기물 처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트석면",
+   "계약금액": 3683000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050563D_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "하늘도시 실개천 경관 조성사업 전기공사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 대산전력",
+   "계약금액": 3490000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "공사",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405067AB_3&ctrtChgOrd=00&prcmBsneSeCd=조070004&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신포시장 일원 외 1개소 하수관 준설공사 폐기물처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 씨엔에스",
+   "계약금액": 3333000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240403EA5_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 가로녹지 제초공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "대한종합안전(주)",
+   "계약금액": 3025000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240514477_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "국민체육센터 전기설비 안전진단 용역",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "한국전기테스트(주)",
+   "계약금액": 3000000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024040E8A8_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 상습침수지역 하수관 준설공사 폐기물 처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 씨엔에스",
+   "계약금액": 2937000,
+   "계약일자": "2024-05-23",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405117D4_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "ISO 22301 1차 사후 인증심사 용역",
+   "수요기관": "인천광역시중구시설관리공단",
+   "계약업체": "주식회사 한국경영인증원",
+   "계약금액": 2904000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A2C6_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "백운산 등산로 공중화장실 조성공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 제이세이프티",
+   "계약금액": 2640000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024010E514_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "보건소 그린리모델링 공사(건축) 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구 보건소",
+   "계약업체": "주식회사 제이세이프티",
+   "계약금액": 2560000,
+   "계약일자": "2024-05-02",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240413BAC_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "정비 대상 집중 관리 빈집 석면 조사 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)에이치앤에스석면",
+   "계약금액": 1977000,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024250096B_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "동인천동 내 빈집 정비 (지정)폐기물 처리용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 새움",
+   "계약금액": 1920000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405052B0_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "(무허가) 빈집 정비 (지정)폐기물 처리 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "인성코퍼레이션 주식회사",
+   "계약금액": 1861000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240505503_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공동주택 음식물 종량기 RFID 저울 정기검사",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(유)신성시엔시",
+   "계약금액": 1734800,
+   "계약일자": "2024-05-31",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240518397_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2023년 운북저수지 정비공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "사)한국건설안전협회 경인지회",
+   "계약금액": 1650000,
+   "계약일자": "2024-05-17",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231112254_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "제물량로39-2 일원 외2개소 보도 점자블록 정비공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 1379400,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517E19_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "항동7가 및 신흥동3가 하수관로 보수보강 사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 1330000,
+   "계약일자": "2024-05-16",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2023110D13A_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 자원특화사업 최초플라타너스주변 정비공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "한국세이프원",
+   "계약금액": 1320000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20233206684_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "개항장 일원 자원특화사업 역사산책길 정비공사 건설재해예방 기술지도용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "한국세이프원",
+   "계약금액": 1320000,
+   "계약일자": "2024-05-20",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231212329_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 주거취약계층 집수리 공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "세이프티 에이치",
+   "계약금액": 1188000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202405178D5_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 가로수 및 녹지대 병해충 방제공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "한국세이프원",
+   "계약금액": 880000,
+   "계약일자": "2024-05-03",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240502F21_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 미세먼지저감 공익숲가꾸기사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 880000,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506926_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자연대로 중앙분리대 화단 조성사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 880000,
+   "계약일자": "2024-05-28",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=202311102B5_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "공항신도시 공원 조도개선 공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트산업안전",
+   "계약금액": 880000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240515BF2_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "신선초 폭염저감시설 조성사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 제이세이프티",
+   "계약금액": 880000,
+   "계약일자": "2024-05-30",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240517E34_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산어촌계 어장진입로 개설 지원사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)베스트안전",
+   "계약금액": 760000,
+   "계약일자": "2024-05-01",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240211EE2_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "자유공원 배드민턴장 노후시설 개선사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "한국세이프원",
+   "계약금액": 660000,
+   "계약일자": "2024-05-08",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024030E57E_5&ctrtChgOrd=01&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "율목동 일원 도로정비공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "한국세이프원",
+   "계약금액": 660000,
+   "계약일자": "2024-05-14",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=2024050A79B_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "2024년 등산로 정비사업 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "(주)스마트안전",
+   "계약금액": 574200,
+   "계약일자": "2024-05-09",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240506A3A_5&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "연안초교 안전한 통학로 개선공사 건설재해예방 기술지도용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "대한종합안전(주)",
+   "계약금액": 440000,
+   "계약일자": "2024-05-10",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20231116032_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  },
+  {
+   "계약명": "송산배수지 상부 테니스장 부대시설 설치 공사 건설재해예방 기술지도 용역",
+   "수요기관": "인천광역시 중구",
+   "계약업체": "주식회사 제이세이프티",
+   "계약금액": 396000,
+   "계약일자": "2024-05-29",
+   "계약방법": "수의계약",
+   "업무구분": "용역",
+   "계약URL": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=20240105D48_5&ctrtChgOrd=02&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y"
+  }
+ ]
+}
