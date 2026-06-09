@@ -269,6 +269,14 @@ def clear_theme():
     _nav({"sido": _sido()})
 
 
+def _ai(): return st.query_params.get("ai") or None
+
+
+def go_ai():
+    """🤖 AI 자동 발견(서울 25구 시민감시 지표) 화면으로."""
+    _nav({"ai": "1"})
+
+
 def go_l4(name):
     _nav({"sido": _sido(), "gu": _gu(), "dom": _dom(), "l4": name})
 
@@ -508,6 +516,8 @@ def _render_nation():
                  args=("서울특별시", "강남구"), key="show_gn", width="stretch")
     st.caption("🟢 인천 10개 자치구 전역 + 서울 강남구 = 4트랙 풀체인 완비. "
                "지도에서 인천을 클릭한 뒤 자치구를 선택하면 모든 인천 자치구를 볼 수 있습니다.")
+    st.button("🤖 AI 자동 발견 — 서울 25개 자치구 시민감시 지표(수의계약·업무추진비) ▸",
+              on_click=go_ai, key="show_ai", width="stretch")
     # Windy식 상단 레이어 메뉴 — 지도 색 기준 전환(전부 실데이터)
     metric = st.segmented_control(
         "지도 색 기준", list(NATION_LAYERS.keys()), default="인구",
@@ -919,6 +929,16 @@ THEME_CATALOG = {
         ("aero", "🚀 항공우주·방산", "항공·우주·방위산업", "항공|우주|방위|방산|항공기|드론|위성"),
         ("ship", "🚢 조선·해양", "조선·해양·기계", "조선|해양|수산|어항|기계|중공업|선박|항만"),
     ],
+    # 세종·제주 = 단일 광역(자치구 없음). 단일 뷰. ※2023 결산 기준(타 시도 2025와 상이).
+    "세종특별자치시": [
+        ("city", "🏙️ 자족·도시", "행정중심·자족·도시개발", "자족|도시개발|행정|신도시|중앙행정|정주여건|일자리|산업단지|정주"),
+        ("smart", "🌳 스마트·환경", "스마트시티·친환경·교통", "스마트|친환경에너지|환경|교통|brt|간선급행|자율주행|디지털|탄소중립|녹지"),
+    ],
+    "제주특별자치도": [
+        ("tour", "🌴 관광", "관광·MICE·문화", "관광|마이스|컨벤션|문화|축제|올레|레저|숙박|크루즈"),
+        ("energy", "⚡ 청정에너지", "풍력·태양광·전기차", "풍력|태양광|신재생|재생에너지|수소|전기차|충전|에너지신산업|지역에너지|에너지정책|탄소중립|그린수소"),
+        ("primary", "🍊 1차산업", "감귤·수산·축산", "감귤|밭작물|농산물|수산|축산|어업|양식|어항|임업"),
+    ],
 }
 _INCHEON_RICH = {"env", "transport"}  # 인천 이 두 테마만 기존 리치뷰(성과 패널 포함) 유지
 
@@ -940,10 +960,17 @@ def _theme_recs(sido, kw):
     pat = re.compile(kw, re.I)
     l3 = district_l3()
     recs = []
+    _jeju_done = False
     for key, doms in l3.items():
         if not key.startswith(sido + "|"):
             continue
         gu = key.split("|", 1)[1]
+        # 제주: 제주시·서귀포시가 道 통합 재정으로 동일 → 1회만 집계(이중계산 방지)
+        if sido == "제주특별자치도":
+            if _jeju_done:
+                continue
+            _jeju_done = True
+            gu = "제주도(통합)"
         bud = exe = 0.0
         n = 0
         for rows in doms.values():
@@ -960,6 +987,8 @@ def _theme_recs(sido, kw):
 
 
 def _open_gu_generic(gu):
+    if gu == "제주도(통합)":   # 제주 단일 막대 → 제주시 상세로
+        gu = "제주시"
     _nav({"sido": _sido(), "gu": gu})
 
 
@@ -1026,6 +1055,9 @@ def _render_theme_generic(sido, theme):
         st.caption("✅ 해당 시군구 모두 정상 집행 범위(80~105%) 내")
     st.caption("※ 세부사업명 키워드 매칭 집계(지방재정365 세출현황). "
                "특화 자산 = 해당 시도의 복제불가 현안. 의안·계약 교차는 자치구 상세에서 확인.")
+    if sido in ("세종특별자치시", "제주특별자치도"):
+        st.caption("※ 세종·제주는 단일 광역(자치구 없음)이라 **2023 결산** 기준으로 표기 — "
+                   "타 시도(2025)와 연도가 달라 절대액 직접 비교는 주의. 제주는 道 통합 재정.")
 
 
 def _open_gu_theme(gu):
@@ -1511,6 +1543,79 @@ def _render_gu(mode):
     _neighborhood_search(sido, gu)
 
 
+@st.cache_data
+def _ai_districts():
+    p = POC / "ai_insights_seoul25.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+
+
+_AI_METRICS = [
+    ("수의계약비율", "🤝 수의계약 비율", "경쟁입찰 없이 맺은 계약 비중(%) — 높을수록 견제 점검 필요"),
+    ("업무추진비", "💳 업무추진비 지표", "기관 운영성 경비 상대지표 — 25구 비교"),
+    ("행사축제경비비율", "🎪 행사·축제 경비(%)", "행사성 지출 비중"),
+]
+
+
+def _render_ai_insights():
+    """🤖 AI 자동 발견 — 서울 25개 자치구 시민감시 지표(수의계약·업무추진비 등) 자동 이상치 하이라이트."""
+    d = _ai_districts()
+    if not d:
+        _nav({}); return
+    ds = d["districts_25"]
+    st.button("◂ 전국 지도", on_click=lambda: _nav({}), key="ai_back")
+    st.markdown("### 🤖 AI 자동 발견 — 서울 25개 자치구 시민감시 지표 "
+                "<span style='font-size:14px;color:#9AA5B1'>— 클릭 한 번이면 AI가 이상 신호를 스스로 짚습니다</span>",
+                unsafe_allow_html=True)
+
+    labels = [m[1] for m in _AI_METRICS]
+    pick = st.segmented_control("지표", labels, default=labels[0],
+                                key="ai_metric", label_visibility="collapsed")
+    key, label, desc = next((m for m in _AI_METRICS if m[1] == pick), _AI_METRICS[0])
+    st.caption(desc + " · 데이터: 지방재정365·나라장터(2023 결산)")
+
+    vals = [(x["district"], x.get(key, 0) or 0) for x in ds if x.get(key) is not None]
+    avg = sum(v for _, v in vals) / len(vals) if vals else 0
+    sv = sorted(vals, key=lambda x: -x[1])
+    top_g, top_v = sv[0]
+    bot_g, bot_v = sv[-1]
+
+    import plotly.graph_objects as go
+    asc = sv[::-1]
+    names = [g for g, _ in asc]
+    nums = [round(v, 1) for _, v in asc]
+    colors = []
+    for g, v in asc:
+        if g == top_g: colors.append("#C0552B")
+        elif g == bot_g: colors.append("#3FA66A")
+        elif v >= avg: colors.append("#E8A13B")
+        else: colors.append("#C9D2DA")
+    fig = go.Figure(go.Bar(x=nums, y=names, orientation="h", marker_color=colors,
+                           text=[f"{v}" for v in nums], textposition="outside",
+                           cliponaxis=False))
+    fig.add_vline(x=avg, line_dash="dash", line_color="#52606D",
+                  annotation_text=f"25구 평균 {avg:.1f}", annotation_position="top right")
+    fig.update_layout(height=560, margin=dict(l=8, r=40, t=22, b=8),
+                      plot_bgcolor="white", showlegend=False, font=dict(size=12))
+    fig.update_xaxes(showgrid=True, gridcolor="#EEF1F4", title=None)
+    fig.update_yaxes(title=None)
+    st.plotly_chart(fig, key="ai_chart", use_container_width=True,
+                    config={"displayModeBar": False, "staticPlot": True})
+
+    ratio = top_v / avg if avg else 0
+    metric_name = label.split(" ", 1)[-1]
+    st.markdown(
+        f"<div style='background:#F5F7FA;border-left:4px solid #2C5F6F;border-radius:8px;"
+        f"padding:11px 14px;margin:6px 0;font-size:13.5px;line-height:1.7'>"
+        f"🤖 <b>AI 자동 인사이트</b><br>"
+        f"🚨 <b>{top_g}</b> — {metric_name} <b>{top_v:.1f}</b>, 25구 중 <b>최고</b>"
+        f"(평균 {avg:.1f}의 <b>{ratio:.1f}배</b>). 점검이 필요한 신호입니다.<br>"
+        f"✅ 반대로 <b>{bot_g}</b>는 <b>{bot_v:.1f}</b>로 <b>가장 낮아</b> 양호합니다. "
+        f"<span style='color:#9AA5B1'>— 잘한 곳과 점검할 곳을 데이터가 가립니다(양면 제시).</span></div>",
+        unsafe_allow_html=True)
+    st.caption("※ 시민이 분석할 줄 몰라도, 25개 자치구를 한 화면에서 비교해 AI가 이상 신호를 자동으로 짚어줍니다. "
+               "개인·정파 평가가 아닌 자치단체 단위 지표 비교입니다.")
+
+
 def run(mode):
     label = "A안 · 동·읍 경계 표시형" if mode == "A" else "B안 · 데이터 집중형"
     st.set_page_config(page_title=f"모정 프로토타입 {mode}안", page_icon="🏛️",
@@ -1546,7 +1651,9 @@ def run(mode):
       }
     </style>""", unsafe_allow_html=True)
     _crumb()
-    if not _sido():
+    if _ai():
+        _render_ai_insights()
+    elif not _sido():
         _render_nation()
     elif _theme() and not _gu():
         _render_theme_detail()
