@@ -273,8 +273,8 @@ def _ai(): return st.query_params.get("ai") or None
 
 
 def go_ai():
-    """🤖 AI 자동 발견(서울 25구 시민감시 지표) 화면으로."""
-    _nav({"ai": "1"})
+    """🤖 AI 자동 발견(시도별 자치구 시민감시 지표) 화면으로 — 현재 시도 유지."""
+    _nav({"sido": _sido(), "ai": "1"})
 
 
 def go_l4(name):
@@ -516,8 +516,6 @@ def _render_nation():
                  args=("서울특별시", "강남구"), key="show_gn", width="stretch")
     st.caption("🟢 인천 10개 자치구 전역 + 서울 강남구 = 4트랙 풀체인 완비. "
                "지도에서 인천을 클릭한 뒤 자치구를 선택하면 모든 인천 자치구를 볼 수 있습니다.")
-    st.button("🤖 AI 자동 발견 — 서울 25개 자치구 시민감시 지표(수의계약·업무추진비) ▸",
-              on_click=go_ai, key="show_ai", width="stretch")
     # Windy식 상단 레이어 메뉴 — 지도 색 기준 전환(전부 실데이터)
     metric = st.segmented_control(
         "지도 색 기준", list(NATION_LAYERS.keys()), default="인구",
@@ -602,6 +600,8 @@ def _render_sido():
                                key=f"th_{sido}_{tk}", use_container_width=True, help=sb)
             if sido == "인천광역시":
                 _render_gateway_panel()
+        st.button(f"🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표(수의계약·집행률 등) ▸",
+                  on_click=go_ai, key=f"ai_{sido}", use_container_width=True)
 
 
 @st.cache_data
@@ -1549,35 +1549,82 @@ def _ai_districts():
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
 
 
-_AI_METRICS = [
-    ("수의계약비율", "🤝 수의계약 비율", "경쟁입찰 없이 맺은 계약 비중(%) — 높을수록 견제 점검 필요"),
-    ("업무추진비", "💳 업무추진비 지표", "기관 운영성 경비 상대지표 — 25구 비교"),
-    ("행사축제경비비율", "🎪 행사·축제 경비(%)", "행사성 지출 비중"),
-]
+def _ai_exec_rates(sido):
+    """자치구별 종합 집행률(district_l3, 전 시도 보유). [(자치구, 집행률%)]."""
+    l3 = district_l3()
+    out, seen = [], False
+    for key, doms in l3.items():
+        if not key.startswith(sido + "|"):
+            continue
+        gu = key.split("|", 1)[1]
+        if sido == "제주특별자치도":
+            if seen:
+                continue
+            seen = True
+            gu = "제주도(통합)"
+        b = sum((r.get("예산_억", 0) or 0) for rows in doms.values() for r in rows)
+        e = sum((r.get("집행_억", 0) or 0) for rows in doms.values() for r in rows)
+        if b:
+            out.append((gu, round(e / b * 100, 1)))
+    return out
+
+
+def _ai_seoul_col(col):
+    d = _ai_districts()
+    return [(x["district"], x.get(col, 0) or 0) for x in d["districts_25"]] if d else []
+
+
+def _ai_incheon_suui():
+    """인천 자치구 수의계약 비율(나라장터 표본). [(자치구, %)]."""
+    out = []
+    for k, slug in FULL_CHAIN.items():
+        if not k.startswith("인천광역시|"):
+            continue
+        c = _contracts(slug)
+        if c and c.get("수의계약비율") is not None:
+            out.append((k.split("|", 1)[1], c["수의계약비율"]))
+    return out
+
+
+def _ai_metrics(sido):
+    """시도별 가용 지표. (id, 라벨, 설명, kind['ratio'|'exec'], data[[(구,값)]])."""
+    M = []
+    if sido == "서울특별시" and _ai_districts():
+        M += [("suui", "🤝 수의계약 비율", "경쟁입찰 없이 맺은 계약 비중(%) — 높을수록 점검", "ratio", _ai_seoul_col("수의계약비율")),
+              ("upchu", "💳 업무추진비 지표", "기관 운영성 경비 상대지표 — 25구 비교", "ratio", _ai_seoul_col("업무추진비")),
+              ("haengsa", "🎪 행사·축제 경비", "행사성 지출 비중(%)", "ratio", _ai_seoul_col("행사축제경비비율"))]
+    elif sido == "인천광역시":
+        ic = _ai_incheon_suui()
+        if ic:
+            M.append(("suui", "🤝 수의계약 비율", "경쟁입찰 없이 맺은 계약 비중(%)·나라장터 표본", "ratio", ic))
+    M.append(("exec", "📊 자치구 집행률", "예산 대비 실제 집행(%) — 80~105% 정상, 벗어나면 이상치", "exec", _ai_exec_rates(sido)))
+    return [m for m in M if m[4]]
 
 
 def _render_ai_insights():
-    """🤖 AI 자동 발견 — 서울 25개 자치구 시민감시 지표(수의계약·업무추진비 등) 자동 이상치 하이라이트."""
-    d = _ai_districts()
-    if not d:
+    """🤖 AI 자동 발견 — 선택 시도의 자치구를 시민감시 지표로 비교·이상치 자동 하이라이트(시도별 일반화)."""
+    sido = _sido()
+    if not sido:
         _nav({}); return
-    ds = d["districts_25"]
-    st.button("◂ 전국 지도", on_click=lambda: _nav({}), key="ai_back")
-    st.markdown("### 🤖 AI 자동 발견 — 서울 25개 자치구 시민감시 지표 "
-                "<span style='font-size:14px;color:#9AA5B1'>— 클릭 한 번이면 AI가 이상 신호를 스스로 짚습니다</span>",
+    metrics = _ai_metrics(sido)
+    st.button(f"◂ {sido} 지도", on_click=lambda: _nav({"sido": sido}), key="ai_back")
+    if not metrics:
+        st.info("이 시도는 AI 자동 발견 지표 데이터가 아직 없습니다."); return
+    st.markdown(f"### 🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표 "
+                "<span style='font-size:14px;color:#9AA5B1'>— AI가 이상 신호를 스스로 짚습니다</span>",
                 unsafe_allow_html=True)
 
-    labels = [m[1] for m in _AI_METRICS]
+    labels = [m[1] for m in metrics]
     pick = st.segmented_control("지표", labels, default=labels[0],
-                                key="ai_metric", label_visibility="collapsed")
-    key, label, desc = next((m for m in _AI_METRICS if m[1] == pick), _AI_METRICS[0])
-    st.caption(desc + " · 데이터: 지방재정365·나라장터(2023 결산)")
+                                key="ai_metric", label_visibility="collapsed") or labels[0]
+    _, label, desc, kind, data = next((m for m in metrics if m[1] == pick), metrics[0])
+    st.caption(desc + " · 데이터: 지방재정365·나라장터")
+    if not data:
+        st.info("데이터 없음"); return
 
-    vals = [(x["district"], x.get(key, 0) or 0) for x in ds if x.get(key) is not None]
-    avg = sum(v for _, v in vals) / len(vals) if vals else 0
-    sv = sorted(vals, key=lambda x: -x[1])
-    top_g, top_v = sv[0]
-    bot_g, bot_v = sv[-1]
+    avg = sum(v for _, v in data) / len(data)
+    sv = sorted(data, key=lambda x: -x[1])
+    name = label.split(" ", 1)[-1]
 
     import plotly.graph_objects as go
     asc = sv[::-1]
@@ -1585,34 +1632,47 @@ def _render_ai_insights():
     nums = [round(v, 1) for _, v in asc]
     colors = []
     for g, v in asc:
-        if g == top_g: colors.append("#C0552B")
-        elif g == bot_g: colors.append("#3FA66A")
-        elif v >= avg: colors.append("#E8A13B")
-        else: colors.append("#C9D2DA")
+        if kind == "exec":
+            colors.append("#C0552B" if v < 80 else "#E8A13B" if v > 105 else "#3FA66A")
+        else:
+            colors.append("#C0552B" if g == sv[0][0] else "#3FA66A" if g == sv[-1][0]
+                          else "#E8A13B" if v >= avg else "#C9D2DA")
     fig = go.Figure(go.Bar(x=nums, y=names, orientation="h", marker_color=colors,
-                           text=[f"{v}" for v in nums], textposition="outside",
-                           cliponaxis=False))
-    fig.add_vline(x=avg, line_dash="dash", line_color="#52606D",
-                  annotation_text=f"25구 평균 {avg:.1f}", annotation_position="top right")
-    fig.update_layout(height=560, margin=dict(l=8, r=40, t=22, b=8),
+                           text=[f"{v}" for v in nums], textposition="outside", cliponaxis=False))
+    fig.add_vline(x=(100 if kind == "exec" else avg), line_dash="dash", line_color="#52606D",
+                  annotation_text=("정상 100" if kind == "exec" else f"평균 {avg:.1f}"),
+                  annotation_position="top right")
+    fig.update_layout(height=max(360, 23 * len(data) + 70), margin=dict(l=8, r=40, t=22, b=8),
                       plot_bgcolor="white", showlegend=False, font=dict(size=12))
     fig.update_xaxes(showgrid=True, gridcolor="#EEF1F4", title=None)
     fig.update_yaxes(title=None)
     st.plotly_chart(fig, key="ai_chart", use_container_width=True,
                     config={"displayModeBar": False, "staticPlot": True})
 
-    ratio = top_v / avg if avg else 0
-    metric_name = label.split(" ", 1)[-1]
-    st.markdown(
-        f"<div style='background:#F5F7FA;border-left:4px solid #2C5F6F;border-radius:8px;"
-        f"padding:11px 14px;margin:6px 0;font-size:13.5px;line-height:1.7'>"
-        f"🤖 <b>AI 자동 인사이트</b><br>"
-        f"🚨 <b>{top_g}</b> — {metric_name} <b>{top_v:.1f}</b>, 25구 중 <b>최고</b>"
-        f"(평균 {avg:.1f}의 <b>{ratio:.1f}배</b>). 점검이 필요한 신호입니다.<br>"
-        f"✅ 반대로 <b>{bot_g}</b>는 <b>{bot_v:.1f}</b>로 <b>가장 낮아</b> 양호합니다. "
-        f"<span style='color:#9AA5B1'>— 잘한 곳과 점검할 곳을 데이터가 가립니다(양면 제시).</span></div>",
-        unsafe_allow_html=True)
-    st.caption("※ 시민이 분석할 줄 몰라도, 25개 자치구를 한 화면에서 비교해 AI가 이상 신호를 자동으로 짚어줍니다. "
+    if kind == "exec":
+        bad = [(g, v) for g, v in sv if v < 80 or v > 105]
+        if bad:
+            items = " · ".join(f"{g} {v:.0f}%" for g, v in bad[:6])
+            st.markdown(
+                f"<div style='background:#FCF3F0;border-left:4px solid #C0552B;border-radius:8px;"
+                f"padding:11px 14px;margin:6px 0;font-size:13.5px;line-height:1.7'>"
+                f"🤖 <b>AI 자동 인사이트</b><br>🚨 집행률이 정상범위(80~105%)를 벗어난 자치구 "
+                f"<b>{len(bad)}곳</b>: {items}. 미집행·과집행 점검이 필요합니다.</div>",
+                unsafe_allow_html=True)
+        else:
+            st.caption("✅ 모든 자치구가 정상 집행 범위(80~105%) 내 — 양호합니다.")
+    else:
+        top_g, top_v = sv[0]; bot_g, bot_v = sv[-1]
+        ratio = top_v / avg if avg else 0
+        st.markdown(
+            f"<div style='background:#F5F7FA;border-left:4px solid #2C5F6F;border-radius:8px;"
+            f"padding:11px 14px;margin:6px 0;font-size:13.5px;line-height:1.7'>"
+            f"🤖 <b>AI 자동 인사이트</b><br>"
+            f"🚨 <b>{top_g}</b> — {name} <b>{top_v:.1f}</b>, 최고(평균 {avg:.1f}의 <b>{ratio:.1f}배</b>). 점검 필요.<br>"
+            f"✅ <b>{bot_g}</b>는 <b>{bot_v:.1f}</b>로 최저, 양호. "
+            f"<span style='color:#9AA5B1'>— 잘한 곳과 점검할 곳을 데이터가 가립니다.</span></div>",
+            unsafe_allow_html=True)
+    st.caption("※ 시민이 분석할 줄 몰라도 자치구를 한 화면에서 비교해 AI가 이상 신호를 자동으로 짚어줍니다. "
                "개인·정파 평가가 아닌 자치단체 단위 지표 비교입니다.")
 
 
