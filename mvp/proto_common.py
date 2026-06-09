@@ -632,28 +632,26 @@ SIDO_ASSET = {
 
 
 def _render_sido_asset_panel(sido):
-    """시도 특화 자산 한눈에 — 대표 자산 개요 + 대표 테마 실예산(인천 gateway 일반판)."""
-    a = SIDO_ASSET.get(sido)
-    if not a:
-        return
-    title, desc = a
-    bud_line = ""
+    """시도 특화 자산 — 대표 자산 헤더 + 테마별 실예산 '큰 숫자' 메트릭 카드(인천 gateway 스타일·전 시도)."""
     themes = _theme_list(sido)
-    if themes:
-        recs = _theme_recs(sido, themes[0][3])
-        if recs:
-            tot = sum(r["예산_억"] for r in recs)
-            n = sum(r["사업수"] for r in recs)
-            tname = themes[0][1].split(" ", 1)[-1]
-            bud_line = (f"<br>📊 대표 테마 <b>'{tname}'</b> 관련 예산 "
-                        f"<b style='color:#FFE08A'>{tot:,.0f}억</b> · 세부사업 {n}건")
-    st.markdown(
-        f"<div style='background:linear-gradient(90deg,#1F4654,#2C5F6F);color:#fff;"
-        f"border-radius:10px;padding:11px 15px;margin:6px 0;font-size:13.5px;line-height:1.7'>"
-        f"<b>{title}</b> <span style='opacity:.8;font-size:12px'>— 다른 지자체와 구별되는 {sido} 고유 자산</span><br>"
-        f"<span style='opacity:.94'>{desc}</span>{bud_line}<br>"
-        f"<span style='font-size:11px;opacity:.65'>※ 특화 자산 개요 · 예산=지방재정365 세부사업 실집계</span></div>",
-        unsafe_allow_html=True)
+    if not themes:
+        return
+    a = SIDO_ASSET.get(sido)
+    if a:
+        title, desc = a
+        st.markdown(
+            f"<div style='background:linear-gradient(90deg,#1F4654,#2C5F6F);color:#fff;"
+            f"border-radius:10px;padding:10px 16px;margin:8px 0 2px'>"
+            f"<b style='font-size:15px'>{title}</b> "
+            f"<span style='opacity:.85;font-size:12.5px'>— 다른 지자체엔 없는 {sido} 고유 자산 · {desc}</span></div>",
+            unsafe_allow_html=True)
+    cols = st.columns(len(themes))
+    for i, (tk, lbl, sb, kw) in enumerate(themes):
+        recs = _theme_recs(sido, kw)
+        tot = sum(r["예산_억"] for r in recs)
+        n = sum(r["사업수"] for r in recs)
+        cols[i].metric(lbl, f"{tot:,.0f}억", f"세부사업 {n}건", delta_color="off")
+    st.caption("📊 특화 자산별 관련 예산(지방재정365 세부사업 실집계). 위 🔥테마 버튼으로 자치구별 상세 비교 가능.")
 
 
 @st.cache_data
