@@ -569,7 +569,6 @@ def _render_sido():
         st.markdown(svg, unsafe_allow_html=True)
         st.caption("색이 진할수록 '살기좋은 내 동네' 만족도가 높은 구. 마우스를 올리면 "
                    "오른쪽에 위=예산·집행, 아래=만족도, 클릭하면 해당 구로 이동합니다.")
-        _render_vote(sat)
     elif sido == "경기도":
         # 경기 = 자치구 42개로 과밀 → 북부/남부 분할(좌=북·우=남 스와이프 토글)
         half = st.segmented_control("경기 권역", ["◀ 경기 북부", "경기 남부 ▶"],
@@ -602,8 +601,59 @@ def _render_sido():
                            key=f"th_{sido}_{tk}", use_container_width=True, help=sb)
         if sido == "인천광역시":
             _render_gateway_panel()
+        else:
+            _render_sido_asset_panel(sido)
     st.button(f"🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표(수의계약·집행률 등) ▸",
               on_click=go_ai, key=f"ai_{sido}", use_container_width=True)
+    # 서울: 만족도 투표 = AI/테마 버튼 아래로(2026-06-09)
+    if sido == "서울특별시":
+        _render_vote(satisfaction())
+
+
+# ── 시도별 특화 자산 개요(인천 gateway의 일반 시도판) — 서술형 대표 자산 + 대표 테마 실예산 ──
+SIDO_ASSET = {
+    "서울특별시": ("🏙️ 수도·경제 심장", "금융·IT 본사 집적 — 청년 주거·도시 노후안전이 핵심 현안"),
+    "부산광역시": ("🚢 제1의 무역항", "부산항 컨테이너 물동량 전국 1위 — 해양·수산·영상의 도시"),
+    "대구광역시": ("🏥 의료·미래모빌리티", "첨단의료복합단지(메디시티) — 로봇·자동차부품 산업"),
+    "광주광역시": ("🤖 AI·문화", "국가 AI 집적단지 — 광(光)산업·아시아문화중심도시"),
+    "대전광역시": ("🔬 과학수도", "대덕연구개발특구(정부출연연 집적) — 바이오·국방 R&D"),
+    "울산광역시": ("🏭 산업수도", "자동차·조선·석유화학 3대 주력 — 친환경 수소 전환 선도"),
+    "경기도": ("🔌 최대 광역", "인구 전국 1위 — 반도체 클러스터(삼성·SK)·광역교통(GTX)"),
+    "강원도": ("⛰️ 관광·산림", "설악·동해·DMZ — 폐광지역 에너지 전환, 청정 자연"),
+    "충청북도": ("🧬 바이오·소재", "오송 첨단의료복합단지 — 2차전지·반도체 소재"),
+    "충청남도": ("🏭 산업·농업", "서산 석유화학·아산 디스플레이 — 서해안 해양·농축산"),
+    "전라북도": ("🌾 농생명·새만금", "국가식품클러스터 — 새만금 재생에너지·신산업"),
+    "전라남도": ("🌊 신재생 메카", "신안 해상풍력(아태 최대 추진)·태양광 — 다도해·농수산 1위"),
+    "경상북도": ("🏭 철강·원자력", "포항 철강(포스코) — 원전 밀집·문화유산의 보고"),
+    "경상남도": ("🚀 조선·항공우주", "거제 조선 빅3 — 사천 항공우주(KAI)·기계·방산"),
+    "세종특별자치시": ("🏛️ 행정수도", "행정중심복합도시 — 정부세종청사·스마트시티 실증"),
+    "제주특별자치도": ("🌴 관광·청정", "국제관광도시 — 풍력·태양광 청정에너지, 감귤·수산"),
+}
+
+
+def _render_sido_asset_panel(sido):
+    """시도 특화 자산 한눈에 — 대표 자산 개요 + 대표 테마 실예산(인천 gateway 일반판)."""
+    a = SIDO_ASSET.get(sido)
+    if not a:
+        return
+    title, desc = a
+    bud_line = ""
+    themes = _theme_list(sido)
+    if themes:
+        recs = _theme_recs(sido, themes[0][3])
+        if recs:
+            tot = sum(r["예산_억"] for r in recs)
+            n = sum(r["사업수"] for r in recs)
+            tname = themes[0][1].split(" ", 1)[-1]
+            bud_line = (f"<br>📊 대표 테마 <b>'{tname}'</b> 관련 예산 "
+                        f"<b style='color:#FFE08A'>{tot:,.0f}억</b> · 세부사업 {n}건")
+    st.markdown(
+        f"<div style='background:linear-gradient(90deg,#1F4654,#2C5F6F);color:#fff;"
+        f"border-radius:10px;padding:11px 15px;margin:6px 0;font-size:13.5px;line-height:1.7'>"
+        f"<b>{title}</b> <span style='opacity:.8;font-size:12px'>— 다른 지자체와 구별되는 {sido} 고유 자산</span><br>"
+        f"<span style='opacity:.94'>{desc}</span>{bud_line}<br>"
+        f"<span style='font-size:11px;opacity:.65'>※ 특화 자산 개요 · 예산=지방재정365 세부사업 실집계</span></div>",
+        unsafe_allow_html=True)
 
 
 @st.cache_data

@@ -75,6 +75,8 @@ _PAD_OVERRIDE = {}
 # 섬 offset(에디터 배치)로 content가 폭의 일부만 차지하는 시도 → 다른 시도처럼 '폭 1000 채우기'로
 # 재정규화. viewBox 공식·도넛 크기가 전 시도 동일해져 일관성 유지(인천만 특별취급 방지).
 _MAP_ZOOM = {"인천광역시"}
+# 시도별 '블록만 축소'(viewBox·도넛·라벨 불변, 자치구 도형만 중심기준 scale → 여백). 대구=0.8배.
+_BLOCK_SCALE = {"대구광역시": 0.8}
 _DEPTH = 16
 _STEP = 0.8
 _DX = 0.12
@@ -345,6 +347,10 @@ def build_sigungu(sido, selected=None, stats=None, fills=None, sat=None,
         _ax += _n[0::2]; _ay += _n[1::2]
     minx, maxx = (min(_ax), max(_ax)) if _ax else (0.0, 1000.0)
     miny, maxy = (min(_ay), max(_ay)) if _ay else (0.0, H)
+    _bs = _BLOCK_SCALE.get(sido)
+    if _bs:                                    # 블록만 중심기준 축소(viewBox는 원본 bbox 유지 → 여백 생김)
+        _ccx, _ccy = (minx + maxx) / 2, (miny + maxy) / 2
+        _dd = {k: _zoom_path(v, _ccx, _ccy, _bs, 0, 0) for k, v in _dd.items()}
     padL, padR = _PAD_OVERRIDE.get(sido, (_PAD_L, _PAD_R))
     vb = (f"{round(minx - padL, 1)} {round(miny - M, 1)} "
           f"{round((maxx - minx) + padL + padR, 1)} {round((maxy - miny) + 2 * M, 1)}")
