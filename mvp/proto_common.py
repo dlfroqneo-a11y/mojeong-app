@@ -600,7 +600,8 @@ def _render_sido():
             cols[i].button(lbl, on_click=go_theme, args=(tk,),
                            key=f"th_{sido}_{tk}", use_container_width=True, help=sb)
         if sido == "인천광역시":
-            _render_gateway_panel()
+            _asset_header(sido)        # 다른 시도와 동일한 자산 헤더 바
+            _render_gateway_panel()    # + 인천 전용 공항·항만 gateway(정밀 실측 수치)
         else:
             _render_sido_asset_panel(sido)
     st.button(f"🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표(수의계약·집행률 등) ▸",
@@ -613,6 +614,7 @@ def _render_sido():
 # ── 시도별 특화 자산 개요(인천 gateway의 일반 시도판) — 서술형 대표 자산 + 대표 테마 실예산 ──
 SIDO_ASSET = {
     "서울특별시": ("🏙️ 수도·경제 심장", "금융·IT 본사 집적 — 청년 주거·도시 노후안전이 핵심 현안"),
+    "인천광역시": ("✈️🚢 관문 경제", "인천국제공항·인천항 — 공항·항만 양대 국가관문을 동시에 가진 유일 도시"),
     "부산광역시": ("🚢 제1의 무역항", "부산항 컨테이너 물동량 전국 1위 — 해양·수산·영상의 도시"),
     "대구광역시": ("🏥 의료·미래모빌리티", "첨단의료복합단지(메디시티) — 로봇·자동차부품 산업"),
     "광주광역시": ("🤖 AI·문화", "국가 AI 집적단지 — 광(光)산업·아시아문화중심도시"),
@@ -631,20 +633,26 @@ SIDO_ASSET = {
 }
 
 
+def _asset_header(sido):
+    """시도 특화 자산 헤더 바(파란 띠) — 전 시도 공통(인천 포함)."""
+    a = SIDO_ASSET.get(sido)
+    if not a:
+        return
+    title, desc = a
+    st.markdown(
+        f"<div style='background:linear-gradient(90deg,#1F4654,#2C5F6F);color:#fff;"
+        f"border-radius:10px;padding:10px 16px;margin:8px 0 2px'>"
+        f"<b style='font-size:15px'>{title}</b> "
+        f"<span style='opacity:.85;font-size:12.5px'>— 다른 지자체엔 없는 {sido} 고유 자산 · {desc}</span></div>",
+        unsafe_allow_html=True)
+
+
 def _render_sido_asset_panel(sido):
     """시도 특화 자산 — 대표 자산 헤더 + 테마별 실예산 '큰 숫자' 메트릭 카드(인천 gateway 스타일·전 시도)."""
     themes = _theme_list(sido)
     if not themes:
         return
-    a = SIDO_ASSET.get(sido)
-    if a:
-        title, desc = a
-        st.markdown(
-            f"<div style='background:linear-gradient(90deg,#1F4654,#2C5F6F);color:#fff;"
-            f"border-radius:10px;padding:10px 16px;margin:8px 0 2px'>"
-            f"<b style='font-size:15px'>{title}</b> "
-            f"<span style='opacity:.85;font-size:12.5px'>— 다른 지자체엔 없는 {sido} 고유 자산 · {desc}</span></div>",
-            unsafe_allow_html=True)
+    _asset_header(sido)
     cols = st.columns(len(themes))
     for i, (tk, lbl, sb, kw) in enumerate(themes):
         recs = _theme_recs(sido, kw)
