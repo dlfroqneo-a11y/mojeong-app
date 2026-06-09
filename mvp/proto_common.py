@@ -12,6 +12,7 @@ MODE="B": 동·읍 지도 없이 데이터 집중.
 """
 import json
 import math
+import os
 import re
 from pathlib import Path
 from urllib.parse import quote
@@ -126,9 +127,15 @@ def satisfaction():
             for gu, v in d["scores"].items()}
 
 
-# 만족도 색 스케일(발산형): 0점=파랑 → 1.25 연파랑 → 1.5 연빨강 → 5점 빨강
-_SAT_ANCHORS = [(0.0, (0x64, 0x96, 0xFF)), (1.25, (0xD9, 0xE6, 0xFF)),
-                (1.5, (0xFF, 0xE1, 0xE1)), (5.0, (0xFF, 0x5A, 0x5A))]
+# 만족도 색 스케일 — 환경변수 SAT_SCHEME로 선택(로컬 색 비교용). 기본=현재(크림→노랑→피치).
+_SAT_SCHEMES = {
+    "current": [(0.0, (0xFB, 0xF8, 0xE5)), (3.0, (0xED, 0xE0, 0x7A)), (5.0, (0xE5, 0x9A, 0x65))],  # 8502 현재(크림→노랑→피치)
+    "green":   [(0.0, (0xEA, 0xF7, 0xE1)), (5.0, (0x2E, 0x7D, 0x32))],                              # 8503 초록 순차(좋을수록 초록)
+    "ylgnbu":  [(0.0, (0xFF, 0xFF, 0xD9)), (2.5, (0x41, 0xB6, 0xC4)), (5.0, (0x22, 0x5E, 0xA8))],   # 8504 노랑-청록-남색
+    "rdylgn":  [(0.0, (0xD7, 0x30, 0x27)), (2.5, (0xFE, 0xE0, 0x8B)), (5.0, (0x1A, 0x98, 0x50))],   # 8505 빨강-노랑-초록(발산)
+    "coral":   [(0.0, (0xED, 0xE0, 0x7A)), (3.0, (0xFF, 0xF3, 0xE6)), (5.0, (0xFB, 0x6F, 0x5A))],    # 노랑(0)→크림(3)→산호(5)
+}
+_SAT_ANCHORS = _SAT_SCHEMES.get(os.getenv("SAT_SCHEME", "coral"), _SAT_SCHEMES["coral"])
 
 
 def sat_color(score):
