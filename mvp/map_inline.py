@@ -78,7 +78,7 @@ _MAP_ZOOM = {"인천광역시"}
 _DEPTH = 16
 _STEP = 0.8
 _DX = 0.12
-_LIFT = 4       # 떠오름 높이(절반의 절반 — 더 낮게)
+_LIFT = 2       # 떠오름 높이(2026-06-09 다시 절반 4→2)
 _DOKDO_SIDO = "경상북도"
 
 
@@ -129,7 +129,7 @@ _STYLE_BASE = """
 .mjmap .ov { opacity:0; pointer-events:none; transform:translateY(0);
   transition: transform .18s ease, opacity .14s; }
 .mjmap .ov path.topov { fill:#E3ECF4; stroke:#2C5F6F; stroke-width:1.4; }
-.mjmap .ov.show { opacity:1; transform:translateY(-3px); }
+.mjmap .ov.show { opacity:1; transform:translateY(-1.5px); }
 .mjmap .ov.show path.topov { stroke:#2C5F6F; stroke-width:2.4; }
 .mjmap .lbl { opacity:0; font-size:34px; font-weight:800; fill:#1F4654;
   pointer-events:none; transition:opacity .15s; text-anchor:end; letter-spacing:-2px; }

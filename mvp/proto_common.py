@@ -581,16 +581,17 @@ def _render_sido():
                     unsafe_allow_html=True)
         st.caption(f"🗺️ {sido} — 구·군에 마우스를 올리면 예산·집행률, 클릭하면 이동. "
                    "(만족도 투표는 서울 시연 중 → 전국 확장 예정)")
-        if sido == "인천광역시":
-            st.markdown("##### 🔥 인천 지역현안 킬러 테마 "
-                        "<span style='font-size:13px;color:#9AA5B1'>— 공약이 예산·집행까지 이어졌는지 4트랙 교차 추적</span>",
+        themes = _theme_list(sido)
+        if themes:
+            st.markdown(f"##### 🔥 {sido} 특화 자산 테마 "
+                        "<span style='font-size:13px;color:#9AA5B1'>— 이 지역만의 현안을 예산·집행으로 교차 추적</span>",
                         unsafe_allow_html=True)
-            tb = st.columns([1, 1, 3])
-            tb[0].button("🌍 환경 투명성", on_click=go_theme, args=("env",),
-                         key="theme_env", use_container_width=True)
-            tb[1].button("🚌 교통 투명성", on_click=go_theme, args=("transport",),
-                         key="theme_transport", use_container_width=True)
-            _render_gateway_panel()
+            cols = st.columns(len(themes) + 1)
+            for i, (tk, lbl, sb, kw) in enumerate(themes):
+                cols[i].button(lbl, on_click=go_theme, args=(tk,),
+                               key=f"th_{sido}_{tk}", use_container_width=True, help=sb)
+            if sido == "인천광역시":
+                _render_gateway_panel()
 
 
 @st.cache_data
@@ -847,6 +848,185 @@ _THEME_MAP = {
 }
 _INCHEON_GU = [(k.split("|")[1], v) for k, v in FULL_CHAIN.items() if k.startswith("인천")]
 
+# ── 시도별 특화 자산 테마 카탈로그 (2026-06-09) ──────────────────────────────
+# 각 시도의 복제불가 특화 현안을 세부사업명 키워드로 추출 → 테마뷰.
+# 구조: 시도키 → [(테마키, 라벨(이모지포함), 부제, 키워드정규식), ...]
+# ※인천 env/transport는 기존 리치뷰(의안·계약·성과 패널) 유지 → _INCHEON_RICH 로 분기.
+THEME_CATALOG = {
+    "서울특별시": [
+        ("safety", "🏙️ 도시안전", "노후·재난·침수·방재", "노후|재난|침수|방재|내진|안전관리|화재|cctv|범죄예방|보행안전|싱크홀|침하"),
+        ("youth", "🧑 청년·주거", "청년·주거·일자리", "청년|주거|임대주택|역세권|일자리|창업지원|신혼|전월세"),
+    ],
+    "부산광역시": [
+        ("port", "🚢 항만·물류", "항만·물류·해운", "항만|물류|부두|해운|컨테이너|북항|신항|배후단지"),
+        ("marine", "🌊 해양·수산", "해양·수산·어촌", "해양|수산|어항|어촌|연안|갯벌|어업|선박"),
+        ("tour", "🎬 관광·문화", "관광·영화·축제", "관광|영화|영상|축제|컨벤션|해수욕장|문화관광|마이스"),
+    ],
+    "대구광역시": [
+        ("medical", "🏥 의료·바이오", "의료·헬스·바이오", "의료|병원|헬스|바이오|의약|첨단의료|메디|건강"),
+        ("mobility", "🚗 미래모빌리티", "자동차·로봇·부품", "자동차|모빌리티|로봇|부품|전기차|미래차|기계"),
+    ],
+    "인천광역시": [
+        ("env", "🌍 환경", "탄소중립·미세먼지·폐기물", "환경|탄소|미세먼지|대기|폐기물|재활용|하수|상수|공원|녹지"),
+        ("transport", "🚌 교통·물류", "출퇴근·도로·대중교통", "교통|도로|버스|지하철|철도|주차|보행|물류"),
+        ("gateway", "✈️ 공항·항만", "관문경제·공항·항만", "공항|항만|항공|크루즈|물류|배후단지"),
+    ],
+    "광주광역시": [
+        ("ai", "🤖 AI·미래산업", "AI·광산업·창업혁신", "인공지능|에이아이|디지털|소프트웨어|정보화|스마트|빅데이터|메타버스|ict|광산업|광융합|창업|벤처|혁신|미래산업|데이터"),
+        ("culture", "🎨 문화·예술", "문화·예술·관광", "문화|예술|미술|디자인|콘텐츠|관광|축제"),
+    ],
+    "대전광역시": [
+        ("science", "🔬 과학·R&D", "과학·연구·기술", "과학|연구|기술개발|대덕|벤처|혁신|실증|특구"),
+        ("biotech", "🧬 바이오·헬스", "바이오·의료", "바이오|의료|병원|제약|헬스|건강"),
+    ],
+    "울산광역시": [
+        ("industry", "🏭 주력산업", "자동차·조선·화학", "자동차|조선|석유화학|화학|기계|중공업|부품"),
+        ("energy", "⚡ 친환경에너지", "수소·에너지전환", "수소|에너지|신재생|태양광|풍력|연료전지|친환경"),
+    ],
+    "경기도": [
+        ("semicon", "🔌 산업·반도체", "반도체·제조·산단", "반도체|산업단지|제조|첨단산업|소부장|클러스터|기업유치"),
+        ("transport", "🚄 광역교통", "GTX·도로·대중교통", "교통|도로|철도|버스|광역|지하철|주차|환승"),
+        ("housing", "🏘️ 주거·도시", "주거·도시개발", "주거|신도시|임대주택|도시개발|재개발|택지|정비사업"),
+    ],
+    "강원도": [
+        ("tour", "⛰️ 관광·산림", "관광·산림·휴양", "관광|산림|숲|휴양|레저|축제|국립공원|치유|둘레길"),
+        ("energy", "⚡ 에너지·자원", "폐광·수소·에너지", "폐광|석탄|수소|에너지|신재생|풍력|발전|광산"),
+    ],
+    "충청북도": [
+        ("biohealth", "🧬 바이오·헬스", "바이오·의약·화장품", "바이오|의약|제약|화장품|헬스|오송|의료"),
+        ("battery", "🔋 2차전지·반도체", "이차전지·반도체·소재", "전지|배터리|반도체|이차전지|소재|첨단"),
+    ],
+    "충청남도": [
+        ("industry", "🏭 산업·디스플레이", "석유화학·디스플레이", "석유화학|디스플레이|철강|산업단지|제조|반도체"),
+        ("agri", "🌾 농업·축산", "농업·축산·농촌", "농업|농촌|농가|축산|친환경농|농산물|쌀"),
+        ("coast", "🌊 서해안·해양", "해양·수산·연안", "해양|수산|어항|연안|갯벌|어촌|항만"),
+    ],
+    "전라북도": [
+        ("agbio", "🌾 농생명", "농업·식품·바이오", "농업|농촌|농생명|식품|종자|농산물|축산|친환경농"),
+        ("saemangeum", "🏗️ 새만금·신산업", "새만금·재생에너지", "새만금|재생에너지|태양광|풍력|수소|신산업|이차전지"),
+    ],
+    "전라남도": [
+        ("energy", "🌊 신재생에너지", "태양광·해상풍력·수소", "태양광|풍력|신재생|재생에너지|수소|연료전지|에너지자립|전기차충전"),
+        ("island", "🏝️ 섬·해양", "다도해·어항·연안", "섬|도서|어항|항만|연안|해양|갯벌|어촌|여객선|선착장|방파제"),
+        ("agri", "🌾 농수산", "농업·수산·김", "농업|농촌|농가|수산|축산|임업|김|친환경농|농산물|어업"),
+    ],
+    "경상북도": [
+        ("steel", "🏭 철강·소재", "철강·소재·전자", "철강|소재|전자|부품|산업단지|제조|배터리"),
+        ("energy", "⚛️ 원자력·에너지", "원자력·수소·에너지", "원자력|원전|수소|에너지|신재생|발전|풍력"),
+        ("heritage", "🏛️ 농업·문화유산", "농업·문화재·관광", "농업|농촌|문화재|유산|관광|전통|한옥"),
+    ],
+    "경상남도": [
+        ("aero", "🚀 항공우주·방산", "항공·우주·방위산업", "항공|우주|방위|방산|항공기|드론|위성"),
+        ("ship", "🚢 조선·해양", "조선·해양·기계", "조선|해양|수산|어항|기계|중공업|선박|항만"),
+    ],
+}
+_INCHEON_RICH = {"env", "transport"}  # 인천 이 두 테마만 기존 리치뷰(성과 패널 포함) 유지
+
+
+def _theme_list(sido):
+    return THEME_CATALOG.get(sido, [])
+
+
+def _theme_def(sido, theme):
+    for t in _theme_list(sido):
+        if t[0] == theme:
+            return t
+    return None
+
+
+@st.cache_data
+def _theme_recs(sido, kw):
+    """시도 자치구별로 세부사업명이 kw정규식에 매칭되는 예산·집행 집계."""
+    pat = re.compile(kw, re.I)
+    l3 = district_l3()
+    recs = []
+    for key, doms in l3.items():
+        if not key.startswith(sido + "|"):
+            continue
+        gu = key.split("|", 1)[1]
+        bud = exe = 0.0
+        n = 0
+        for rows in doms.values():
+            for r in rows:
+                if pat.search(r.get("세부사업", "") or ""):
+                    bud += r.get("예산_억", 0) or 0
+                    exe += r.get("집행_억", 0) or 0
+                    n += 1
+        if bud > 0:
+            recs.append({"구": gu, "예산_억": bud, "집행_억": exe,
+                         "집행률": (exe / bud * 100 if bud else 0), "사업수": n})
+    recs.sort(key=lambda x: -x["예산_억"])
+    return recs
+
+
+def _open_gu_generic(gu):
+    _nav({"sido": _sido(), "gu": gu})
+
+
+def _render_theme_generic(sido, theme):
+    """시도 특화자산 테마뷰(키워드 기반) — 세부사업 예산·집행 교차집계 + 이상치 경고등."""
+    tdef = _theme_def(sido, theme)
+    if not tdef:
+        clear_theme(); st.rerun(); return
+    _, label, sub, kw = tdef
+    icon = label.split()[0] if label.split() else "📌"
+    name = label.split(" ", 1)[1] if " " in label else label
+
+    st.button(f"◂ {sido} 지도", on_click=go_sido, args=(sido,), key="theme_back_g")
+    themes = _theme_list(sido)
+    if len(themes) > 1:
+        opts = [t[1] for t in themes]
+        cur = label
+        pick = st.segmented_control("테마", opts, default=cur, key="theme_pick_g",
+                                    label_visibility="collapsed")
+        if pick and pick != cur:
+            go_theme(themes[opts.index(pick)][0]); st.rerun()
+
+    st.markdown(
+        f"### {icon} {sido} {name} 특화 투명성 "
+        f"<span style='font-size:14px;color:#9AA5B1'>— {sub}</span>", unsafe_allow_html=True)
+    st.caption(f"{sido} 자치구의 '{name}' 관련 세부사업을 예산→집행으로 교차 추적. "
+               f"키워드: {kw.replace('|', ', ')}")
+
+    recs = _theme_recs(sido, kw)
+    if not recs:
+        st.info("이 테마에 해당하는 세부사업 데이터가 없습니다."); return
+
+    tot_b = sum(r["예산_억"] for r in recs)
+    tot_e = sum(r["집행_억"] for r in recs)
+    rate = tot_e / tot_b * 100 if tot_b else 0
+    n_proj = sum(r["사업수"] for r in recs)
+    anomaly = [r for r in recs if r["집행률"] < 80 or r["집행률"] > 105]
+
+    k = st.columns(4)
+    k[0].metric(f"테마 예산({len(recs)}개 시군구)", f"{tot_b:,.0f}억")
+    k[1].metric("평균 집행률", f"{rate:.0f}%")
+    k[2].metric("매칭 세부사업", f"{n_proj:,}건")
+    k[3].metric("⚠️ 집행 이상치", f"{len(anomaly)}곳")
+
+    st.markdown("**🏙️ 시군구별 테마 예산·집행 비교** "
+                "<span style='color:#9AA5B1;font-size:12px'>(막대 클릭 → 해당 시군구 상세)</span>",
+                unsafe_allow_html=True)
+    _field_chart(recs, "구", f"thg_{sido}_{theme}", click=_open_gu_generic, topn=15)
+
+    if anomaly:
+        items = "".join(
+            f"<li><b>{r['구']}</b> — 집행률 <b>{r['집행률']:.0f}%</b> "
+            + ("⚠️ 미집행(80% 미만 — 착공지연·보상 등 점검)" if r['집행률'] < 80
+               else "🔺 추경·이월(편성 초과)") + "</li>"
+            for r in sorted(anomaly, key=lambda x: x['집행률'])[:12])
+        st.markdown(
+            f"<div style='background:#FCF3F0;border-left:4px solid #C0552B;border-radius:8px;"
+            f"padding:9px 13px;margin:6px 0;font-size:13px'>"
+            f"🚨 <b>테마 예산 집행 이상치 경고등</b> "
+            f"<span style='color:#9AA5B1;font-size:12px'>(편성↔결산 · 정상 80~105% 밖)</span>"
+            f"<ul style='margin:5px 0 0;padding-left:20px;color:#52606D'>{items}</ul></div>",
+            unsafe_allow_html=True)
+    else:
+        st.caption("✅ 해당 시군구 모두 정상 집행 범위(80~105%) 내")
+    st.caption("※ 세부사업명 키워드 매칭 집계(지방재정365 세출현황). "
+               "특화 자산 = 해당 시도의 복제불가 현안. 의안·계약 교차는 자치구 상세에서 확인.")
+
 
 def _open_gu_theme(gu):
     """테마 비교 막대 클릭 → 해당 구의 그 분야(환경/교통) 상세로 이동."""
@@ -868,9 +1048,11 @@ def _theme_contract_count(slug, fld):
 
 
 def _render_theme_detail():
-    """인천 10구 환경/교통 4트랙 사슬 비교 대시보드(지역현안 특화 킬러 뷰)."""
+    """테마뷰 라우터: 인천 env/transport=리치뷰(성과 패널) / 그 외 전 시도=일반화 키워드 뷰."""
     sido, theme = _sido(), _theme()
-    if sido != "인천광역시" or theme not in _THEME_MAP:
+    if not (sido == "인천광역시" and theme in _INCHEON_RICH):
+        if _theme_def(sido, theme):
+            _render_theme_generic(sido, theme); return
         clear_theme(); st.rerun(); return
     fld, icon, sub = _THEME_MAP[theme]
     disp = "환경" if theme == "env" else "교통"
@@ -1333,9 +1515,15 @@ def run(mode):
     label = "A안 · 동·읍 경계 표시형" if mode == "A" else "B안 · 데이터 집중형"
     st.set_page_config(page_title=f"모정 프로토타입 {mode}안", page_icon="🏛️",
                        layout="wide", initial_sidebar_state="collapsed")
-    # 뒤로가기 = Streamlit 1.58 네이티브 query_params 처리(자동 rerun)에 위임.
-    # 과거 popstate→location.reload()는 전체 페이지 새로고침이라 느린 환경(Cloud 무료플랜)에서
-    # 뒤로가기 반응이 늦어 '두 번 눌러야' 체감을 유발 → 제거(2026-06-08, back 전수검증 PASS).
+    # 뒤로가기(popstate) = 문서 리로드가 없어 Streamlit 스크립트가 재실행되지 않음 →
+    # URL만 바뀌고 화면이 안 따라옴(L4→L3→L2 화면 그대로). popstate 시 명시적 reload로 재실행 강제.
+    # (2026-06-09 리그레션 복구: 1.58 '네이티브 처리' 위임은 실제 브라우저+nginx서 동작 안 함)
+    # __mjPop 가드 = 리스너 1회만 등록(중복 시 1회 back에 다중 reload = '두 번' 체감 원인) → 방지.
+    components.html(
+        "<script>var w=window.parent;if(!w.__mjPop){w.__mjPop=1;"
+        "w.addEventListener('popstate',function(){w.location.reload();});}</script>",
+        height=0, width=0,
+    )
     # 8501과 동일한 본문 폭·여백 + 입체 토글 스위치
     st.markdown("""<style>
       .block-container { padding-top: 2.6rem; max-width: 1240px; }
