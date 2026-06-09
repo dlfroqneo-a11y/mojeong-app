@@ -589,19 +589,21 @@ def _render_sido():
                     unsafe_allow_html=True)
         st.caption(f"🗺️ {sido} — 구·군에 마우스를 올리면 예산·집행률, 클릭하면 이동. "
                    "(만족도 투표는 서울 시연 중 → 전국 확장 예정)")
-        themes = _theme_list(sido)
-        if themes:
-            st.markdown(f"##### 🔥 {sido} 특화 자산 테마 "
-                        "<span style='font-size:13px;color:#9AA5B1'>— 이 지역만의 현안을 예산·집행으로 교차 추적</span>",
-                        unsafe_allow_html=True)
-            cols = st.columns(len(themes) + 1)
-            for i, (tk, lbl, sb, kw) in enumerate(themes):
-                cols[i].button(lbl, on_click=go_theme, args=(tk,),
-                               key=f"th_{sido}_{tk}", use_container_width=True, help=sb)
-            if sido == "인천광역시":
-                _render_gateway_panel()
-        st.button(f"🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표(수의계약·집행률 등) ▸",
-                  on_click=go_ai, key=f"ai_{sido}", use_container_width=True)
+
+    # ── 공통(전 시도, 지도 종류 무관): 특화 자산 테마 + AI 자동 발견 버튼 ──
+    themes = _theme_list(sido)
+    if themes:
+        st.markdown(f"##### 🔥 {sido} 특화 자산 테마 "
+                    "<span style='font-size:13px;color:#9AA5B1'>— 이 지역만의 현안을 예산·집행으로 교차 추적</span>",
+                    unsafe_allow_html=True)
+        cols = st.columns(len(themes) + 1)
+        for i, (tk, lbl, sb, kw) in enumerate(themes):
+            cols[i].button(lbl, on_click=go_theme, args=(tk,),
+                           key=f"th_{sido}_{tk}", use_container_width=True, help=sb)
+        if sido == "인천광역시":
+            _render_gateway_panel()
+    st.button(f"🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표(수의계약·집행률 등) ▸",
+              on_click=go_ai, key=f"ai_{sido}", use_container_width=True)
 
 
 @st.cache_data

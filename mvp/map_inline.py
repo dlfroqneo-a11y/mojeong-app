@@ -66,7 +66,7 @@ def _zoom_path(d, cx, cy, s, tx, ty):
     return re.sub(r"([ML])(-?\d+\.?\d*) (-?\d+\.?\d*)", tf, d)
 
 
-_PAD_L = 210
+_PAD_L = 290   # 좌측 여백(2026-06-09 210→290: 지도 좌치우침 완화 + 좌측 라벨 잘림 방지)
 _PAD_R = 360
 # 시도별 좌/우 여백 override (viewBox 프레이밍용). 비우면 전 시도 기본값.
 _PAD_OVERRIDE = {}
