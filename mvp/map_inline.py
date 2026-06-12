@@ -74,12 +74,14 @@ _PAD_OVERRIDE = {}
 # target_right_x = 확대 후 지도 우측끝이 닿을 x(도넛 좌측 직전). 인천=섬이 동쪽에 몰려 작게 보임 → 지도만 키움.
 # 섬 offset(에디터 배치)로 content가 폭의 일부만 차지하는 시도 → 다른 시도처럼 '폭 1000 채우기'로
 # 재정규화. viewBox 공식·도넛 크기가 전 시도 동일해져 일관성 유지(인천만 특별취급 방지).
-_MAP_ZOOM = {"인천광역시"}
+# 세종·대전(2026-06-11 추가): sigungu 좌표가 0~1000 정규화 안 됨(maxx 727/783) → 고정 도넛(cx=1185,
+#   우측 1305)이 viewBox(maxx+360) 밖으로 잘림. 폭 1000 정규화로 도넛이 우측 여백에 정상 안착.
+_MAP_ZOOM = {"인천광역시", "세종특별자치시", "대전광역시"}
 # 시도별 '블록만 축소'(viewBox·도넛·라벨 불변, 자치구 도형만 중심기준 scale → 여백). 대구=0.8배.
 _BLOCK_SCALE = {"대구광역시": 0.8}
-_DEPTH = 16
-_STEP = 0.8
-_DX = 0.12
+_DEPTH = 8       # 입체 겹 수(2026-06-10 16→8: SVG ~45%↓ 렌더 가속. _STEP·_DX 2배로 총깊이 동일 유지)
+_STEP = 1.6
+_DX = 0.24
 _LIFT = 2       # 떠오름 높이(2026-06-09 다시 절반 4→2)
 _DOKDO_SIDO = "경상북도"
 
@@ -134,7 +136,8 @@ _STYLE_BASE = """
 .mjmap .ov.show { opacity:1; transform:translateY(-1.5px); }
 .mjmap .ov.show path.topov { stroke:#2C5F6F; stroke-width:2.4; }
 .mjmap .lbl { opacity:0; font-size:34px; font-weight:800; fill:#1F4654;
-  pointer-events:none; transition:opacity .15s; text-anchor:end; letter-spacing:-2px; }
+  pointer-events:none; transition:opacity .15s; text-anchor:start; letter-spacing:-2px;
+  paint-order:stroke; stroke:#FFFFFF; stroke-width:5px; }
 .mjmap .mk-dot { fill:#52606D; stroke:#fff; stroke-width:1.5; }
 .mjmap .mk-lbl { font-size:30px; font-weight:700; fill:#1F4654; cursor:pointer; }
 /* 행정동 경계 비클릭 이미지 */
@@ -355,7 +358,7 @@ def build_sigungu(sido, selected=None, stats=None, fills=None, sat=None,
     vb = (f"{round(minx - padL, 1)} {round(miny - M, 1)} "
           f"{round((maxx - minx) + padL + padR, 1)} {round((maxy - miny) + 2 * M, 1)}")
     ycen = round((miny + maxy) / 2, 1)
-    lx = round(minx - 12, 1)               # 라벨 우측끝(end-anchor) = 지도 좌측 직전
+    lx = round((minx - padL) + ((maxx + padR) - 1305), 1)  # 좌 라벨 좌여백 = 도넛(cx1185+r120=1305) 우여백 대칭
 
     hullhits = []
     hits, sidebase, topbase, overlay, rules = [], [], [], [], []
@@ -458,7 +461,7 @@ def build(selected=None, stats=None, fills=None, labels=None):
     d = _load()
     H = d["height"]
     ycen = round(H / 2, 1)
-    lx = -(_PAD_L - 12)
+    lx = round(-_PAD_L + (1000 + _PAD_R) - 1305, 1)  # 좌 라벨 좌여백 = 도넛(cx1185+r120=1305) 우여백 대칭
     vb = f"-{_PAD_L} 0 {1000 + _PAD_L + _PAD_R} {H}"
 
     hullhits, hits, sidebase, topbase, overlay, rules, poplbls = [], [], [], [], [], [], []

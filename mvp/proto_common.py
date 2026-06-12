@@ -30,13 +30,13 @@ GANGNAM_DONG = ["역삼동", "삼성동", "청담동", "압구정동", "신사�
                 "도곡동", "개포동", "일원동", "수서동", "세곡동"]
 
 
-@st.cache_data
+@st.cache_resource   # 순수 JSON 로더(읽기전용) → 세션간 단일객체 공유(복사 제거, 로딩 가속)
 def domain_status():
     p = POC / "domain_status_gangnam.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"분야": []}
 
 
-@st.cache_data
+@st.cache_resource   # 순수 JSON 로더 → 공유
 def gangnam_budget():
     return json.loads((POC / "track_budget_gangnam_detail.json").read_text(encoding="utf-8"))
 
@@ -181,7 +181,7 @@ def cast_vote(gu, score):
     SAT_PATH.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-@st.cache_data
+@st.cache_resource   # 순수 JSON 로더 → 공유
 def all_districts():
     """전국 시군구 L1+L2 (collect_all_districts.py)."""
     p = POC / "districts_all.json"
@@ -721,14 +721,14 @@ def _emd_image(sido, gu):
     st.caption("ⓘ 동·읍은 독립 예산·조례가 없어(재정·입법 최소단위=자치구) 경계 표시·정보용입니다.")
 
 
-@st.cache_data
+@st.cache_resource   # 13MB 최대 로더 → 단일객체 공유(세션마다 13MB 복사 제거 = 로딩 가속 핵심)
 def district_l3():
     """전국 자치구별 L3 세부사업(build_district_l3.py). {"시도|자치구": {분야:[세부사업..]}}."""
     p = POC / "district_l3.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 
-@st.cache_data
+@st.cache_resource   # 순수 JSON 로더 → 공유
 def budget_2026():
     """2026 예산안(편성·예산현액) — districts_2026.json {시도:{구:{l1,l2}}}. 없으면 {}.
     (주 데이터=2025 결산. 2026은 회계연도 진행 중이라 '편성 계획'으로 병기, 집행률은 연말 확정.)"""
@@ -751,7 +751,7 @@ def _b2026_total(sido, gu):
     return rec["l1"]["총예산_억"] if rec else None
 
 
-@st.cache_data
+@st.cache_resource   # 순수 JSON 로더 → 공유
 def budget_2024():
     """2024 회계연도 결산 — districts_2024.json {시도:{구:{l1,l2}}}. 없으면 {}. (3개년 추세용)"""
     p = POC / "districts_2024.json"
@@ -773,7 +773,7 @@ def _b2024_total(sido, gu):
     return rec["l1"]["총예산_억"] if rec else None
 
 
-@st.cache_data
+@st.cache_resource   # 1.9MB 순수 JSON 로더 → 공유
 def domain_status_all():
     """전국 자치구 분야별 이행(조례+AI, build_domain_status_nationwide.py)."""
     p = POC / "domain_status_all.json"
@@ -796,7 +796,7 @@ FULL_CHAIN = {
 }
 
 
-@st.cache_data
+@st.cache_resource   # 순수 JSON 로더(slug별 공유)
 def _domain_status_slug(slug):
     p = POC / f"domain_status_{slug}.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {"분야": []}
@@ -994,7 +994,7 @@ THEME_CATALOG = {
         ("aero", "🚀 항공우주·방산", "항공·우주·방위산업", "항공|우주|방위|방산|항공기|드론|위성"),
         ("ship", "🚢 조선·해양", "조선·해양·기계", "조선|해양|수산|어항|기계|중공업|선박|항만"),
     ],
-    # 세종·제주 = 단일 광역(자치구 없음). 단일 뷰. ※2023 결산 기준(타 시도 2025와 상이).
+    # 세종·제주 = 단일 광역(자치구 없음). 단일 뷰. 2025 결산·순계(타 시도와 동일 기준, 2026-06-10 V2 통일).
     "세종특별자치시": [
         ("city", "🏙️ 자족·도시", "행정중심·자족·도시개발", "자족|도시개발|행정|신도시|중앙행정|정주여건|일자리|산업단지|정주"),
         ("smart", "🌳 스마트·환경", "스마트시티·친환경·교통", "스마트|친환경에너지|환경|교통|brt|간선급행|자율주행|디지털|탄소중립|녹지"),
@@ -1051,6 +1051,36 @@ def _theme_recs(sido, kw):
     return recs
 
 
+@st.cache_data
+def _theme_projects(sido, kw):
+    """테마 키워드 매칭 '세부사업' 단위 집계(동일 세부사업명 합산). 단일 광역(제주·세종)에서
+    시군구 막대 1개 대신 세부사업 breakdown(세부 화면)을 바로 보여주기 위함."""
+    pat = re.compile(kw, re.I)
+    l3 = district_l3()
+    agg = {}
+    _jeju_done = False
+    for key, doms in l3.items():
+        if not key.startswith(sido + "|"):
+            continue
+        if sido == "제주특별자치도":          # 제주 = 道 통합 재정 동일 → 1회만(이중계산 방지)
+            if _jeju_done:
+                continue
+            _jeju_done = True
+        for rows in doms.values():
+            for r in rows:
+                nm = r.get("세부사업", "") or ""
+                if nm and pat.search(nm):
+                    a = agg.setdefault(nm, {"세부사업": nm, "예산_억": 0.0, "집행_억": 0.0})
+                    a["예산_억"] += r.get("예산_억", 0) or 0
+                    a["집행_억"] += r.get("집행_억", 0) or 0
+    out = []
+    for a in agg.values():
+        a["집행률"] = (a["집행_억"] / a["예산_억"] * 100) if a["예산_억"] else 0
+        out.append(a)
+    out.sort(key=lambda x: -x["예산_억"])
+    return out
+
+
 def _open_gu_generic(gu):
     if gu == "제주도(통합)":   # 제주 단일 막대 → 제주시 상세로
         gu = "제주시"
@@ -1093,15 +1123,28 @@ def _render_theme_generic(sido, theme):
     anomaly = [r for r in recs if r["집행률"] < 80 or r["집행률"] > 105]
 
     k = st.columns(4)
-    k[0].metric(f"테마 예산({len(recs)}개 시군구)", f"{tot_b:,.0f}억")
+    k[0].metric("테마 예산" if len(recs) == 1 else f"테마 예산({len(recs)}개 시군구)", f"{tot_b:,.0f}억")
     k[1].metric("평균 집행률", f"{rate:.0f}%")
     k[2].metric("매칭 세부사업", f"{n_proj:,}건")
     k[3].metric("⚠️ 집행 이상치", f"{len(anomaly)}곳")
 
-    st.markdown("**🏙️ 시군구별 테마 예산·집행 비교** "
-                "<span style='color:#9AA5B1;font-size:12px'>(막대 클릭 → 해당 시군구 상세)</span>",
-                unsafe_allow_html=True)
-    _field_chart(recs, "구", f"thg_{sido}_{theme}", click=_open_gu_generic, topn=15)
+    if len(recs) == 1:
+        # 단일 광역(제주·세종 등) = 시군구 비교 막대가 1개뿐 → 막대 화면 대신 '세부사업' breakdown(세부 화면)을
+        #  바로 표시(2026-06-11). 세부사업은 이미 최하위 상세 → 클릭 비활성(2026-06-12): 개별 사업 집행률(예: 5%)을
+        #  클릭하면 지역 전체(예: 93%)로 점프해 '레벨이 다른 두 수치'가 모순처럼 보이던 혼란 제거.
+        projs = _theme_projects(sido, kw)
+        st.markdown(f"**📋 {recs[0]['구'].replace('(통합)','')} 세부사업별 예산·집행** "
+                    "<span style='color:#9AA5B1;font-size:12px'>(이 지역의 세부사업 단위 집행 현황)</span>",
+                    unsafe_allow_html=True)
+        if projs:
+            _field_chart(projs, "세부사업", f"thgp_{sido}_{theme}", topn=15)   # click 없음 = 정적(점프 제거)
+        else:
+            _field_chart(recs, "구", f"thg_{sido}_{theme}", click=_open_gu_generic, topn=15)
+    else:
+        st.markdown("**🏙️ 시군구별 테마 예산·집행 비교** "
+                    "<span style='color:#9AA5B1;font-size:12px'>(막대 클릭 → 해당 시군구 상세)</span>",
+                    unsafe_allow_html=True)
+        _field_chart(recs, "구", f"thg_{sido}_{theme}", click=_open_gu_generic, topn=15)
 
     if anomaly:
         items = "".join(
@@ -1121,8 +1164,9 @@ def _render_theme_generic(sido, theme):
     st.caption("※ 세부사업명 키워드 매칭 집계(지방재정365 세출현황). "
                "특화 자산 = 해당 시도의 복제불가 현안. 의안·계약 교차는 자치구 상세에서 확인.")
     if sido in ("세종특별자치시", "제주특별자치도"):
-        st.caption("※ 세종·제주는 단일 광역(자치구 없음)이라 **2023 결산** 기준으로 표기 — "
-                   "타 시도(2025)와 연도가 달라 절대액 직접 비교는 주의. 제주는 道 통합 재정.")
+        st.caption("※ 세종·제주는 단일 광역(자치구 없음)이라 시·도 본청 재정으로 표기 "
+                   "(**2025 결산·순계**, 타 시도와 동일 기준). 제주는 행정시(제주시·서귀포시)가 "
+                   "자치권이 없어 道 통합 재정을 동일 적용.")
 
 
 def _open_gu_theme(gu):
@@ -1747,7 +1791,8 @@ def run(mode):
                        layout="wide", initial_sidebar_state="collapsed")
     # 뒤로가기(popstate) = 문서 리로드가 없어 Streamlit 스크립트가 재실행되지 않음 →
     # URL만 바뀌고 화면이 안 따라옴(L4→L3→L2 화면 그대로). popstate 시 명시적 reload로 재실행 강제.
-    # (2026-06-09 리그레션 복구: 1.58 '네이티브 처리' 위임은 실제 브라우저+nginx서 동작 안 함)
+    # 🔴 실측 검증(2026-06-11): 소프트 resync(pushState 후 숨은버튼 클릭)는 from_dict 내비(테마·버튼)의
+    #    내부 query_params stale 때문에 back 시 콘텐츠가 동결되고, 전진 시 URL이 desync됨 → reload 가 유일 정답.
     # __mjPop 가드 = 리스너 1회만 등록(중복 시 1회 back에 다중 reload = '두 번' 체감 원인) → 방지.
     components.html(
         "<script>var w=window.parent;if(!w.__mjPop){w.__mjPop=1;"
