@@ -328,22 +328,8 @@ def _crumb():
 
 
 # ---- 분야 신호등 ----
-def _domain_cards(cols_n):
-    ds = domain_status()["분야"]
-    cols = st.columns(cols_n)
-    for i, d in enumerate(ds):
-        with cols[i % cols_n]:
-            dot = SIG.get(d["신호"], "#9AA5B1")
-            st.markdown(
-                f"<div style='border:1px solid #E4E7EB;border-left:5px solid {dot};"
-                f"border-radius:8px;padding:10px 12px;margin-bottom:8px'>"
-                f"<b style='color:#2C5F6F'>● {d['분야']}</b><br>"
-                f"<span style='font-size:12px;color:#52606D'>"
-                f"공약 {d['공약수']} · 조례 {d['조례수']} · 의안 {d['의안수']}<br>"
-                f"예산 {d['예산_억']:,.0f}억 · 집행률 {d['집행률']:.0f}%</span></div>",
-                unsafe_allow_html=True)
-            st.button("이행 현황 보기 ▸", key=f"dom_{i}",
-                      on_click=go_dom, args=(d["분야"],))
+# (2026-06-14) 구버전 _domain_cards 제거 — 미사용 dead code이자 domain_status 데모 예산/집행률(stale) 표시.
+#  현행 = _domain_cards_g(실 districts_all l2 예산/집행 + 실 집행률 신호등).
 
 
 def _render_bills_section(row):
@@ -406,23 +392,35 @@ def _render_contract_crosscheck(sido, gu):
         unsafe_allow_html=True)
 
 
-def _render_budget_crosscheck(sido, gu, row):
-    """예산 교차검증: 편성 예산서(cpl) ↔ 집행 결산(ep) 2단계 생애주기 병치 + 이상치."""
-    pc = (_dstat_meta(sido, gu) or {}).get("예산교차") or {}
-    if not pc or not pc.get("총예산_억"):
+def _render_budget_crosscheck(sido, gu, dom):
+    """예산 교차검증: 편성 예산서(cpl) ↔ 집행 결산(ep) 2단계 생애주기 병치 + 이상치.
+    2026-06-14: domain_status 데모 메타(stale) 대신 실 2025 결산(rec["l2"])으로 분야·전체 집행률·분야분류 재산출."""
+    rec = district_rec(sido, gu)
+    l2 = rec["l2"] if rec else []
+    fld = next((x for x in l2 if x["분야"] == dom), None)
+    if not fld or not l2:
         return
     from data_provenance import badge
-    rt = row.get("집행률", 0) if row else 0
+    # 집행률 = 표시 금액 기준(예산_억/집행_억)으로 통일 → 메트릭·차트와 100% 일치(2026-06-14)
+    def _ar(x):
+        return (x.get("집행_억", 0) / x["예산_억"] * 100) if x.get("예산_억") else 0
+    rt = _ar(fld)
     flag = ("✅ 편성대로 집행" if 80 <= rt <= 105 else
             ("⚠️ 미집행 점검" if rt < 80 else "🔺 추경·이월"))
+    tot_b = sum(x.get("예산_억", 0) for x in l2)
+    tot_e = sum(x.get("집행_억", 0) for x in l2)
+    total_rate = (tot_e / tot_b * 100) if tot_b else 0
+    n_ok = sum(1 for x in l2 if 80 <= _ar(x) <= 105)
+    n_under = sum(1 for x in l2 if _ar(x) < 80)
+    n_over = sum(1 for x in l2 if _ar(x) > 105)
     st.markdown(
         f"<div style='background:#F5F3F8;border-left:4px solid #7A5BA6;border-radius:8px;"
         f"padding:8px 12px;margin:4px 0;font-size:12px'>"
         f"🔗 <b>예산 교차검증</b> {badge('A','A')} "
         f"<span style='color:#52606D'>편성 예산서 ↔ 집행 결산 (lofin365 세출현황 — 사전 편성 vs 사후 결산 2단계 병치)</span><br>"
         f"<span style='color:#52606D'>이 분야 집행률 <b>{rt:.0f}%</b> {flag} · "
-        f"자치구 전체 <b>{pc['전체집행률']:.0f}%</b> "
-        f"(정합 {pc['정합분야']} · 미집행 {pc['미집행분야']} · 추경·이월 {pc['추경이월분야']} 분야)</span></div>",
+        f"자치구 전체 <b>{total_rate:.0f}%</b> "
+        f"(정합 {n_ok} · 미집행 {n_under} · 추경·이월 {n_over} 분야)</span></div>",
         unsafe_allow_html=True)
 
 
@@ -472,14 +470,20 @@ def _domain_detail():
     st.button("◂ 분야 목록", on_click=clear_dom, key="back_dom")
     if not d:
         st.info("데이터 없음"); return
-    dot = SIG.get(d["신호"], "#9AA5B1")
+    # 예산 집행률·금액·신호등 = 아래 막대(차트)와 동일한 실 2025 세부사업 데이터(gbiz)로 산출.
+    #  (기존엔 domain_status 데모 집행률/신호를 써 차트와 불일치 — 강남 일반공공행정 24% vs 실제 82%, 2026-06-14 해소)
+    g_b = sum(r.get("예산_억", 0) for r in gbiz)
+    g_e = sum(r.get("집행_억", 0) for r in gbiz)
+    g_rate = (g_e / g_b * 100) if g_b else 0
+    dot = SIG.get(_sig(g_rate), "#9AA5B1")
     st.markdown(f"#### <span style='color:{dot}'>●</span> {d['분야']} — 정책 이행 현황",
                 unsafe_allow_html=True)
     k = st.columns(4)
     k[0].metric("관련 공약", f"{d['공약수']}건")
     k[1].metric("제정 조례", f"{d['조례수']}건")
     k[2].metric("발의 의안", f"{d['의안수']}건")
-    k[3].metric("예산 집행률", f"{d['집행률']:.0f}%")
+    k[3].metric("예산 집행률", f"{g_rate:.0f}%")
+    st.caption(f"💰 총예산 {g_b:,.0f}억 · 실제 집행 {g_e:,.0f}억 (2025 결산 세부사업 합산, 아래 막대와 동일 기준)")
 
     st.markdown("**입법 ① 공포 조례** <span style='color:#9AA5B1;font-size:12px'>(law.go.kr 최종 조례)</span>",
                 unsafe_allow_html=True)
@@ -516,13 +520,7 @@ def _render_nation():
         "🏛️ <b>대표 시연 — 4트랙 풀체인</b> "
         "<span style='font-size:13px;opacity:.9'>공약→입법(조례·의안)→예산→집행을 한 자치구에서 끝까지</span></div>",
         unsafe_allow_html=True)
-    sc = st.columns(2)
-    sc[0].button("📍 인천 서구 4트랙 보기 ▸", on_click=goto_district,
-                 args=("인천광역시", "서구"), key="show_seo", width="stretch")
-    sc[1].button("📍 서울 강남구 4트랙 보기 ▸", on_click=goto_district,
-                 args=("서울특별시", "강남구"), key="show_gn", width="stretch")
-    st.caption("🟢 인천 10개 자치구 전역 + 서울 강남구 = 4트랙 풀체인 완비. "
-               "지도에서 인천을 클릭한 뒤 자치구를 선택하면 모든 인천 자치구를 볼 수 있습니다.")
+    # (2026-06-13) 첫 화면 상단 바로가기 버튼 2개 + 안내 캡션 제거 — 팀장 요청.
     # Windy식 상단 레이어 메뉴 — 지도 색 기준 전환(전부 실데이터)
     metric = st.segmented_control(
         "지도 색 기준", list(NATION_LAYERS.keys()), default="인구",
@@ -613,6 +611,7 @@ def _render_sido():
             _render_sido_asset_panel(sido)
     st.button(f"🤖 AI 자동 발견 — {sido} 자치구 시민감시 지표(수의계약·집행률 등) ▸",
               on_click=go_ai, key=f"ai_{sido}", use_container_width=True)
+    _render_elected(sido)             # 광역단체장(시장·도지사) 2026 당선자 + 공약
     # 서울: 만족도 투표 = AI/테마 버튼 아래로(2026-06-09)
     if sido == "서울특별시":
         _render_vote(satisfaction())
@@ -1212,12 +1211,19 @@ def _render_theme_detail():
     st.caption(f"인천 10개 군·구의 '{fld}' 분야를 공약→입법→예산→집행 4트랙으로 교차 추적 "
                f"({sub}). 지역현안 특화 대시보드.")
 
+    # 예산/집행 = 실 2025 결산(districts_all l2), 조례·의안 = domain_status 트랙(입법 정본) 병합
+    #  (2026-06-14: 기존 domain_status 데모 예산/집행이 실데이터와 불일치 → 실 l2로 통일).
     recs = []
     for gu, slug in _INCHEON_GU:
         d = _domain_status_slug(slug)
-        f = next((x for x in d.get("분야", []) if x["분야"] == fld), None)
-        if f:
-            recs.append({**f, "구": gu, "slug": slug})
+        trk = next((x for x in d.get("분야", []) if x["분야"] == fld), None)   # 조례·의안 트랙
+        rg = district_rec("인천광역시", gu)
+        fb = next((x for x in (rg["l2"] if rg else []) if x["분야"] == fld), None)  # 실 예산/집행
+        if fb:
+            recs.append({"구": gu, "slug": slug,
+                         "예산_억": fb.get("예산_억", 0), "집행_억": fb.get("집행_억", 0),
+                         "집행률": fb.get("집행률", 0),
+                         "조례수": (trk or {}).get("조례수", 0), "의안수": (trk or {}).get("의안수", 0)})
     if not recs:
         st.info("데이터 준비 중입니다."); return
 
@@ -1464,7 +1470,7 @@ def _domain_cards_g(sido, gu, rec, cols_n=2):
     for i, x in enumerate(rec["l2"][:14]):
         rate = x.get("집행률", 0)
         row = ds.get(x["분야"])
-        dot = SIG.get(row["신호"] if row else _sig(rate), "#9AA5B1")
+        dot = SIG.get(_sig(rate), "#9AA5B1")   # 신호등 = 실 2025 집행률 기반(domain_status 데모 신호 stale, 2026-06-14)
         ord_txt = (f" · 조례 {row['조례수']}" + (f" · 의안 {row['의안수']}" if row.get("의안수") else "")) if row else ""
         with cols[i % cols_n]:
             st.markdown(
@@ -1486,7 +1492,11 @@ def _domain_detail_g(sido, gu):
     rec = district_rec(sido, gu)
     fld = next((x for x in (rec["l2"] if rec else []) if x["분야"] == dom), None)
     row = _dstat(sido, gu).get(dom)
-    dot = SIG.get(row["신호"] if row else (_sig(fld.get("집행률", 0)) if fld else "amber"), "#9AA5B1")
+    # 신호등 = 실 2025 집행률(fld) 기반(domain_status 데모 신호 stale, 2026-06-14)
+    # 집행률·신호등 = 표시 금액(예산_억/집행_억) 기준으로 계산 → 아래 세부사업 막대(동일 금액)와 100% 일치
+    #  (2026-06-14: 집행률 필드(정밀)와 표시 금액의 0.1억 양자화 차이로 메트릭↔차트 1%p 어긋나던 것 통일).
+    f_rate = (fld["집행_억"] / fld["예산_억"] * 100) if fld and fld.get("예산_억") else 0
+    dot = SIG.get(_sig(f_rate) if fld else "amber", "#9AA5B1")
     st.markdown(f"#### <span style='color:{dot}'>●</span> {dom} — 정책 이행 현황",
                 unsafe_allow_html=True)
     if fld:
@@ -1496,7 +1506,8 @@ def _domain_detail_g(sido, gu):
             k[1].metric("제정 조례", f"{row['조례수']}건")
             k[2].metric("발의 의안", f"{row['의안수']}건")
             k[3].metric("분야 예산", f"{fld['예산_억']:,.0f}억")
-            k[4].metric("집행률", f"{fld['집행률']:.0f}%")
+            k[4].metric("집행률", f"{f_rate:.0f}%")
+            st.caption(f"💰 총예산 {fld['예산_억']:,.0f}억 · 실제 집행 {fld['집행_억']:,.0f}억 (2025 결산)")
             srcs = row.get("공약출처") or []
             if row.get("공약수", 0) and srcs:
                 from data_provenance import badge
@@ -1512,7 +1523,7 @@ def _domain_detail_g(sido, gu):
             k[0].metric("제정 조례", f"{row['조례수']}건" if row else "—")
             k[1].metric("분야 예산", f"{fld['예산_억']:,.0f}억")
             k[2].metric("분야 집행", f"{fld['집행_억']:,.0f}억")
-            k[3].metric("집행률", f"{fld['집행률']:.0f}%")
+            k[3].metric("집행률", f"{f_rate:.0f}%")
 
     # 3개년 예산 추이 병기: 2024 결산 → 2025 결산 → 2026 편성
     b24 = _b2024_field(sido, gu, dom) if fld else None
@@ -1523,7 +1534,7 @@ def _domain_detail_g(sido, gu):
             parts.append(f"<b>2024 결산</b> {b24['예산_억']:,.0f}억"
                          f"<span style='color:#9AA5B1'> 집행 {b24['집행률']:.0f}%</span>")
         parts.append(f"<b>2025 결산</b> {fld['예산_억']:,.0f}억"
-                     f"<span style='color:#9AA5B1'> 집행 {fld['집행률']:.0f}%</span>")
+                     f"<span style='color:#9AA5B1'> 집행 {f_rate:.0f}%</span>")   # 금액 기준 통일
         if b26 is not None:
             parts.append(f"<b style='color:#1F5C7A'>2026 편성</b> {b26:,.0f}억")
         st.markdown(
@@ -1558,7 +1569,7 @@ def _domain_detail_g(sido, gu):
     st.markdown("**예산 → 집행 (세부사업)** <span style='color:#9AA5B1;font-size:12px'>막대 클릭 → 세부 상세</span>",
                 unsafe_allow_html=True)
     if full_slug:
-        _render_budget_crosscheck(sido, gu, row)
+        _render_budget_crosscheck(sido, gu, dom)
         _render_contract_crosscheck(sido, gu)
     _field_chart(biz, "세부사업", f"l3_{sido}_{_parent_gu(gu)}_{dom}", click=go_l4)
 
@@ -1576,28 +1587,50 @@ def _domain_detail_g(sido, gu):
             st.caption("※ 공약·의안 트랙은 강남구·인천 서구 시연 중(선관위 단체장 공약·CLIK 의안 수집 후 전국 확장).")
 
 
-def _neighborhood_search(sido, gu):
-    """우리 동네 예산 찾기 — 세부사업명에 지역명이 포함된 사업 검색.
-    읍면동 주소 필드는 지방재정 공개 최소단위(자치구) 한계로 부재 → 사업명 텍스트 매칭."""
-    key = f"{sido}|{_parent_gu(gu)}"
-    biz = [b for rows in district_l3().get(key, {}).values() for b in rows]
-    if not biz:
+@st.cache_data
+def _elected_data():
+    try:
+        return json.loads((POC / "elected_2026.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {"광역": {}, "기초": {}}
+
+
+_PARTY_COLOR = {"더불어민주당": "#152484", "국민의힘": "#E61E2B", "조국혁신당": "#06275E",
+                "개혁신당": "#FF7210", "진보당": "#D6001C", "무소속": "#7B8794"}
+
+
+def _render_elected(sido, gu=None):
+    """2026 지방선거(제9회·6/3) 당선자 + 핵심 공약 카드.
+    gu=None → 광역단체장(시·도지사) / gu 지정 → 기초단체장(구청장·시장·군수).
+    데이터 없으면 렌더 안 함(graceful)."""
+    data = _elected_data()
+    rec = (data.get("기초", {}).get(f"{sido}|{gu}") if gu
+           else data.get("광역", {}).get(sido))
+    if not rec or not rec.get("name"):
         return
-    with st.expander("🔍 우리 동네 예산 찾기 — 내 세금이 어디 쓰이는지"):
-        q = st.text_input("동·지역 이름 입력 (예: 검단, 청라, 가정)", key=f"nb_{key}").strip()
-        if q:
-            hits = [b for b in biz if q in (b.get("세부사업") or "")]
-            if hits:
-                tot = sum(b.get("예산_억", 0) for b in hits)
-                st.caption(f"'{q}' 관련 사업 {len(hits)}건 · 예산 합계 {tot:,.0f}억원")
-                for b in sorted(hits, key=lambda x: -x.get("예산_억", 0))[:12]:
-                    st.markdown(f"- {b['세부사업']} <span style='color:#9AA5B1;font-size:12px'>"
-                                f"(예산 {b.get('예산_억',0):,.0f}억 · 집행률 {b.get('집행률',0):.0f}%)</span>",
-                                unsafe_allow_html=True)
-            else:
-                st.caption(f"'{q}'가 사업명에 포함된 사업이 없습니다.")
-        st.caption("ⓘ 지방재정 공개 최소단위가 자치구라, 사업명에 지역명이 들어간 사업만 검색됩니다. "
-                   "읍면동 단위 예산·내 동네 알림 구독은 향후 확장 예정입니다.")
+    party = rec.get("정당", "")
+    col = _PARTY_COLOR.get(party, "#2C5F6F")
+    title = rec.get("직책") or ("시·도지사" if not gu else "구청장·시장·군수")
+    src = rec.get("출처", "중앙선거관리위원회")
+    items = ""
+    for p in (rec.get("공약") or [])[:5]:
+        fld = p.get("분야", "")
+        tag = (f"<span style='background:#EAF4FB;color:#2C5F6F;border-radius:8px;"
+               f"padding:1px 7px;font-size:11px;margin-right:6px'>{fld}</span>" if fld else "")
+        items += f"<li style='margin:3px 0'>{tag}{p.get('제목','')}</li>"
+    pledge_html = (f"<ul style='margin:6px 0 0;padding-left:18px;color:#3A4754;font-size:13.5px'>{items}</ul>"
+                   if items else "<div style='color:#9AA5B1;font-size:13px;margin-top:4px'>등록 공약 준비 중</div>")
+    st.markdown(
+        f"<div style='background:#F8FAFC;border:1px solid #E1E8EE;"
+        f"border-radius:10px;padding:13px 16px;margin:8px 0'>"
+        f"<div style='font-size:13px;color:#7B8794'>🏛️ {title} 당선자 "
+        f"<span style='color:#9AA5B1'>· 제9회 지방선거(2026.6.3)</span></div>"
+        f"<div style='font-size:18px;font-weight:800;color:#1F4654;margin:2px 0 1px'>{rec['name']} "
+        f"<span style='font-size:13px;font-weight:700;color:{col}'>{party}</span></div>"
+        f"<div style='font-size:12.5px;color:#52606D;font-weight:700;margin-top:7px'>📋 핵심 공약</div>"
+        f"{pledge_html}"
+        f"<div style='font-size:11px;color:#9AA5B1;margin-top:7px'>출처: {src}</div>"
+        f"</div>", unsafe_allow_html=True)
 
 
 def _render_gu(mode):
@@ -1647,9 +1680,12 @@ def _render_gu(mode):
             st.metric("사업수", f"{l1['사업수']:,}")
         if disp != gu:
             st.caption(f"※ 일반구({gu})=소속 시({disp}) 기준")
-    fields = domain_status()["분야"] if is_gn else rec["l2"]
+    # 분야(L2) 막대 = 실 2025 결산(rec["l2"]) 통일. 강남도 domain_status 데모(stale 예산/집행) 대신 실데이터 사용
+    #  (2026-06-14: domain_status는 입법 트랙(공약·조례·의안)만 정본, 예산/집행은 districts_all/district_l3 실데이터).
+    fields = rec["l2"]
     _field_chart(fields, "분야", f"l2_{sido}_{disp}", click=go_dom)
-    _neighborhood_search(sido, gu)
+    # (2026-06-13) '🔍 우리 동네 예산 찾기' expander 제거 — 팀장 요청.
+    _render_elected(sido, gu)         # 기초단체장(구청장·시장·군수) 2026 당선자 + 공약
 
 
 @st.cache_data
