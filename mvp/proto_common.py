@@ -1856,8 +1856,14 @@ def run(mode):
     #  이유: Streamlit 은 매 rerun 마다 components iframe 을 '재생성' → 최초 iframe 이 top 에 add 한
     #  popstate 리스너는 그 iframe 파괴와 함께 '죽은 참조'(realm 소멸)가 되어 발화 안 함. 가드가 재등록을
     #  막아 영구 무동작. onpopstate 를 살아있는 현재 iframe realm 함수로 매번 덮어쓰면 항상 유효.
+    # 🌐 대상 윈도우 = '동일 출처 최상위'(window.parent 가 아니라 부모 체인을 거슬러 올라간 끝).
+    #  Streamlit Cloud 는 앱을 `app/~/+/` iframe 으로 한 겹 더 감싸므로, window.parent 는 '안쪽 앱
+    #  iframe'을 가리켜 핸들러가 거기에만 걸림 → 브라우저 뒤로가기(=바깥 top)와 어긋나 무동작. 부모 체인을
+    #  동일 출처인 동안 끝까지 올라가면 자체호스팅(래퍼 없음)은 top 에서 멈추고 Cloud 는 바깥 윈도우까지
+    #  도달 → 양쪽 모두 브라우저 뒤로가기가 핸들러에 잡힘. (cross-origin 만나면 접근 가능한 최상위에서 멈춤.)
     components.html(
         "<script>var w=window.parent;"
+        "try{while(w.parent&&w.parent!==w){var _pp=w.parent.location.pathname;w=w.parent;}}catch(e){}"
         f"w.__mjPar={json.dumps(_par_url)};"
         f"var cur={json.dumps(_cur_url)};"
         # 부모 있는 화면(=전국 외)에서만 trap: 현재 URL 이 바뀔 때 1회 올바른 URL 로 trap push(lag 보정 겸용).
