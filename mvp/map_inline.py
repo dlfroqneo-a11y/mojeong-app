@@ -142,10 +142,13 @@ _STYLE_BASE = """
 .mjmap .mk-lbl { font-size:30px; font-weight:700; fill:#1F4654; cursor:pointer; }
 /* 행정동 경계 비클릭 이미지 */
 .mjemd { background:#F4F8FB; border:1px solid #E1E8EE; border-radius:10px; padding:6px; text-align:center; }
-.mjemd svg { width:100%; height:auto; max-height:300px; display:inline-block; }
+.mjemd svg { width:100%; height:auto; max-height:360px; display:inline-block; }
 .mjemd path { fill:#FFFFFF; stroke:#9AA5B1; stroke-width:1.1; stroke-linejoin:round; }
+/* 일반구 레이어(MJ_GU_LAYER=1) — 굵은 경계선 + 큰 라벨 */
+.mjemd path.guline { fill:none; stroke:#2C5F6F; stroke-width:2.5; stroke-linejoin:round; }
 .mjemd text { font-weight:700; fill:#3A4754; pointer-events:none;
   text-anchor:middle; paint-order:stroke; stroke:#FFFFFF; stroke-width:4px; }
+.mjemd text.gulbl { font-weight:800; fill:#1F4654; stroke:#FFFFFF; stroke-width:5px; }
 </style>
 """
 
@@ -428,6 +431,49 @@ def build_sigungu(sido, selected=None, stats=None, fills=None, sat=None,
     return _STYLE_BASE + dyn + svg
 
 
+def _declutter_labels(labels, fsz, W, H):
+    """행정동 라벨이 겹치지 않게 분산(글씨 크기 유지). centroid 우선, 겹치면 나선형으로
+    가까운 빈 자리 탐색. 반환 = [(name, x, y)] (text-anchor=middle 기준 중심좌표)."""
+    cw = fsz * 0.96          # 한글 글자 폭(≈정사각)
+    lh = fsz * 1.02          # 라벨 높이
+    placed = []              # (x1,y1,x2,y2)
+    out = []
+
+    def box(x, y, w):
+        return (x - w / 2, y - lh / 2, x + w / 2, y + lh / 2)
+
+    def hit(b):
+        for q in placed:
+            if b[0] < q[2] and b[2] > q[0] and b[1] < q[3] and b[3] > q[1]:
+                return True
+        return False
+
+    step = fsz * 0.62
+    dirs = [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, -1), (1, -1), (-1, 1), (1, 1)]
+    # 위→아래(같으면 좌→우) 순서로 배치: 위쪽 라벨이 먼저 자리 차지(읽기 자연스럽게)
+    for lb in sorted(labels, key=lambda l: (l["cy"], l["cx"])):
+        nm = lb["name"]
+        w = max(1, len(nm)) * cw
+        cx, cy = lb["cx"], lb["cy"]
+        cand = [(cx, cy)]
+        for r in range(1, 9):
+            for dx, dy in dirs:
+                cand.append((cx + dx * step * r, cy + dy * step * r))
+        chosen = None
+        for x, y in cand:
+            b = box(x, y, w)
+            # 맵 밖으로 너무 나가면 스킵(여백 약간 허용)
+            if b[0] < -w or b[2] > W + w or b[1] < -lh or b[3] > H + lh:
+                continue
+            if not hit(b):
+                chosen = (x, y, b); break
+        if chosen is None:
+            chosen = (cx, cy, box(cx, cy, w))   # 자리 못 찾으면 원위치
+        placed.append(chosen[2])
+        out.append((nm, round(chosen[0], 1), round(chosen[1], 1)))
+    return out
+
+
 def build_emd_image(sido, gu, show_labels=True):
     """자치구 L2 화면용 — 행정동(읍면동) 경계 = 클릭 불가 지도 이미지. 없으면 None."""
     global _EMD_CACHE
@@ -450,8 +496,19 @@ def build_emd_image(sido, gu, show_labels=True):
     for p in d["paths"]:
         body.append(f'<path d="{p["d"]}"/>')
     if show_labels:
-        for lb in d.get("labels", []):
-            body.append(f'<text x="{lb["cx"]}" y="{lb["cy"]}" font-size="{fsz}">{lb["name"]}</text>')
+        # 라벨 충돌 회피(declutter): 밀집 도심부 행정동 라벨이 겹치지 않게 인근 빈 공간으로 분산.
+        #  글씨 크기는 유지(축소 안 함). centroid 우선 → 겹치면 나선형으로 가까운 빈 자리 탐색.
+        for nm, lx, ly in _declutter_labels(d.get("labels", []), fsz, W, H):
+            body.append(f'<text x="{lx}" y="{ly}" font-size="{fsz}">{nm}</text>')
+    # 일반구 레이어 토글: MJ_GU_LAYER=1 이면 일반구 경계(굵은 선)+라벨(큰 글씨)을 행정동 위에 오버레이.
+    # 미설정(기본)=행정동만(B안). gu_paths/gu_labels 는 일반구 보유 시(12개)에만 존재.
+    if os.environ.get("MJ_GU_LAYER") == "1":
+        for gp in d.get("gu_paths", []):
+            body.append(f'<path class="guline" d="{gp["d"]}"/>')
+        gfsz = round(fsz * 1.55, 1)   # 일반구 라벨 = 행정동보다 크게
+        for gl in d.get("gu_labels", []):
+            body.append(f'<text class="gulbl" x="{gl["cx"]}" y="{gl["cy"]}" '
+                        f'font-size="{gfsz}">{gl["gu"]}</text>')
     svg = (f'<div class="mjemd"><svg viewBox="0 0 {W} {H}" preserveAspectRatio="xMidYMid meet">'
            f'{"".join(body)}</svg></div>')
     return _STYLE_BASE + svg

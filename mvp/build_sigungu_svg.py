@@ -186,11 +186,18 @@ def _feat_bbox(f):
     return min(xs), max(xs), min(ys), max(ys)
 
 
+_INTRA_MAINLAND_FRAC = 0.15   # main ring 면적의 이 비율 이상 = '제2 본토'(섬 아님) → 당기지 않음.
+#   안산시단원구처럼 본토가 2개 폴리곤(시화호로 분단)일 때 동쪽 본토를 섬으로 오인해 서쪽으로
+#   당겨 인접 시흥시와 겹치는 버그 방지(2026-06-14). 진짜 부속섬(대부도 등)은 main의 <4%라 영향 없음.
+
+
 def _intra_compact(f, gap):
-    """A. feature 내부: 본체(최대 ring) bbox에서 멀리 떨어진 부속섬 ring을 당김."""
+    """A. feature 내부: 본체(최대 ring) bbox에서 멀리 떨어진 부속섬 ring을 당김.
+    단, main 면적의 _INTRA_MAINLAND_FRAC 이상인 ring = 분단된 본토로 보고 당기지 않음."""
     rings = [(r, _ring_area(r), _centroid(r)) for r in _iter_rings(f["geometry"])]
     if len(rings) < 2:
         return
+    main_area = max(r[1] for r in rings)
     main = max(rings, key=lambda r: r[1])[0]
     mx = [p[0] for p in main]; my = [p[1] for p in main]
     Lx0, Lx1, Ly0, Ly1 = min(mx), max(mx), min(my), max(my)
@@ -198,6 +205,8 @@ def _intra_compact(f, gap):
     for ring, area, (ccx, ccy) in rings:
         if ring is main:
             continue
+        if main_area > 0 and area >= main_area * _INTRA_MAINLAND_FRAC:
+            continue                           # 분단된 본토(섬 아님) → 위치 유지
         dx = dy = 0.0
         if ccx < Lx0 - bx:   dx = (Lx0 - bx - ccx) * (1 - gap)
         elif ccx > Lx1 + bx: dx = (Lx1 + bx - ccx) * (1 - gap)

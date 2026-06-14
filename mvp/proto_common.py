@@ -1830,9 +1830,49 @@ def run(mode):
     # 🔴 실측 검증(2026-06-11): 소프트 resync(pushState 후 숨은버튼 클릭)는 from_dict 내비(테마·버튼)의
     #    내부 query_params stale 때문에 back 시 콘텐츠가 동결되고, 전진 시 URL이 desync됨 → reload 가 유일 정답.
     # __mjPop 가드 = 리스너 1회만 등록(중복 시 1회 back에 다중 reload = '두 번' 체감 원인) → 방지.
+    # 🔧 논리적 계층 뒤로가기 — trap 엔트리 방식(2026-06-14 재설계). 배경:
+    #  ① st.query_params.from_dict 는 URL 을 1 rerun 늦게 push → 브라우저 히스토리에 '직전 상태' URL 이 박힘.
+    #  ② 단순 popstate→location.href(부모) 는, 한 번 location.href(풀로드) 후 다음 back 이 '문서 경계를 넘는'
+    #     stale 엔트리(예: theme=transport)로 가며 popstate 가 발화하지 않아 핸들러가 개입 못함 → 꼬임 잔존.
+    #  해결: 매 렌더마다 '올바른 현재 URL' 로 trap 엔트리를 pushState. back 은 항상 '같은 문서' trap 을 pop →
+    #        popstate 가 확실히 발화 → location.href(논리적 부모) 풀로드 → 부모 페이지가 다시 trap 무장.
+    #        깊이 무관(l4→dom→gu→sido→전국, theme/ai→sido). pushState(올바른 URL) 가 lag 까지 보정.
+    _qp = st.query_params
+    if _qp.get("l4"):
+        _par = {k: _qp[k] for k in ("sido", "gu", "dom") if _qp.get(k)}
+    elif _qp.get("dom"):
+        _par = {k: _qp[k] for k in ("sido", "gu") if _qp.get(k)}
+    elif _qp.get("gu") or _qp.get("theme") or _qp.get("ai"):
+        _par = {k: _qp[k] for k in ("sido",) if _qp.get(k)}
+    elif _qp.get("sido"):
+        _par = {}                       # 시도 → 전국
+    else:
+        _par = None                     # 전국 = 부모 없음(브라우저 기본 뒤로가기)
+    _par_url = (None if _par is None
+                else ("?" + "&".join(f"{k}={quote(v)}" for k, v in _par.items()) if _par else ""))
+    _cur = {k: _qp[k] for k in ("sido", "gu", "dom", "l4", "theme", "ai") if _qp.get(k)}
+    _cur_url = ("?" + "&".join(f"{k}={quote(v)}" for k, v in _cur.items())) if _cur else ""
+    # 🔑 리스너는 addEventListener+가드(__mjListen) 가 아니라 w.onpopstate 매-렌더 재할당으로 등록.
+    #  이유: Streamlit 은 매 rerun 마다 components iframe 을 '재생성' → 최초 iframe 이 top 에 add 한
+    #  popstate 리스너는 그 iframe 파괴와 함께 '죽은 참조'(realm 소멸)가 되어 발화 안 함. 가드가 재등록을
+    #  막아 영구 무동작. onpopstate 를 살아있는 현재 iframe realm 함수로 매번 덮어쓰면 항상 유효.
     components.html(
-        "<script>var w=window.parent;if(!w.__mjPop){w.__mjPop=1;"
-        "w.addEventListener('popstate',function(){w.location.reload();});}</script>",
+        "<script>var w=window.parent;"
+        f"w.__mjPar={json.dumps(_par_url)};"
+        f"var cur={json.dumps(_cur_url)};"
+        # 부모 있는 화면(=전국 외)에서만 trap: 현재 URL 이 바뀔 때 1회 올바른 URL 로 trap push(lag 보정 겸용).
+        "if(w.__mjPar!==null&&w.__mjPar!==undefined){"
+        "if(w.__mjArmed!==cur){w.__mjArmed=cur;try{w.history.pushState({mjt:1},'',cur);}catch(e){}}}"
+        "w.onpopstate=function(){"
+        "var pr=w.__mjPar;"
+        "if(pr===null||pr===undefined){return;}"           # 전국 = 브라우저 자연 동작
+        # ⚠️ 네비게이션은 반드시 TOP 윈도우 realm 에서 실행. iframe realm 의 setTimeout 콜백은 popstate→
+        #  Streamlit 재실행이 components iframe 을 파괴하면 죽은 realm 이 되어 location.href 가 무시됨(동기부는
+        #  실행되나 지연부는 소멸). → w.setTimeout(문자열) 로 top 전역 스코프 평가 = iframe 파괴와 무관 생존.
+        #  (동기 nav 는 popstate 디스패치 중이라 브라우저가 무시하므로 지연 필수.)
+        "var t=pr||w.location.pathname;"
+        "w.setTimeout('window.location.href='+JSON.stringify(t),80);"
+        "};</script>",
         height=0, width=0,
     )
     # 8501과 동일한 본문 폭·여백 + 입체 토글 스위치
