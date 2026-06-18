@@ -19,7 +19,7 @@ from urllib.parse import quote
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 _SVG = os.path.join(_DIR, "geo", "sido_svg.json")
-_SVG_SIGUNGU = os.path.join(_DIR, "geo", "sigungu_svg.json")
+_SVG_SIGUNGU = os.environ.get("MOJEONG_SIGUNGU_SVG") or os.path.join(_DIR, "geo", "sigungu_svg.json")
 _EMD = os.path.join(_DIR, "geo", "emd_svg.json")
 _OFFSETS = os.path.join(_DIR, "geo", "island_offsets.json")
 _OFFSETS_CACHE = None

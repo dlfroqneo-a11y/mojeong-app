@@ -8,9 +8,9 @@ import json
 import os
 from functools import lru_cache
 
-# poc_output 절대 경로 (mvp/ 기준 상위 폴더)
+# poc_output 절대 경로 (mvp/ 기준 상위 폴더). MOJEONG_POC env로 오버라이드 가능(8505 미래버전).
 _BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-POC_DIR = os.path.join(_BASE, "poc_output")
+POC_DIR = os.environ.get("MOJEONG_POC") or os.path.join(_BASE, "poc_output")
 
 
 def _load(name):

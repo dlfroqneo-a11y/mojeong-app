@@ -22,7 +22,10 @@ import streamlit.components.v1 as components
 import data_loader as dl
 import map_inline as mi
 
-POC = Path(__file__).resolve().parent.parent / "poc_output"
+# 데이터 디렉토리/변형 = env 오버라이드(8505 '7.1 개편 미리보기' 버전용).
+# 미설정 시 라이브(8501/8502)와 100% 동일하게 동작.
+VARIANT = os.environ.get("MOJEONG_VARIANT", "")   # "" = 라이브 / "2026q3" = 2026.7.1 행정개편 적용 미리보기
+POC = Path(os.environ.get("MOJEONG_POC") or (Path(__file__).resolve().parent.parent / "poc_output"))
 POP_PATH = Path(__file__).resolve().parent / "geo" / "population_sido.json"
 SAT_PATH = POC / "satisfaction_seoul.json"
 SIG = {"green": "#2E9E5B", "amber": "#E8743B", "red": "#D64545"}
@@ -593,6 +596,16 @@ def _render_sido():
                     unsafe_allow_html=True)
         st.caption(f"🗺️ {sido} — 구·군에 마우스를 올리면 예산·집행률, 클릭하면 이동. "
                    "(만족도 투표는 서울 시연 중 → 전국 확장 예정)")
+        if sido == "인천광역시":
+            if VARIANT == "2026q3":
+                st.info("🆕 **2026.7.1 행정구역 개편 적용 (미리보기 버전)** — 인천이 8구2군 → 9구2군으로 바뀝니다. "
+                        "동구·중구 → **제물포구·영종구**, 서구 → **서해구** + **검단구** 신설. "
+                        "※ 지도 경계는 잠정(정부 신규 경계데이터 반영 전)이며, **신설 구의 예산·집행 데이터는 "
+                        "7월 1일 정부 예산 재편성 이후 표시**됩니다. 지금은 당선자·구조 미리보기입니다.")
+            else:
+                st.info("📢 **2026년 7월 1일 인천 행정구역 개편 예정** — 동구·중구가 **제물포구·영종구**로, "
+                        "서구가 **서해구**로 바뀌고 **검단구**가 신설되어 **8구2군 → 9구2군**이 됩니다. "
+                        "7월 1일 정부 데이터 전환에 맞춰 지도·예산이 업데이트될 예정입니다.")
 
     # ── 공통(전 시도, 지도 종류 무관): 특화 자산 테마 + AI 자동 발견 버튼 ──
     themes = _theme_list(sido)
@@ -793,6 +806,23 @@ FULL_CHAIN = {
     "인천광역시|강화군": "incheon_ganghwa",
     "인천광역시|옹진군": "incheon_ongjin",
 }
+
+if VARIANT == "2026q3":
+    # 2026.7.1 인천 개편: 동구→제물포구 / 중구→영종구 / 서구→서해구 + 검단구 신설.
+    # 풀체인 자산(조례·의안·예산)은 승계 구의 기존 slug 재사용(잠정, 정부 데이터 전환 시 갱신).
+    FULL_CHAIN = {
+        "서울특별시|강남구": "gangnam",
+        "인천광역시|제물포구": "incheon_dong",      # 동구 자산 승계
+        "인천광역시|영종구": "incheon_jung",         # 중구 자산 승계
+        "인천광역시|미추홀구": "incheon_michuhol",
+        "인천광역시|연수구": "incheon_yeonsu",
+        "인천광역시|남동구": "incheon_namdong",
+        "인천광역시|부평구": "incheon_bupyeong",
+        "인천광역시|계양구": "incheon_gyeyang",
+        "인천광역시|서해구": "incheon_seo",           # 서구 자산 승계
+        "인천광역시|강화군": "incheon_ganghwa",
+        "인천광역시|옹진군": "incheon_ongjin",
+    }
 
 
 @st.cache_resource   # 순수 JSON 로더(slug별 공유)
