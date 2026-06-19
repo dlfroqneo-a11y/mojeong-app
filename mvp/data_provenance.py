@@ -51,6 +51,19 @@ TRACK_SOURCES = [
      "갱신": "수시(계약체결 시)", "교차검증": "병치(차별점·집행 실체)"},
 ]
 
+# 지도(행정구역 경계) 데이터 출처 — A/B 등급
+MAP_SOURCES = [
+    {"항목": "시군구 경계", "등급": "B",
+     "출처": "통계청 SGIS / 행정안전부 도로명주소 행정구역 경계(메르카토르 투영·자치구 단위 정규화)",
+     "갱신": "행정개편 시"},
+    {"항목": "행정동(읍·면·동) 경계", "등급": "B",
+     "출처": "행정안전부 도로명주소 행정동경계(월 1회 갱신) — admdongkor 정리본(ver2026.04 기준)",
+     "갱신": "월 1회"},
+    {"항목": "인천 2026.7.1 개편 지도", "등급": "B",
+     "출처": "「인천광역시 제물포구·영종구 및 검단구 설치 등에 관한 법률」(2024-01-30 공포) 근거 + 도로명주소 행정동경계로 영종/제물포/서해/검단 재구성",
+     "갱신": "7.1 정부 정형 데이터 등재 시 교차검증 후 교체"},
+]
+
 # 매칭(연결) 정직 고지 — Gemini 리스크 #1(유니크키 부재) 방어
 MATCH_DISCLOSURE = (
     "트랙 간 연결(공약↔조례↔예산↔의안)은 한국 공공데이터에 공통 식별키가 없어, "
@@ -62,3 +75,39 @@ MATCH_DISCLOSURE = (
 TIMELAG_NOTICE = (
     "예산·집행은 확정 결산(분기) 기준, 조례·의안은 수시 갱신이라 트랙 간 시점이 다를 수 있습니다."
 )
+
+# 지역 상징마크(CI)/휘장 표시 — 명목적 사용 면책 고지
+SYMBOL_DISCLOSURE = (
+    "지도에서 각 지역에 마우스를 올리면 좌측 지역명 위에 해당 지역의 상징마크(CI)·휘장이 함께 표시됩니다. "
+    "이는 각 지역을 식별·안내하기 위한 목적(명목적 사용)으로만 사용한 것이며, "
+    "각 상징물의 저작권·상표권은 해당 지방자치단체에 있습니다. "
+    "본 서비스는 해당 기관과 무관하며, 표시가 그 기관의 후원·공식 인증·제휴를 의미하지 않습니다. "
+    "정식 서비스 전환 시에는 각 자치단체의 사용 승인을 받은 뒤 게재할 예정입니다."
+)
+
+
+def symbol_sources():
+    """geo/symbols.json 에서 (실제 이미지 파일이 존재하는) 상징마크 출처 목록을 반환.
+    반환 = [{region, source, license, url}] (표시명 기준 중복 제거)."""
+    import json as _json
+    import os as _os
+    base = _os.path.dirname(_os.path.abspath(__file__))
+    reg_path = _os.path.join(base, "geo", "symbols.json")
+    sym_dir = _os.path.join(base, "geo", "symbols")
+    try:
+        with open(reg_path, encoding="utf-8") as f:
+            reg = _json.load(f)
+    except Exception:
+        return []
+    out, seen = [], set()
+    for key, meta in (reg.get("symbols") or {}).items():
+        fn = (meta or {}).get("file")
+        if not fn or not _os.path.exists(_os.path.join(sym_dir, fn)):
+            continue                       # 이미지 미확보(레지스트리만 존재) → 출처 표시 안 함
+        src = meta.get("source", "")
+        if src in seen:
+            continue
+        seen.add(src)
+        out.append({"region": key, "source": src,
+                    "license": meta.get("license", "미상"), "url": meta.get("url", "")})
+    return out

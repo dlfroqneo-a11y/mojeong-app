@@ -24,7 +24,7 @@ import map_inline as mi
 
 # 데이터 디렉토리/변형 = env 오버라이드(8505 '7.1 개편 미리보기' 버전용).
 # 미설정 시 라이브(8501/8502)와 100% 동일하게 동작.
-VARIANT = os.environ.get("MOJEONG_VARIANT", "")   # "" = 라이브 / "2026q3" = 2026.7.1 행정개편 적용 미리보기
+VARIANT = os.environ.get("MOJEONG_VARIANT", "2026q3")   # "" = 라이브 / "2026q3" = 2026.7.1 행정개편 적용 미리보기
 POC = Path(os.environ.get("MOJEONG_POC") or (Path(__file__).resolve().parent.parent / "poc_output"))
 POP_PATH = Path(__file__).resolve().parent / "geo" / "population_sido.json"
 SAT_PATH = POC / "satisfaction_seoul.json"
@@ -201,15 +201,66 @@ def _parent_gu(name):
 
 @st.cache_data
 def _sigungu_names(sido):
-    sg = json.loads((Path(__file__).resolve().parent / "geo" / "sigungu_svg.json")
-                    .read_text(encoding="utf-8"))
+    # 지도 렌더(map_inline)와 동일 소스를 봐야 호버 통계 이름이 일치(8505 미래버전 = 2026q3 지도)
+    svg_path = os.environ.get("MOJEONG_SIGUNGU_SVG") or str(
+        Path(__file__).resolve().parent / "geo" / "sigungu_svg.json")
+    sg = json.loads(Path(svg_path).read_text(encoding="utf-8"))
     return [p["name"] for p in sg.get(sido, {}).get("paths", [])]
 
 
+# 2026q3 미리보기: 인천 신설구 → 예산 데이터 상속할 옛 구(정부 신설구 예산 = 7.1 이후)
+#  영종구=옛 중구 / 제물포구=옛 동구 / 서해구·검단구=옛 서구 (추정 안분 없이 모태 구 실데이터 표시)
+_NEW_GU_2026Q3 = {"영종구": "중구", "제물포구": "동구", "서해구": "서구", "검단구": "서구"}
+
+
+def _old_gu(sido, name):
+    """2026q3 에서 인천 신설구 이름 → 예산을 상속할 옛 구 이름(그 외엔 그대로)."""
+    if VARIANT == "2026q3" and sido == "인천광역시":
+        return _NEW_GU_2026Q3.get(name, name)
+    return name
+
+
+@st.cache_data
+def _official_overrides():
+    """공공데이터(API) 미반영 항목을 공식 문서(의회 의결·조례 등)로 채운 오버라이드.
+    API 갱신 시 교차검증 후 교체 — '공식자료 선반영 → API 교차검증' 데이터 신뢰도 모델."""
+    p = POC / "official_overrides.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def _official_override(sido, gu):
+    """해당 (시도, 구)의 공식자료 오버라이드(없으면 None). _로 시작하는 메타키는 스키마용."""
+    return _official_overrides().get(f"{sido}|{gu}")
+
+
+def _render_official_gu(sido, gu, ov):
+    """신설구 등 API 미반영 화면 — '예산은 서류 없이 안 움직인다' 원칙:
+    ①법적 근거(공개) → ②분야별 예산서 공개 상태 → ③잠정치(출처·한계) 순으로 투명 표시."""
+    l1 = ov.get("l1", {})
+    st.markdown(f"#### 🏛️ {sido} {gu} "
+                f"<span style='font-size:13px;color:#9AA5B1'>— 신설 구({ov.get('_status','잠정')})</span>",
+                unsafe_allow_html=True)
+    st.warning(f"📢 **2026년 7월 1일 인천 행정구역 개편으로 신설** — {gu}")
+    if ov.get("_legal_basis"):
+        st.markdown(f"**✅ 분리 법적 근거**: {ov['_legal_basis']}")
+    if ov.get("_official_budget_doc"):
+        st.markdown(f"**⏳ 분야별 예산 데이터**: {ov['_official_budget_doc']}")
+    if "총예산_억" in l1:
+        st.metric(f"이관 예산({ov.get('_status','잠정')})", f"{l1['총예산_억']:,.0f}억")
+        st.info(
+            f"ℹ️ 위 금액은 **{ov.get('_source_type','잠정치')}**입니다 — 출처: {ov.get('_source','')}.\n\n"
+            f"정부 공공데이터(API)에 정식 등재 전이며, **{ov.get('_replace_when','')}** 시 "
+            f"교차검증 후 정식 데이터로 자동 갱신됩니다.")
+    if ov.get("_note"):
+        st.caption("ⓘ " + ov["_note"])
+    _render_elected(sido, gu)
+
+
 def district_rec(sido, geojson_name):
-    """지도 시군구명 → 예산 레코드(일반구는 부모 시로 매핑)."""
+    """지도 시군구명 → 예산 레코드(일반구는 부모 시로 매핑; 2026q3 신설구는 옛 구로)."""
+    name = _old_gu(sido, geojson_name)
     ad = all_districts().get(sido, {})
-    return ad.get(_parent_gu(geojson_name)) or ad.get(geojson_name)
+    return ad.get(_parent_gu(name)) or ad.get(name)
 
 
 @st.cache_data
@@ -1515,7 +1566,7 @@ def _domain_cards_g(sido, gu, rec, cols_n=2):
 
 def _domain_detail_g(sido, gu):
     dom = _dom()
-    biz = district_l3().get(f"{sido}|{_parent_gu(gu)}", {}).get(dom, [])
+    biz = district_l3().get(f"{sido}|{_parent_gu(_old_gu(sido, gu))}", {}).get(dom, [])
     if _l4():
         _l4_detail(biz, dom); return
     st.button("◂ 분야 목록", on_click=clear_dom, key="back_dom")
@@ -1669,6 +1720,11 @@ def _render_gu(mode):
     top[0].button("◂ 전국", on_click=go_home, key="g_nation")
     top[1].button(f"◂ {sido}", on_click=go_sido, args=(sido,), key="g_sido")
 
+    # 공식자료 오버라이드(API 미반영 → 공식 문서로 선반영). 있으면 전용 화면.
+    ov = _official_override(sido, gu) if VARIANT == "2026q3" else None
+    if ov:
+        _render_official_gu(sido, gu, ov); return
+
     rec = district_rec(sido, gu)
     if not rec:
         st.info(f"{gu}의 예산 데이터는 확장 예정입니다."); return
@@ -1685,6 +1741,15 @@ def _render_gu(mode):
         f"<span style='font-size:13px;color:#9AA5B1'>— 분야별 {title}</span>",
         unsafe_allow_html=True)
     st.caption(f"📊 데이터 공개 등급 {grade} · {gdesc}")
+
+    # 2026q3 미리보기: 신설구는 옛 구 예산을 상속 표시 + 개편/준비중 안내
+    if VARIANT == "2026q3" and sido == "인천광역시" and gu in _NEW_GU_2026Q3:
+        _old = _NEW_GU_2026Q3[gu]
+        st.warning(
+            f"📢 **2026년 7월 1일 인천 행정구역 개편** — **{gu}**는 신설 구입니다. "
+            f"독립 예산·집행 데이터가 정부 공공데이터에 공개되면 **즉각 업데이트 예정**입니다.\n\n"
+            f"현재는 개편 전 **옛 {_old}**의 실제 예산·집행 자료를 표시합니다 "
+            f"(모정의 잠정·예측 수치가 아니라 정부 공식 데이터입니다).")
 
     if _dom():
         if is_gn:
@@ -1959,8 +2024,9 @@ def _render_footer():
 
 def _render_provenance_panel():
     """4트랙 데이터 출처·신뢰등급(A/B/C) + 교차검증 유형 투명성 레이어."""
-    from data_provenance import (TRACK_SOURCES, GRADE, badge,
-                                  MATCH_DISCLOSURE, TIMELAG_NOTICE)
+    from data_provenance import (TRACK_SOURCES, MAP_SOURCES, GRADE, badge,
+                                  MATCH_DISCLOSURE, TIMELAG_NOTICE,
+                                  SYMBOL_DISCLOSURE, symbol_sources)
     with st.expander("🔍 데이터 출처·신뢰등급 (다중소스 교차검증)", expanded=False):
         # 등급 범례
         legend = " &nbsp; ".join(
@@ -1987,3 +2053,35 @@ def _render_provenance_panel():
             f"<b>🔗 트랙 연결 방식</b> &nbsp;{MATCH_DISCLOSURE}<br>"
             f"<b>⏱ 시점 안내</b> &nbsp;{TIMELAG_NOTICE}</div>",
             unsafe_allow_html=True)
+        # 지도(행정구역 경계) 데이터 출처
+        _map_rows = "".join(
+            "<tr style='border-top:1px solid #EEF1F4'>"
+            f"<td style='padding:3px 6px;font-weight:600'>{m['항목']}</td>"
+            f"<td style='padding:3px 6px'>{badge(m['등급'], m['등급'])}</td>"
+            f"<td style='padding:3px 6px;color:#52606D'>{m['출처']}</td>"
+            f"<td style='padding:3px 6px;white-space:nowrap'>{m['갱신']}</td></tr>"
+            for m in MAP_SOURCES)
+        st.markdown(
+            "<div style='font-size:12px;font-weight:600;margin-top:12px'>🗺️ 지도(행정구역 경계) 데이터 출처</div>"
+            "<table style='width:100%;font-size:11px;border-collapse:collapse'>"
+            "<tr style='color:#52606D;text-align:left'><th>항목</th><th>등급</th><th>출처</th><th>갱신</th></tr>"
+            f"{_map_rows}</table>",
+            unsafe_allow_html=True)
+        # 지역 상징마크(CI) 출처·면책 — 실제 표시 중인 심볼이 있을 때만 노출
+        _syms = symbol_sources()
+        if _syms:
+            _src_rows = "".join(
+                "<tr style='border-top:1px solid #EEF1F4'>"
+                f"<td style='padding:3px 6px'>{s['source']}</td>"
+                f"<td style='padding:3px 6px;color:#52606D'>{s['license']}</td>"
+                f"<td style='padding:3px 6px'>"
+                + (f"<a href='{s['url']}' target='_blank'>출처</a>" if s['url'] else "—")
+                + "</td></tr>"
+                for s in _syms)
+            st.markdown(
+                "<div style='font-size:12px;font-weight:600;margin-top:12px'>🏛️ 지역 상징마크(CI)·휘장 출처</div>"
+                f"<div style='font-size:11px;color:#9AA5B1;line-height:1.7;margin:4px 0'>{SYMBOL_DISCLOSURE}</div>"
+                "<table style='width:100%;font-size:11px;border-collapse:collapse'>"
+                "<tr style='color:#52606D;text-align:left'><th>지역</th><th>이용 조건</th><th>링크</th></tr>"
+                f"{_src_rows}</table>",
+                unsafe_allow_html=True)

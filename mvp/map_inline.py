@@ -11,6 +11,7 @@
   · build_emd_image(): 자치구 L2 화면용 행정동(읍면동) 경계 = 클릭 불가 지도 이미지.
 클릭: <a href="?sido=..."> 페이지 이동. iframe 미사용 → 활성창 이벤트 차단 회피.
 """
+import base64
 import json
 import math
 import os
@@ -23,6 +24,59 @@ _SVG_SIGUNGU = os.environ.get("MOJEONG_SIGUNGU_SVG") or os.path.join(_DIR, "geo"
 _EMD = os.path.join(_DIR, "geo", "emd_svg.json")
 _OFFSETS = os.path.join(_DIR, "geo", "island_offsets.json")
 _OFFSETS_CACHE = None
+
+# ── 지역 상징마크(CI)/휘장 — 좌측 hover 라벨 위에 표시 ──────────────────────
+# 각 지역을 식별·안내하는 목적(명목적 사용)으로만 표시. 저작권·상표권은 각 자치단체.
+# 레지스트리(geo/symbols.json) = {key: {file, source, license, url}}.
+#   key 규칙: 시도 지도 = 시도명("서울특별시"), 시군구 지도 = "시도명|구군명"("인천광역시|남동구").
+# 이미지 파일(geo/symbols/*) 은 data URI(base64) 로 SVG 안에 임베드 → 외부 호출 0(자체 호스팅 원칙).
+# 파일이 없으면 조용히 건너뜀(기존 동작 유지). 한 자치구가 다른 구 파일을 가리켜도 됨(서해구→서구).
+_SYMBOLS_JSON = os.path.join(_DIR, "geo", "symbols.json")
+_SYMBOLS_DIR = os.path.join(_DIR, "geo", "symbols")
+_SYMBOLS_CACHE = None       # {key: data_uri}
+_SYM_SIZE = 96              # 상징마크 크기(px, viewBox 단위) — 일반 크기
+_SYM_GAP = 14              # 상징마크 ↔ 라벨 글씨 간격
+_SYM_LBL_FONT = 34         # 라벨 글씨 높이(위치 계산용, .lbl font-size 와 동일)
+
+
+def _symbols():
+    """symbols.json 레지스트리를 읽어 {key: data_uri} 캐시. 파일 없으면 빈 dict."""
+    global _SYMBOLS_CACHE
+    if _SYMBOLS_CACHE is not None:
+        return _SYMBOLS_CACHE
+    _SYMBOLS_CACHE = {}
+    try:
+        with open(_SYMBOLS_JSON, encoding="utf-8") as f:
+            reg = json.load(f)
+    except Exception:
+        return _SYMBOLS_CACHE
+    _mime = {"svg": "image/svg+xml", "jpg": "image/jpeg", "jpeg": "image/jpeg",
+             "png": "image/png", "gif": "image/gif"}
+    for key, meta in (reg.get("symbols") or {}).items():
+        fn = (meta or {}).get("file")
+        if not fn:
+            continue
+        path = os.path.join(_SYMBOLS_DIR, fn)
+        try:
+            with open(path, "rb") as fb:
+                b = base64.b64encode(fb.read()).decode("ascii")
+        except Exception:
+            continue                       # 파일 미존재 → 건너뜀(레지스트리에만 있고 이미지 미확보)
+        ext = os.path.splitext(fn)[1].lstrip(".").lower()
+        _SYMBOLS_CACHE[key] = f"data:{_mime.get(ext, 'image/png')};base64,{b}"
+    return _SYMBOLS_CACHE
+
+
+def _symbol_img(key, i, lx, ycen):
+    """key 에 해당하는 상징마크 <image> SVG(라벨 글씨 위). 없으면 빈 문자열.
+    class lbl-{i} 공유 → 기존 hover 규칙(.hit-{i}:hover .lbl-{i}{opacity:1})으로 글씨와 함께 노출."""
+    uri = _symbols().get(key)
+    if not uri:
+        return ""
+    y = round(ycen - _SYM_LBL_FONT - _SYM_GAP - _SYM_SIZE, 1)
+    return (f'<image class="lbl-img lbl-{i}" href="{uri}" xlink:href="{uri}" '
+            f'x="{lx}" y="{y}" width="{_SYM_SIZE}" height="{_SYM_SIZE}" '
+            f'preserveAspectRatio="xMidYMid meet"/>')
 
 
 def _island_offsets(sido):
@@ -138,6 +192,8 @@ _STYLE_BASE = """
 .mjmap .lbl { opacity:0; font-size:34px; font-weight:800; fill:#1F4654;
   pointer-events:none; transition:opacity .15s; text-anchor:start; letter-spacing:-2px;
   paint-order:stroke; stroke:#FFFFFF; stroke-width:5px; }
+/* 좌측 라벨 글씨 위 지역 상징마크(CI) — 글씨와 함께 hover 시 노출(lbl-{i} 클래스 공유) */
+.mjmap .lbl-img { opacity:0; pointer-events:none; transition:opacity .15s; }
 .mjmap .mk-dot { fill:#52606D; stroke:#fff; stroke-width:1.5; }
 .mjmap .mk-lbl { font-size:30px; font-weight:700; fill:#1F4654; cursor:pointer; }
 /* 행정동 경계 비클릭 이미지 */
@@ -374,9 +430,10 @@ def build_sigungu(sido, selected=None, stats=None, fills=None, sat=None,
         if hull:
             hullhits.append(f'<a class="hit hit-{i}" href="{href}" target="_self">'
                             f'<path class="hullp" d="{hull}"/></a>')
+        symimg = _symbol_img(f"{link_sido}|{name}", i, lx, ycen)
         hits.append(
             f'<a class="hit hit-{i}" href="{href}" target="_self">'
-            f'<path class="hitp" d="{dd}"/>'
+            f'<path class="hitp" d="{dd}"/>{symimg}'
             f'<text class="lbl lbl-{i}" x="{lx}" y="{ycen}">{name}</text></a>'
         )
         sidebase.append(f'<g class="sb sb-{i}">{_stack(dd)}</g>')
@@ -530,9 +587,10 @@ def build(selected=None, stats=None, fills=None, labels=None):
         if hull:
             hullhits.append(f'<a class="hit hit-{i}" href="{href}" target="_self">'
                             f'<path class="hullp" d="{hull}"/></a>')
+        symimg = _symbol_img(name, i, lx, ycen)
         hits.append(
             f'<a class="hit hit-{i}" href="{href}" target="_self">'
-            f'<path class="hitp" d="{dd}"/>'
+            f'<path class="hitp" d="{dd}"/>{symimg}'
             f'<text class="lbl lbl-{i}" x="{lx}" y="{ycen}">{name}</text></a>'
         )
         if labels and name in labels:
